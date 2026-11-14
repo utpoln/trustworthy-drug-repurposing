@@ -6,6 +6,8 @@
 - **Deadline:** 2027-01-31
 
 ## Pipeline
+Full original brief: `PROJECT_BRIEF.md` (source of truth for scope).
+
 1. **Candidate generation** — train a link-prediction model (RotatE / TransE via PyKEEN, or a GNN) on PrimeKG to predict missing drug–disease `indication` edges. Output the top-k candidate drugs for each disease.
 2. **Grounded explanation + re-ranking** — for each (disease, candidate drug), retrieve 2–3-hop KG paths from drug to disease. Send them to an LLM through MindRouter. The LLM must:
    - explain the mechanism using **only** the given paths (no outside knowledge),
@@ -16,14 +18,21 @@
    - Faithfulness: % of LLM claims supported by the retrieved paths
    - Calibration: ECE of the LLM confidence scores
    - Robustness: inject fake edges (KG poisoning), then measure the drop in accuracy and faithfulness
-   - Model comparison: 2–3 MindRouter models
+   - Model comparison: 5 MindRouter models (see below)
 4. **Provenance** — every recommendation logs the data version (PrimeKG release + hash), the KG model and checkpoint, the LLM name, the prompt (text + template version), the retrieved paths, the raw response, and a timestamp.
 
 ## MindRouter
 - OpenAI-compatible endpoint: `https://mindrouter.uidaho.edu/v1` (use the `openai` Python client with `base_url`).
 - Credentials go in `.env` (git-ignored): `MINDROUTER_API_KEY`, `MINDROUTER_BASE_URL`, `MINDROUTER_MODEL`. See `.env.example`.
 - Reasoning models (e.g. Qwen3) may return `<think>...</think>` blocks or `reasoning_content`. Strip them before parsing.
-- Models used in sibling projects: `llama3.3:70b`, `qwen2.5:72b`, `mistral-large:123b`, `Qwen/Qwen3-32B`, `google/gemma-4-31b`.
+- **Models for the paper** (exact IDs, never aliases like `default-llm`, which can be remapped):
+  - `openai/gpt-oss-120b`: OpenAI family, MoE (117B total, 5.1B active), reasoning, 128k context
+  - `qwen/qwen3.5-122b`: Qwen family, MoE (122B total, ~10B active), reasoning, FP8, 256k context
+  - `google/gemma-4-31b`: Google family, dense 31B, 256k context
+  - `moonshotai/kimi-k3`: Moonshot family, MoE (2.8T total, ~104B active), reasoning, 1M context (largest)
+  - `qwen/qwen3.8-27b`: Qwen family, dense 27B, reasoning, 256k context (the within-family comparison with qwen3.5-122b)
+  - Optional non-generative baseline: `Qwen/Qwen3-Reranker-8B` (scores relevance only, no explanation or confidence)
+- All of the above are served by vLLM and answered the smoke test in under 1 s (2026-11-13). `llama3.3:70b` (Ollama, Q4) took 9 s.
 
 ## Layout
 ```
