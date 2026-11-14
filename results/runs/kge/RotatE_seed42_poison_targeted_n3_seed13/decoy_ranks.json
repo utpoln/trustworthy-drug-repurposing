@@ -1,0 +1,10 @@
+{
+  "n": 496,
+  "median_rank_clean": 10.0,
+  "median_rank_poisoned": 11.0,
+  "top1_clean": 0.05040322580645161,
+  "top1_poisoned": 0.1028225806451613,
+  "top10_clean": 0.5080645161290323,
+  "top10_poisoned": 0.4939516129032258,
+  "frac_promoted": 0.3951612903225806
+}
