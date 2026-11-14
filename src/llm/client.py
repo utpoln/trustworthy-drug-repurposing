@@ -1,6 +1,7 @@
 """MindRouter (OpenAI-compatible) chat client with retries and JSON parsing."""
 import json
 import os
+import random
 import re
 import time
 from pathlib import Path
@@ -64,7 +65,7 @@ def parse_json(text: str) -> Optional[dict]:
 
 
 def chat(client: OpenAI, model: str, system: str, user: str, *, temperature: float = 0.0,
-         max_tokens: int = 4096, retries: int = 4, json_mode: bool = True) -> dict:
+         max_tokens: int = 4096, retries: int = 8, json_mode: bool = True) -> dict:
     """One chat call. Returns {content, reasoning, usage, latency_s, attempts, error}."""
     msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]
     last_err = None
@@ -93,6 +94,8 @@ def chat(client: OpenAI, model: str, system: str, user: str, *, temperature: flo
             if json_mode and "response_format" in str(e):
                 json_mode = False  # model does not support JSON mode: retry without it
                 continue
-            time.sleep(min(60, 2 ** attempt))
+            # rate limits (429) get longer, jittered waits; other errors a short backoff
+            base = 15 * attempt if "429" in str(e) or "RateLimit" in type(e).__name__ else 2 ** attempt
+            time.sleep(min(120, base) * (0.75 + 0.5 * random.random()))
     return {"content": "", "reasoning": None, "finish_reason": None, "usage": {},
             "latency_s": None, "attempts": retries, "error": last_err}
