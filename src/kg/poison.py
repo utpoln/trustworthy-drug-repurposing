@@ -5,7 +5,8 @@ Attacks
 targeted  For each test disease, choose a decoy drug: a non-gold candidate in
           the KGE top-k. Inject `n_paths` fake mechanistic chains
               decoy -[drug_protein: target]-> P_i -[disease_protein]-> disease
-          through randomly chosen proteins P_i. The decoy now has strong-looking
+          through randomly chosen druggable proteins P_i (proteins that already
+          have a drug_protein edge, so they look plausible). The decoy now has strong-looking
           but false 2-hop evidence.
 random    Add fake drug_protein and disease_protein edges between random
           drug/protein and protein/disease nodes, equal to `rate` x the number
@@ -41,8 +42,9 @@ def existing_pairs(train: pd.DataFrame, rel: str) -> set:
 
 
 def targeted(train, nodes, topk_file, n_paths, k, rng):
-    proteins = nodes.loc[nodes["node_type"] == "gene/protein", "node_index"].to_numpy()
     dp, dis_p = existing_pairs(train, "drug_protein"), existing_pairs(train, "disease_protein")
+    # stealthy attacker: only use proteins that are already drug targets in the KG
+    proteins = np.array(sorted({p for _, p in dp}))
     fake, decoys = [], []
     for line in open(topk_file):
         rec = json.loads(line)

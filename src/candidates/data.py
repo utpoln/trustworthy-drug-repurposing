@@ -25,9 +25,10 @@ class SplitData:
     known: Dict[int, Set[int]]   # disease node_index -> drug node_indexes (all splits)
 
 
-def load_split(split_dir: Path = DEFAULT_SPLIT) -> SplitData:
+def load_split(split_dir: Path = DEFAULT_SPLIT, train_file: Path = None) -> SplitData:
+    """`train_file` overrides the training graph (e.g. a poisoned copy); valid/test stay clean."""
     nodes = pd.read_csv(split_dir / "nodes.tsv.gz", sep="\t", low_memory=False)
-    train = pd.read_csv(split_dir / "train.tsv.gz", sep="\t")
+    train = pd.read_csv(train_file or split_dir / "train.tsv.gz", sep="\t")
     valid = pd.read_csv(split_dir / "valid.tsv", sep="\t")
     test = pd.read_csv(split_dir / "test.tsv", sep="\t")
 

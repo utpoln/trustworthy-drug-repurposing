@@ -122,6 +122,7 @@ def main() -> None:
     ap.add_argument("--split", type=Path, default=DEFAULT_SPLIT)
     ap.add_argument("--max-triples", type=int, default=None, help="subsample train (smoke tests only)")
     ap.add_argument("--tag", default="")
+    ap.add_argument("--train-file", type=Path, default=None, help="override training graph (poisoning)")
     args = ap.parse_args()
 
     torch.manual_seed(args.seed)
@@ -131,7 +132,7 @@ def main() -> None:
     run.mkdir(parents=True, exist_ok=True)
 
     t0 = time.time()
-    data = load_split(args.split)
+    data = load_split(args.split, args.train_file)
     tf = data.train
     if args.max_triples:
         g = torch.Generator().manual_seed(args.seed)
@@ -150,6 +151,7 @@ def main() -> None:
     config = {**{k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()},
               "device": str(device), "n_train_triples": tf.num_triples,
               "split_meta": json.loads((args.split / "split_meta.json").read_text()),
+              "train_file": str(args.train_file or args.split / "train.tsv.gz"),
               "started_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
               "torch": torch.__version__}
     (run / "config.json").write_text(json.dumps(config, indent=2))

@@ -1,0 +1,1060 @@
+head	relation	tail	display	attack
+21803	drug_protein	1356	target	random
+15707	drug_protein	78728	target	random
+20838	drug_protein	7270	target	random
+18390	drug_protein	9293	target	random
+20771	drug_protein	61427	target	random
+17186	drug_protein	58781	target	random
+19938	drug_protein	33955	target	random
+18295	drug_protein	82090	target	random
+21239	drug_protein	3559	target	random
+17344	drug_protein	79143	target	random
+16364	drug_protein	87	target	random
+20799	drug_protein	7134	target	random
+18227	drug_protein	6672	target	random
+19416	drug_protein	61068	target	random
+21848	drug_protein	4188	target	random
+18184	drug_protein	13956	target	random
+17679	drug_protein	79380	target	random
+21600	drug_protein	2506	target	random
+17561	drug_protein	4486	target	random
+20308	drug_protein	56671	target	random
+18412	drug_protein	1266	target	random
+19647	drug_protein	1128	target	random
+18046	drug_protein	34185	target	random
+19817	drug_protein	10844	target	random
+14025	drug_protein	83035	target	random
+20674	drug_protein	7966	target	random
+16253	drug_protein	81930	target	random
+15065	drug_protein	4968	target	random
+15956	drug_protein	106	target	random
+19830	drug_protein	3290	target	random
+16827	drug_protein	13115	target	random
+18430	drug_protein	5612	target	random
+20477	drug_protein	12107	target	random
+18050	drug_protein	5672	target	random
+16078	drug_protein	2722	target	random
+21400	drug_protein	13494	target	random
+14265	drug_protein	34026	target	random
+18131	drug_protein	57833	target	random
+17638	drug_protein	35278	target	random
+19123	drug_protein	1060	target	random
+19503	drug_protein	61474	target	random
+15748	drug_protein	80921	target	random
+17812	drug_protein	34484	target	random
+20233	drug_protein	79576	target	random
+21489	drug_protein	9987	target	random
+16563	drug_protein	82802	target	random
+21638	drug_protein	11379	target	random
+14688	drug_protein	83674	target	random
+17193	drug_protein	4242	target	random
+14308	drug_protein	59062	target	random
+17332	drug_protein	13815	target	random
+20617	drug_protein	34550	target	random
+17504	drug_protein	10391	target	random
+19879	drug_protein	80127	target	random
+16969	drug_protein	58207	target	random
+14972	drug_protein	6072	target	random
+17973	drug_protein	3871	target	random
+21179	drug_protein	77538	target	random
+14667	drug_protein	9637	target	random
+21537	drug_protein	83125	target	random
+21872	drug_protein	82157	target	random
+16270	drug_protein	58981	target	random
+17718	drug_protein	83739	target	random
+14548	drug_protein	78248	target	random
+15297	drug_protein	13325	target	random
+20104	drug_protein	35343	target	random
+19653	drug_protein	58929	target	random
+19483	drug_protein	2647	target	random
+16092	drug_protein	12848	target	random
+21713	drug_protein	5398	target	random
+14657	drug_protein	10557	target	random
+20451	drug_protein	57407	target	random
+20404	drug_protein	13644	target	random
+15771	drug_protein	7353	target	random
+18620	drug_protein	11711	target	random
+21400	drug_protein	9752	target	random
+17847	drug_protein	12990	target	random
+17722	drug_protein	5112	target	random
+14402	drug_protein	61106	target	random
+19483	drug_protein	3278	target	random
+21576	drug_protein	4364	target	random
+21194	drug_protein	79893	target	random
+20192	drug_protein	35238	target	random
+16563	drug_protein	56566	target	random
+16994	drug_protein	3799	target	random
+15708	drug_protein	34342	target	random
+17710	drug_protein	8594	target	random
+15454	drug_protein	2050	target	random
+20465	drug_protein	5211	target	random
+16861	drug_protein	2531	target	random
+20089	drug_protein	601	target	random
+20518	drug_protein	80811	target	random
+14300	drug_protein	6657	target	random
+15501	drug_protein	79089	target	random
+17387	drug_protein	10710	target	random
+20489	drug_protein	82913	target	random
+19261	drug_protein	59641	target	random
+21308	drug_protein	81073	target	random
+18895	drug_protein	79509	target	random
+16882	drug_protein	59464	target	random
+18013	drug_protein	9314	target	random
+14626	drug_protein	82281	target	random
+14422	drug_protein	8059	target	random
+15041	drug_protein	58263	target	random
+20534	drug_protein	56772	target	random
+16706	drug_protein	10552	target	random
+15415	drug_protein	33844	target	random
+18570	drug_protein	61221	target	random
+14762	drug_protein	58345	target	random
+17791	drug_protein	58075	target	random
+20290	drug_protein	82322	target	random
+21507	drug_protein	11451	target	random
+18813	drug_protein	1356	target	random
+15361	drug_protein	83144	target	random
+20196	drug_protein	57695	target	random
+17814	drug_protein	81776	target	random
+14026	drug_protein	6774	target	random
+21572	drug_protein	3102	target	random
+17636	drug_protein	33993	target	random
+19243	drug_protein	7880	target	random
+16577	drug_protein	1282	target	random
+21543	drug_protein	11864	target	random
+16767	drug_protein	6083	target	random
+21396	drug_protein	13880	target	random
+14565	drug_protein	56826	target	random
+18822	drug_protein	12570	target	random
+16857	drug_protein	60861	target	random
+19071	drug_protein	8716	target	random
+19034	drug_protein	83562	target	random
+18026	drug_protein	60220	target	random
+16237	drug_protein	34284	target	random
+19894	drug_protein	77339	target	random
+20280	drug_protein	58169	target	random
+17395	drug_protein	9196	target	random
+16522	drug_protein	81772	target	random
+20486	drug_protein	4710	target	random
+14541	drug_protein	59806	target	random
+21144	drug_protein	81863	target	random
+16142	drug_protein	78079	target	random
+19841	drug_protein	57051	target	random
+15787	drug_protein	3651	target	random
+19869	drug_protein	78612	target	random
+16290	drug_protein	10923	target	random
+21219	drug_protein	34163	target	random
+16182	drug_protein	8931	target	random
+18263	drug_protein	59784	target	random
+21488	drug_protein	33878	target	random
+21583	drug_protein	56835	target	random
+18818	drug_protein	35123	target	random
+18933	drug_protein	61238	target	random
+20178	drug_protein	9963	target	random
+19314	drug_protein	1645	target	random
+19465	drug_protein	8950	target	random
+14184	drug_protein	4994	target	random
+19997	drug_protein	5247	target	random
+19668	drug_protein	13147	target	random
+21654	drug_protein	5018	target	random
+18502	drug_protein	59913	target	random
+18400	drug_protein	10048	target	random
+21027	drug_protein	11611	target	random
+17092	drug_protein	7577	target	random
+14251	drug_protein	5685	target	random
+19821	drug_protein	7476	target	random
+17130	drug_protein	8354	target	random
+20573	drug_protein	78559	target	random
+17823	drug_protein	81227	target	random
+17821	drug_protein	81019	target	random
+19759	drug_protein	9014	target	random
+15029	drug_protein	2446	target	random
+16509	drug_protein	22	target	random
+16504	drug_protein	2952	target	random
+17806	drug_protein	80082	target	random
+19218	drug_protein	13123	target	random
+14945	drug_protein	58091	target	random
+20910	drug_protein	13392	target	random
+19459	drug_protein	57435	target	random
+20817	drug_protein	576	target	random
+18254	drug_protein	78945	target	random
+19165	drug_protein	6325	target	random
+21911	drug_protein	56678	target	random
+18201	drug_protein	3317	target	random
+14670	drug_protein	10723	target	random
+18784	drug_protein	83229	target	random
+19933	drug_protein	79247	target	random
+16088	drug_protein	79744	target	random
+18163	drug_protein	4300	target	random
+19955	drug_protein	33899	target	random
+15289	drug_protein	60945	target	random
+21767	drug_protein	12191	target	random
+19877	drug_protein	78104	target	random
+21708	drug_protein	61257	target	random
+18381	drug_protein	58690	target	random
+16634	drug_protein	79005	target	random
+17499	drug_protein	8167	target	random
+20667	drug_protein	1683	target	random
+21226	drug_protein	10860	target	random
+19737	drug_protein	8750	target	random
+16424	drug_protein	57888	target	random
+18816	drug_protein	61226	target	random
+19662	drug_protein	11700	target	random
+20903	drug_protein	3628	target	random
+14943	drug_protein	7957	target	random
+17192	drug_protein	8653	target	random
+17637	drug_protein	57408	target	random
+18778	drug_protein	81167	target	random
+20973	drug_protein	80812	target	random
+15987	drug_protein	33824	target	random
+16997	drug_protein	59107	target	random
+18410	drug_protein	79633	target	random
+14665	drug_protein	59481	target	random
+16505	drug_protein	57122	target	random
+17976	drug_protein	56694	target	random
+17264	drug_protein	56708	target	random
+17158	drug_protein	80926	target	random
+16754	drug_protein	13739	target	random
+20369	drug_protein	1189	target	random
+14870	drug_protein	11902	target	random
+15004	drug_protein	3113	target	random
+18370	drug_protein	35213	target	random
+19442	drug_protein	9347	target	random
+21828	drug_protein	83663	target	random
+18463	drug_protein	9090	target	random
+21256	drug_protein	2049	target	random
+14600	drug_protein	8252	target	random
+19892	drug_protein	5602	target	random
+20288	drug_protein	7314	target	random
+16543	drug_protein	60980	target	random
+17039	drug_protein	3153	target	random
+17289	drug_protein	61087	target	random
+18901	drug_protein	8782	target	random
+20893	drug_protein	34836	target	random
+14032	drug_protein	11269	target	random
+19563	drug_protein	57041	target	random
+21481	drug_protein	78673	target	random
+19734	drug_protein	7142	target	random
+19282	drug_protein	11655	target	random
+21677	drug_protein	1312	target	random
+16510	drug_protein	82238	target	random
+18248	drug_protein	8057	target	random
+21127	drug_protein	7981	target	random
+20589	drug_protein	5761	target	random
+21141	drug_protein	12089	target	random
+14445	drug_protein	8350	target	random
+21253	drug_protein	874	target	random
+20138	drug_protein	59199	target	random
+14023	drug_protein	77326	target	random
+14126	drug_protein	58298	target	random
+21119	drug_protein	81785	target	random
+21267	drug_protein	12515	target	random
+20443	drug_protein	80190	target	random
+17691	drug_protein	34535	target	random
+15259	drug_protein	3209	target	random
+15314	drug_protein	57591	target	random
+20084	drug_protein	5209	target	random
+16881	drug_protein	60751	target	random
+34816	disease_protein	33614	associated with	random
+9829	disease_protein	36613	associated with	random
+61583	disease_protein	29176	associated with	random
+7519	disease_protein	97061	associated with	random
+11115	disease_protein	31590	associated with	random
+2979	disease_protein	38447	associated with	random
+83010	disease_protein	28866	associated with	random
+6164	disease_protein	38172	associated with	random
+1999	disease_protein	98211	associated with	random
+58042	disease_protein	35707	associated with	random
+21970	disease_protein	38146	associated with	random
+3872	disease_protein	98052	associated with	random
+12817	disease_protein	27448	associated with	random
+8783	disease_protein	32860	associated with	random
+7709	disease_protein	36625	associated with	random
+59384	disease_protein	31506	associated with	random
+60821	disease_protein	95272	associated with	random
+922	disease_protein	35766	associated with	random
+7054	disease_protein	38261	associated with	random
+7889	disease_protein	95818	associated with	random
+13411	disease_protein	99445	associated with	random
+61552	disease_protein	28802	associated with	random
+82734	disease_protein	95628	associated with	random
+59921	disease_protein	27280	associated with	random
+2040	disease_protein	32071	associated with	random
+80654	disease_protein	35431	associated with	random
+10315	disease_protein	96802	associated with	random
+9927	disease_protein	29205	associated with	random
+61299	disease_protein	38937	associated with	random
+9751	disease_protein	36716	associated with	random
+1241	disease_protein	37962	associated with	random
+4042	disease_protein	29290	associated with	random
+79292	disease_protein	99550	associated with	random
+56618	disease_protein	27196	associated with	random
+771	disease_protein	38607	associated with	random
+11018	disease_protein	32982	associated with	random
+78248	disease_protein	99136	associated with	random
+13784	disease_protein	37013	associated with	random
+5982	disease_protein	96431	associated with	random
+57568	disease_protein	36834	associated with	random
+3212	disease_protein	38268	associated with	random
+863	disease_protein	38537	associated with	random
+9443	disease_protein	84323	associated with	random
+59317	disease_protein	36524	associated with	random
+12881	disease_protein	98219	associated with	random
+83442	disease_protein	27602	associated with	random
+61028	disease_protein	83826	associated with	random
+61009	disease_protein	98612	associated with	random
+7034	disease_protein	84187	associated with	random
+1089	disease_protein	97468	associated with	random
+3408	disease_protein	98061	associated with	random
+80405	disease_protein	38505	associated with	random
+60800	disease_protein	32823	associated with	random
+79680	disease_protein	95075	associated with	random
+7170	disease_protein	96638	associated with	random
+58763	disease_protein	35848	associated with	random
+73	disease_protein	99718	associated with	random
+83061	disease_protein	30897	associated with	random
+3591	disease_protein	84200	associated with	random
+57399	disease_protein	98884	associated with	random
+78726	disease_protein	84267	associated with	random
+4576	disease_protein	36565	associated with	random
+4366	disease_protein	38543	associated with	random
+34709	disease_protein	96639	associated with	random
+12785	disease_protein	32154	associated with	random
+797	disease_protein	28550	associated with	random
+58882	disease_protein	31393	associated with	random
+8701	disease_protein	32650	associated with	random
+11904	disease_protein	100024	associated with	random
+7165	disease_protein	99942	associated with	random
+9073	disease_protein	95720	associated with	random
+33993	disease_protein	31684	associated with	random
+58193	disease_protein	84139	associated with	random
+1477	disease_protein	98497	associated with	random
+7879	disease_protein	95004	associated with	random
+58562	disease_protein	33337	associated with	random
+81205	disease_protein	35906	associated with	random
+2279	disease_protein	97455	associated with	random
+10840	disease_protein	36875	associated with	random
+9307	disease_protein	31818	associated with	random
+5125	disease_protein	36361	associated with	random
+34305	disease_protein	32691	associated with	random
+52	disease_protein	37148	associated with	random
+81769	disease_protein	32866	associated with	random
+58876	disease_protein	97058	associated with	random
+12878	disease_protein	37845	associated with	random
+4848	disease_protein	31870	associated with	random
+78374	disease_protein	32514	associated with	random
+2924	disease_protein	31299	associated with	random
+57126	disease_protein	31510	associated with	random
+2278	disease_protein	39764	associated with	random
+9081	disease_protein	38928	associated with	random
+1196	disease_protein	99898	associated with	random
+557	disease_protein	98114	associated with	random
+10950	disease_protein	37524	associated with	random
+80608	disease_protein	36720	associated with	random
+5886	disease_protein	39860	associated with	random
+4253	disease_protein	32590	associated with	random
+5854	disease_protein	35963	associated with	random
+13219	disease_protein	96097	associated with	random
+80179	disease_protein	37882	associated with	random
+61334	disease_protein	31827	associated with	random
+81224	disease_protein	83801	associated with	random
+9254	disease_protein	35585	associated with	random
+10121	disease_protein	97200	associated with	random
+77541	disease_protein	83976	associated with	random
+10507	disease_protein	98813	associated with	random
+80658	disease_protein	30399	associated with	random
+58134	disease_protein	27540	associated with	random
+1558	disease_protein	83928	associated with	random
+6485	disease_protein	84246	associated with	random
+60295	disease_protein	33050	associated with	random
+81358	disease_protein	94830	associated with	random
+59724	disease_protein	27447	associated with	random
+3058	disease_protein	99146	associated with	random
+1971	disease_protein	38858	associated with	random
+35286	disease_protein	37626	associated with	random
+13387	disease_protein	29495	associated with	random
+10923	disease_protein	27599	associated with	random
+2062	disease_protein	32560	associated with	random
+1542	disease_protein	97574	associated with	random
+1118	disease_protein	27934	associated with	random
+6159	disease_protein	30053	associated with	random
+272	disease_protein	98642	associated with	random
+60416	disease_protein	37900	associated with	random
+77210	disease_protein	97970	associated with	random
+78931	disease_protein	99264	associated with	random
+4883	disease_protein	31175	associated with	random
+9966	disease_protein	36189	associated with	random
+845	disease_protein	94711	associated with	random
+1960	disease_protein	27602	associated with	random
+61622	disease_protein	36152	associated with	random
+8838	disease_protein	31873	associated with	random
+544	disease_protein	38382	associated with	random
+28	disease_protein	95657	associated with	random
+5698	disease_protein	32165	associated with	random
+1763	disease_protein	98984	associated with	random
+7753	disease_protein	95901	associated with	random
+4213	disease_protein	83809	associated with	random
+11808	disease_protein	39117	associated with	random
+59967	disease_protein	30220	associated with	random
+2528	disease_protein	27232	associated with	random
+5828	disease_protein	38794	associated with	random
+34842	disease_protein	27418	associated with	random
+12171	disease_protein	39276	associated with	random
+59436	disease_protein	98450	associated with	random
+82174	disease_protein	98538	associated with	random
+10996	disease_protein	30953	associated with	random
+2914	disease_protein	37512	associated with	random
+60070	disease_protein	38305	associated with	random
+6776	disease_protein	38242	associated with	random
+7307	disease_protein	27670	associated with	random
+79638	disease_protein	29003	associated with	random
+79517	disease_protein	30690	associated with	random
+34983	disease_protein	31460	associated with	random
+13353	disease_protein	98773	associated with	random
+3821	disease_protein	96158	associated with	random
+58324	disease_protein	32753	associated with	random
+78473	disease_protein	36256	associated with	random
+77757	disease_protein	98592	associated with	random
+33799	disease_protein	35712	associated with	random
+12834	disease_protein	27165	associated with	random
+2936	disease_protein	33042	associated with	random
+2437	disease_protein	32702	associated with	random
+9937	disease_protein	30384	associated with	random
+9122	disease_protein	97943	associated with	random
+58558	disease_protein	28504	associated with	random
+60085	disease_protein	95755	associated with	random
+58665	disease_protein	39202	associated with	random
+61249	disease_protein	31053	associated with	random
+59465	disease_protein	35481	associated with	random
+33942	disease_protein	96335	associated with	random
+35201	disease_protein	39131	associated with	random
+6775	disease_protein	97126	associated with	random
+80026	disease_protein	31875	associated with	random
+79588	disease_protein	31136	associated with	random
+3577	disease_protein	39657	associated with	random
+113	disease_protein	31743	associated with	random
+58510	disease_protein	98172	associated with	random
+1114	disease_protein	38220	associated with	random
+60866	disease_protein	95120	associated with	random
+12976	disease_protein	97371	associated with	random
+81262	disease_protein	84271	associated with	random
+59238	disease_protein	33070	associated with	random
+9200	disease_protein	37064	associated with	random
+414	disease_protein	28055	associated with	random
+33992	disease_protein	95252	associated with	random
+6317	disease_protein	32951	associated with	random
+80111	disease_protein	99070	associated with	random
+77943	disease_protein	32406	associated with	random
+58599	disease_protein	36726	associated with	random
+13321	disease_protein	33673	associated with	random
+81457	disease_protein	28276	associated with	random
+9547	disease_protein	27174	associated with	random
+4197	disease_protein	28906	associated with	random
+61091	disease_protein	98621	associated with	random
+12911	disease_protein	37063	associated with	random
+12678	disease_protein	28081	associated with	random
+10732	disease_protein	28902	associated with	random
+59382	disease_protein	95751	associated with	random
+83688	disease_protein	30989	associated with	random
+5578	disease_protein	96331	associated with	random
+81896	disease_protein	84273	associated with	random
+83102	disease_protein	37006	associated with	random
+198	disease_protein	98529	associated with	random
+59774	disease_protein	32119	associated with	random
+1772	disease_protein	32172	associated with	random
+79578	disease_protein	39807	associated with	random
+78222	disease_protein	96938	associated with	random
+5091	disease_protein	96896	associated with	random
+59084	disease_protein	83899	associated with	random
+1842	disease_protein	28997	associated with	random
+6542	disease_protein	98585	associated with	random
+3555	disease_protein	35930	associated with	random
+58911	disease_protein	29791	associated with	random
+4162	disease_protein	96005	associated with	random
+57806	disease_protein	36573	associated with	random
+9822	disease_protein	38525	associated with	random
+11400	disease_protein	28152	associated with	random
+2252	disease_protein	28980	associated with	random
+60676	disease_protein	95781	associated with	random
+59574	disease_protein	39278	associated with	random
+34890	disease_protein	31469	associated with	random
+56874	disease_protein	27977	associated with	random
+80759	disease_protein	99586	associated with	random
+61413	disease_protein	33007	associated with	random
+60061	disease_protein	97710	associated with	random
+5744	disease_protein	37514	associated with	random
+34821	disease_protein	29819	associated with	random
+1581	disease_protein	36536	associated with	random
+60458	disease_protein	36170	associated with	random
+8956	disease_protein	37830	associated with	random
+3685	disease_protein	31304	associated with	random
+59884	disease_protein	32804	associated with	random
+34233	disease_protein	97008	associated with	random
+57970	disease_protein	38096	associated with	random
+3986	disease_protein	27616	associated with	random
+82412	disease_protein	39834	associated with	random
+4718	disease_protein	97018	associated with	random
+33925	disease_protein	99363	associated with	random
+35060	disease_protein	31418	associated with	random
+3992	disease_protein	36345	associated with	random
+59082	disease_protein	95314	associated with	random
+57736	disease_protein	31778	associated with	random
+58043	disease_protein	30883	associated with	random
+78575	disease_protein	96297	associated with	random
+7271	disease_protein	37523	associated with	random
+79101	disease_protein	37522	associated with	random
+57315	disease_protein	83790	associated with	random
+58997	disease_protein	95364	associated with	random
+78127	disease_protein	99306	associated with	random
+11610	disease_protein	36588	associated with	random
+63091	disease_protein	95147	associated with	random
+11702	disease_protein	30398	associated with	random
+8752	disease_protein	94827	associated with	random
+58724	disease_protein	83853	associated with	random
+9340	disease_protein	31835	associated with	random
+5999	disease_protein	31036	associated with	random
+83214	disease_protein	36689	associated with	random
+33877	disease_protein	32224	associated with	random
+108	disease_protein	33213	associated with	random
+8947	disease_protein	84067	associated with	random
+8300	disease_protein	30857	associated with	random
+34111	disease_protein	99363	associated with	random
+13921	disease_protein	37334	associated with	random
+3621	disease_protein	30497	associated with	random
+77992	disease_protein	29176	associated with	random
+4930	disease_protein	94690	associated with	random
+57253	disease_protein	99159	associated with	random
+8430	disease_protein	28199	associated with	random
+329	disease_protein	38797	associated with	random
+33804	disease_protein	27684	associated with	random
+77312	disease_protein	37373	associated with	random
+3907	disease_protein	98729	associated with	random
+4723	disease_protein	27361	associated with	random
+34284	disease_protein	37297	associated with	random
+57787	disease_protein	28966	associated with	random
+6898	disease_protein	95214	associated with	random
+10724	disease_protein	84102	associated with	random
+58960	disease_protein	35815	associated with	random
+704	disease_protein	39268	associated with	random
+61363	disease_protein	94972	associated with	random
+4900	disease_protein	36051	associated with	random
+80319	disease_protein	35868	associated with	random
+8186	disease_protein	99896	associated with	random
+1284	disease_protein	99298	associated with	random
+59463	disease_protein	95927	associated with	random
+81134	disease_protein	37505	associated with	random
+10639	disease_protein	95263	associated with	random
+12641	disease_protein	37835	associated with	random
+34064	disease_protein	38736	associated with	random
+79843	disease_protein	39578	associated with	random
+12952	disease_protein	98576	associated with	random
+3116	disease_protein	94726	associated with	random
+2774	disease_protein	96167	associated with	random
+82249	disease_protein	84242	associated with	random
+78099	disease_protein	38008	associated with	random
+13685	disease_protein	39560	associated with	random
+83326	disease_protein	96752	associated with	random
+4986	disease_protein	27977	associated with	random
+6451	disease_protein	30010	associated with	random
+754	disease_protein	31518	associated with	random
+4186	disease_protein	28463	associated with	random
+7165	disease_protein	95791	associated with	random
+10806	disease_protein	99582	associated with	random
+12876	disease_protein	31177	associated with	random
+13936	disease_protein	97483	associated with	random
+2717	disease_protein	29047	associated with	random
+59085	disease_protein	99241	associated with	random
+60039	disease_protein	95286	associated with	random
+1583	disease_protein	96072	associated with	random
+11205	disease_protein	37566	associated with	random
+10809	disease_protein	36910	associated with	random
+79250	disease_protein	96214	associated with	random
+7454	disease_protein	31685	associated with	random
+81179	disease_protein	83951	associated with	random
+9437	disease_protein	95832	associated with	random
+81394	disease_protein	32463	associated with	random
+61019	disease_protein	29291	associated with	random
+78928	disease_protein	37687	associated with	random
+9838	disease_protein	33350	associated with	random
+11629	disease_protein	27560	associated with	random
+3498	disease_protein	35655	associated with	random
+6859	disease_protein	28119	associated with	random
+2059	disease_protein	96464	associated with	random
+57975	disease_protein	38578	associated with	random
+60625	disease_protein	28577	associated with	random
+12054	disease_protein	33603	associated with	random
+83739	disease_protein	97438	associated with	random
+78714	disease_protein	95193	associated with	random
+77844	disease_protein	98562	associated with	random
+81118	disease_protein	97303	associated with	random
+79195	disease_protein	35858	associated with	random
+80380	disease_protein	27458	associated with	random
+5320	disease_protein	31524	associated with	random
+57100	disease_protein	29939	associated with	random
+82209	disease_protein	35942	associated with	random
+82258	disease_protein	35807	associated with	random
+3839	disease_protein	36307	associated with	random
+61611	disease_protein	31758	associated with	random
+59484	disease_protein	27171	associated with	random
+58133	disease_protein	39383	associated with	random
+78557	disease_protein	29270	associated with	random
+5286	disease_protein	38975	associated with	random
+35118	disease_protein	84154	associated with	random
+58733	disease_protein	32199	associated with	random
+5534	disease_protein	39189	associated with	random
+3044	disease_protein	31014	associated with	random
+56725	disease_protein	28377	associated with	random
+79273	disease_protein	28323	associated with	random
+2477	disease_protein	96042	associated with	random
+9971	disease_protein	31376	associated with	random
+59125	disease_protein	29560	associated with	random
+3308	disease_protein	39273	associated with	random
+13586	disease_protein	30410	associated with	random
+12516	disease_protein	37565	associated with	random
+57825	disease_protein	97617	associated with	random
+11404	disease_protein	28996	associated with	random
+12025	disease_protein	38886	associated with	random
+34481	disease_protein	99049	associated with	random
+9000	disease_protein	35611	associated with	random
+2115	disease_protein	99728	associated with	random
+4404	disease_protein	37527	associated with	random
+81401	disease_protein	96189	associated with	random
+4950	disease_protein	98916	associated with	random
+217	disease_protein	94555	associated with	random
+59212	disease_protein	35491	associated with	random
+81923	disease_protein	37938	associated with	random
+57322	disease_protein	37217	associated with	random
+3010	disease_protein	96617	associated with	random
+57861	disease_protein	31097	associated with	random
+78908	disease_protein	33288	associated with	random
+930	disease_protein	35606	associated with	random
+77236	disease_protein	37467	associated with	random
+61539	disease_protein	36585	associated with	random
+2879	disease_protein	30402	associated with	random
+82550	disease_protein	39595	associated with	random
+3303	disease_protein	29665	associated with	random
+58731	disease_protein	37518	associated with	random
+6145	disease_protein	38426	associated with	random
+9530	disease_protein	29149	associated with	random
+13187	disease_protein	27753	associated with	random
+34643	disease_protein	98796	associated with	random
+8676	disease_protein	27440	associated with	random
+78228	disease_protein	99598	associated with	random
+2822	disease_protein	35884	associated with	random
+35045	disease_protein	37609	associated with	random
+2487	disease_protein	30808	associated with	random
+82882	disease_protein	97107	associated with	random
+81417	disease_protein	30603	associated with	random
+77530	disease_protein	39670	associated with	random
+58621	disease_protein	33045	associated with	random
+79383	disease_protein	98284	associated with	random
+4870	disease_protein	30662	associated with	random
+11206	disease_protein	35535	associated with	random
+11860	disease_protein	99496	associated with	random
+60809	disease_protein	32413	associated with	random
+3512	disease_protein	36447	associated with	random
+82215	disease_protein	37148	associated with	random
+60606	disease_protein	27642	associated with	random
+11032	disease_protein	98935	associated with	random
+61494	disease_protein	32354	associated with	random
+4701	disease_protein	83789	associated with	random
+4757	disease_protein	28930	associated with	random
+81084	disease_protein	35930	associated with	random
+79915	disease_protein	33163	associated with	random
+10856	disease_protein	35696	associated with	random
+9035	disease_protein	96263	associated with	random
+80007	disease_protein	98641	associated with	random
+4454	disease_protein	36467	associated with	random
+80772	disease_protein	28619	associated with	random
+7087	disease_protein	95601	associated with	random
+6073	disease_protein	28844	associated with	random
+3823	disease_protein	28607	associated with	random
+78628	disease_protein	32335	associated with	random
+56784	disease_protein	95097	associated with	random
+5887	disease_protein	28107	associated with	random
+3867	disease_protein	29068	associated with	random
+2908	disease_protein	37603	associated with	random
+13522	disease_protein	31692	associated with	random
+11374	disease_protein	32378	associated with	random
+82967	disease_protein	37407	associated with	random
+56595	disease_protein	99389	associated with	random
+4826	disease_protein	29410	associated with	random
+56848	disease_protein	37060	associated with	random
+2805	disease_protein	35799	associated with	random
+34686	disease_protein	96663	associated with	random
+8181	disease_protein	99133	associated with	random
+78895	disease_protein	30558	associated with	random
+77430	disease_protein	27631	associated with	random
+3570	disease_protein	94999	associated with	random
+8298	disease_protein	27727	associated with	random
+2550	disease_protein	28635	associated with	random
+80492	disease_protein	28695	associated with	random
+83305	disease_protein	35443	associated with	random
+61045	disease_protein	98574	associated with	random
+80834	disease_protein	96352	associated with	random
+35352	disease_protein	39606	associated with	random
+80922	disease_protein	38752	associated with	random
+59909	disease_protein	38271	associated with	random
+58450	disease_protein	31702	associated with	random
+3200	disease_protein	29786	associated with	random
+124	disease_protein	32616	associated with	random
+60756	disease_protein	29158	associated with	random
+81817	disease_protein	37520	associated with	random
+83738	disease_protein	31431	associated with	random
+79410	disease_protein	95357	associated with	random
+60511	disease_protein	28006	associated with	random
+8214	disease_protein	29026	associated with	random
+60326	disease_protein	32390	associated with	random
+83657	disease_protein	98140	associated with	random
+9763	disease_protein	33264	associated with	random
+7690	disease_protein	27308	associated with	random
+2674	disease_protein	31936	associated with	random
+5984	disease_protein	28138	associated with	random
+2220	disease_protein	33572	associated with	random
+3314	disease_protein	37477	associated with	random
+80804	disease_protein	35839	associated with	random
+11028	disease_protein	38893	associated with	random
+78291	disease_protein	30295	associated with	random
+35398	disease_protein	32124	associated with	random
+4345	disease_protein	33131	associated with	random
+11847	disease_protein	27574	associated with	random
+10017	disease_protein	96854	associated with	random
+80977	disease_protein	37097	associated with	random
+9536	disease_protein	33477	associated with	random
+6995	disease_protein	28756	associated with	random
+6287	disease_protein	37062	associated with	random
+81023	disease_protein	33677	associated with	random
+5869	disease_protein	27769	associated with	random
+77515	disease_protein	29692	associated with	random
+83688	disease_protein	99835	associated with	random
+2672	disease_protein	83946	associated with	random
+10753	disease_protein	35939	associated with	random
+58971	disease_protein	97990	associated with	random
+7883	disease_protein	95107	associated with	random
+57967	disease_protein	99995	associated with	random
+633	disease_protein	94747	associated with	random
+82068	disease_protein	37088	associated with	random
+57763	disease_protein	38504	associated with	random
+11877	disease_protein	28779	associated with	random
+12318	disease_protein	97285	associated with	random
+1223	disease_protein	30880	associated with	random
+5582	disease_protein	37511	associated with	random
+81675	disease_protein	31024	associated with	random
+11869	disease_protein	98105	associated with	random
+78079	disease_protein	28049	associated with	random
+10082	disease_protein	30266	associated with	random
+13788	disease_protein	30489	associated with	random
+6735	disease_protein	38609	associated with	random
+7651	disease_protein	36537	associated with	random
+34042	disease_protein	95657	associated with	random
+82728	disease_protein	95740	associated with	random
+79818	disease_protein	30717	associated with	random
+78048	disease_protein	98578	associated with	random
+1320	disease_protein	39839	associated with	random
+3109	disease_protein	83784	associated with	random
+2725	disease_protein	97395	associated with	random
+6899	disease_protein	37939	associated with	random
+9420	disease_protein	99357	associated with	random
+1641	disease_protein	29137	associated with	random
+61200	disease_protein	35550	associated with	random
+11743	disease_protein	38070	associated with	random
+33888	disease_protein	27692	associated with	random
+7961	disease_protein	38275	associated with	random
+11571	disease_protein	97751	associated with	random
+13138	disease_protein	32707	associated with	random
+80475	disease_protein	99881	associated with	random
+58428	disease_protein	95927	associated with	random
+8624	disease_protein	39388	associated with	random
+81517	disease_protein	29112	associated with	random
+22055	disease_protein	32583	associated with	random
+4181	disease_protein	31198	associated with	random
+34564	disease_protein	94709	associated with	random
+8953	disease_protein	30011	associated with	random
+4029	disease_protein	28953	associated with	random
+13654	disease_protein	38221	associated with	random
+34059	disease_protein	98347	associated with	random
+58007	disease_protein	96773	associated with	random
+59702	disease_protein	33348	associated with	random
+81435	disease_protein	98638	associated with	random
+3179	disease_protein	39390	associated with	random
+7038	disease_protein	33043	associated with	random
+208	disease_protein	37645	associated with	random
+77466	disease_protein	39733	associated with	random
+60000	disease_protein	38640	associated with	random
+56732	disease_protein	39332	associated with	random
+61596	disease_protein	36147	associated with	random
+77422	disease_protein	33619	associated with	random
+60820	disease_protein	94658	associated with	random
+83383	disease_protein	36260	associated with	random
+78701	disease_protein	37597	associated with	random
+12526	disease_protein	28648	associated with	random
+81436	disease_protein	30709	associated with	random
+77530	disease_protein	30192	associated with	random
+57750	disease_protein	83903	associated with	random
+2000	disease_protein	97480	associated with	random
+80741	disease_protein	95700	associated with	random
+35093	disease_protein	84059	associated with	random
+77671	disease_protein	95971	associated with	random
+34249	disease_protein	95074	associated with	random
+10897	disease_protein	30671	associated with	random
+81183	disease_protein	96570	associated with	random
+81764	disease_protein	36828	associated with	random
+10203	disease_protein	30272	associated with	random
+7058	disease_protein	96659	associated with	random
+10829	disease_protein	96862	associated with	random
+6612	disease_protein	29865	associated with	random
+57460	disease_protein	96770	associated with	random
+9213	disease_protein	27840	associated with	random
+61519	disease_protein	95552	associated with	random
+3165	disease_protein	99504	associated with	random
+77783	disease_protein	32745	associated with	random
+60003	disease_protein	32270	associated with	random
+12212	disease_protein	29247	associated with	random
+7185	disease_protein	31471	associated with	random
+5022	disease_protein	27617	associated with	random
+6791	disease_protein	36517	associated with	random
+80451	disease_protein	36869	associated with	random
+824	disease_protein	95463	associated with	random
+58929	disease_protein	36245	associated with	random
+7791	disease_protein	98253	associated with	random
+7125	disease_protein	98819	associated with	random
+5391	disease_protein	99667	associated with	random
+12105	disease_protein	27409	associated with	random
+4966	disease_protein	39074	associated with	random
+895	disease_protein	97558	associated with	random
+82288	disease_protein	38523	associated with	random
+9619	disease_protein	31901	associated with	random
+60411	disease_protein	33120	associated with	random
+56805	disease_protein	96304	associated with	random
+82230	disease_protein	83933	associated with	random
+61180	disease_protein	36065	associated with	random
+58935	disease_protein	38674	associated with	random
+79755	disease_protein	38998	associated with	random
+1996	disease_protein	84115	associated with	random
+12467	disease_protein	28017	associated with	random
+3080	disease_protein	33377	associated with	random
+11794	disease_protein	29776	associated with	random
+13759	disease_protein	39015	associated with	random
+702	disease_protein	99280	associated with	random
+7978	disease_protein	29925	associated with	random
+10392	disease_protein	96730	associated with	random
+13353	disease_protein	94853	associated with	random
+2756	disease_protein	96442	associated with	random
+58231	disease_protein	38990	associated with	random
+4915	disease_protein	95734	associated with	random
+80831	disease_protein	38717	associated with	random
+12973	disease_protein	27763	associated with	random
+78883	disease_protein	27243	associated with	random
+34598	disease_protein	29275	associated with	random
+3343	disease_protein	83802	associated with	random
+83037	disease_protein	36162	associated with	random
+5003	disease_protein	33197	associated with	random
+1133	disease_protein	39705	associated with	random
+7052	disease_protein	33035	associated with	random
+83326	disease_protein	27228	associated with	random
+8171	disease_protein	99152	associated with	random
+77405	disease_protein	37748	associated with	random
+957	disease_protein	97784	associated with	random
+60500	disease_protein	28497	associated with	random
+1281	disease_protein	28038	associated with	random
+60917	disease_protein	28102	associated with	random
+2299	disease_protein	96705	associated with	random
+10167	disease_protein	97514	associated with	random
+7382	disease_protein	95056	associated with	random
+79559	disease_protein	97661	associated with	random
+77814	disease_protein	30206	associated with	random
+13754	disease_protein	98292	associated with	random
+60915	disease_protein	35524	associated with	random
+59980	disease_protein	31454	associated with	random
+6875	disease_protein	31141	associated with	random
+1964	disease_protein	28454	associated with	random
+13120	disease_protein	33025	associated with	random
+8675	disease_protein	31416	associated with	random
+9457	disease_protein	29511	associated with	random
+78567	disease_protein	39196	associated with	random
+34246	disease_protein	32992	associated with	random
+81813	disease_protein	28412	associated with	random
+59835	disease_protein	37744	associated with	random
+13858	disease_protein	98623	associated with	random
+8763	disease_protein	95648	associated with	random
+80042	disease_protein	31556	associated with	random
+7906	disease_protein	38000	associated with	random
+10873	disease_protein	38418	associated with	random
+61594	disease_protein	36580	associated with	random
+7029	disease_protein	37318	associated with	random
+12986	disease_protein	98977	associated with	random
+83553	disease_protein	94634	associated with	random
+9145	disease_protein	30678	associated with	random
+11302	disease_protein	35553	associated with	random
+5947	disease_protein	35477	associated with	random
+7002	disease_protein	32809	associated with	random
+58969	disease_protein	98935	associated with	random
+13976	disease_protein	28911	associated with	random
+10155	disease_protein	99526	associated with	random
+9465	disease_protein	36146	associated with	random
+4549	disease_protein	99017	associated with	random
+9393	disease_protein	30388	associated with	random
+10426	disease_protein	28047	associated with	random
+1654	disease_protein	99155	associated with	random
+10453	disease_protein	38129	associated with	random
+4727	disease_protein	31715	associated with	random
+34652	disease_protein	38788	associated with	random
+10060	disease_protein	32047	associated with	random
+59662	disease_protein	30232	associated with	random
+2755	disease_protein	98031	associated with	random
+2524	disease_protein	96530	associated with	random
+82415	disease_protein	83927	associated with	random
+13363	disease_protein	32481	associated with	random
+8891	disease_protein	39159	associated with	random
+2950	disease_protein	96549	associated with	random
+59253	disease_protein	95059	associated with	random
+1903	disease_protein	94800	associated with	random
+7062	disease_protein	38677	associated with	random
+33832	disease_protein	32480	associated with	random
+57036	disease_protein	32569	associated with	random
+13526	disease_protein	32224	associated with	random
+7357	disease_protein	30646	associated with	random
+4293	disease_protein	31882	associated with	random
+126	disease_protein	99688	associated with	random
+13582	disease_protein	29644	associated with	random
+12012	disease_protein	32720	associated with	random
+2486	disease_protein	32968	associated with	random
+9800	disease_protein	84097	associated with	random
+10067	disease_protein	36722	associated with	random
+82508	disease_protein	33110	associated with	random
+9350	disease_protein	32911	associated with	random
+80247	disease_protein	99440	associated with	random
+79772	disease_protein	32979	associated with	random
+8208	disease_protein	31531	associated with	random
+3120	disease_protein	99827	associated with	random
+82830	disease_protein	98574	associated with	random
+60772	disease_protein	95841	associated with	random
+34284	disease_protein	95362	associated with	random
+82358	disease_protein	98844	associated with	random
+57004	disease_protein	28618	associated with	random
+80873	disease_protein	83772	associated with	random
+7776	disease_protein	83970	associated with	random
+5100	disease_protein	39274	associated with	random
+2169	disease_protein	38648	associated with	random
+12768	disease_protein	38170	associated with	random
+59822	disease_protein	96514	associated with	random
+2610	disease_protein	32478	associated with	random
+5513	disease_protein	98279	associated with	random
+12210	disease_protein	94783	associated with	random
+172	disease_protein	99138	associated with	random
+890	disease_protein	28129	associated with	random
+58857	disease_protein	32130	associated with	random
+4008	disease_protein	96609	associated with	random
+7643	disease_protein	36740	associated with	random
+57641	disease_protein	28119	associated with	random
+80633	disease_protein	98028	associated with	random
+79740	disease_protein	35957	associated with	random
+58129	disease_protein	96477	associated with	random
+13493	disease_protein	98084	associated with	random
+56513	disease_protein	30555	associated with	random
+7254	disease_protein	28252	associated with	random
+58191	disease_protein	99161	associated with	random
+78912	disease_protein	97893	associated with	random
+82559	disease_protein	95855	associated with	random
+6726	disease_protein	94821	associated with	random
+12106	disease_protein	35459	associated with	random
+58416	disease_protein	96646	associated with	random
+80454	disease_protein	37618	associated with	random
+81073	disease_protein	37147	associated with	random
+81099	disease_protein	30869	associated with	random
+77196	disease_protein	30775	associated with	random
+6963	disease_protein	30942	associated with	random
+59592	disease_protein	98945	associated with	random
+3183	disease_protein	95658	associated with	random
+1028	disease_protein	98053	associated with	random
+82669	disease_protein	28750	associated with	random
+11863	disease_protein	84233	associated with	random
+35224	disease_protein	32798	associated with	random
+13240	disease_protein	37998	associated with	random
+9442	disease_protein	84016	associated with	random
+13996	disease_protein	30424	associated with	random
+11170	disease_protein	98684	associated with	random
+8836	disease_protein	96489	associated with	random
+57472	disease_protein	95128	associated with	random
+7147	disease_protein	36406	associated with	random
+80737	disease_protein	37727	associated with	random
+9655	disease_protein	95527	associated with	random
+56654	disease_protein	97143	associated with	random
+11647	disease_protein	27212	associated with	random
+3307	disease_protein	98713	associated with	random
+58656	disease_protein	36457	associated with	random
+82222	disease_protein	96997	associated with	random
+12380	disease_protein	30589	associated with	random
+5964	disease_protein	29000	associated with	random
+60186	disease_protein	94947	associated with	random
+6095	disease_protein	29056	associated with	random
+3738	disease_protein	31573	associated with	random
+13640	disease_protein	27872	associated with	random
+58224	disease_protein	83913	associated with	random
+35169	disease_protein	36012	associated with	random
+60078	disease_protein	27642	associated with	random
+77895	disease_protein	37133	associated with	random
+961	disease_protein	27478	associated with	random
+60295	disease_protein	29306	associated with	random
+58212	disease_protein	37459	associated with	random
+34739	disease_protein	39662	associated with	random
+58717	disease_protein	97904	associated with	random
+941	disease_protein	32496	associated with	random
+13764	disease_protein	28191	associated with	random
+13405	disease_protein	33384	associated with	random
+6698	disease_protein	37949	associated with	random
+5995	disease_protein	37056	associated with	random
+3086	disease_protein	32177	associated with	random
+5173	disease_protein	98578	associated with	random
+79916	disease_protein	37830	associated with	random
+82033	disease_protein	84121	associated with	random
+1516	disease_protein	97094	associated with	random
+12495	disease_protein	98963	associated with	random
+82215	disease_protein	27217	associated with	random
+81741	disease_protein	29311	associated with	random
+77717	disease_protein	33110	associated with	random
+11481	disease_protein	84046	associated with	random
+8721	disease_protein	37002	associated with	random
+58346	disease_protein	96801	associated with	random
+34552	disease_protein	33038	associated with	random
+7815	disease_protein	30664	associated with	random
+77570	disease_protein	96366	associated with	random
+82822	disease_protein	36660	associated with	random
+9272	disease_protein	39594	associated with	random
+58397	disease_protein	98838	associated with	random
+81522	disease_protein	33571	associated with	random
+2781	disease_protein	95651	associated with	random
+11492	disease_protein	99233	associated with	random
+13391	disease_protein	95429	associated with	random
+59764	disease_protein	95088	associated with	random
+1736	disease_protein	28525	associated with	random
+34010	disease_protein	36003	associated with	random
+35406	disease_protein	95051	associated with	random
+13454	disease_protein	31816	associated with	random
+79870	disease_protein	28288	associated with	random
+495	disease_protein	39733	associated with	random
+80831	disease_protein	33021	associated with	random
+35180	disease_protein	96136	associated with	random
+7849	disease_protein	33267	associated with	random
+7644	disease_protein	37575	associated with	random
+1109	disease_protein	98126	associated with	random
+11627	disease_protein	32188	associated with	random
+80442	disease_protein	29780	associated with	random
+5724	disease_protein	97364	associated with	random
+1799	disease_protein	38407	associated with	random
+61394	disease_protein	97440	associated with	random
+79785	disease_protein	27700	associated with	random
+60437	disease_protein	36825	associated with	random
+61521	disease_protein	28052	associated with	random
+34379	disease_protein	38303	associated with	random
+82111	disease_protein	30007	associated with	random
+4769	disease_protein	37160	associated with	random
+61482	disease_protein	96335	associated with	random
+59727	disease_protein	27298	associated with	random
+8846	disease_protein	29156	associated with	random
+12501	disease_protein	39347	associated with	random
+9775	disease_protein	38107	associated with	random
+77704	disease_protein	38495	associated with	random
+77277	disease_protein	30276	associated with	random
+13434	disease_protein	95907	associated with	random
+34375	disease_protein	32703	associated with	random
+4226	disease_protein	27710	associated with	random

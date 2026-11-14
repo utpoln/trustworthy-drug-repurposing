@@ -1,0 +1,2964 @@
+head	relation	tail	display	attack
+14251	drug_protein	12651	target	targeted
+12651	disease_protein	27219	associated with	targeted
+14251	drug_protein	11860	target	targeted
+11860	disease_protein	27219	associated with	targeted
+14251	drug_protein	12876	target	targeted
+12876	disease_protein	27219	associated with	targeted
+14956	drug_protein	3019	target	targeted
+3019	disease_protein	27304	associated with	targeted
+14956	drug_protein	1967	target	targeted
+1967	disease_protein	27304	associated with	targeted
+14956	drug_protein	864	target	targeted
+864	disease_protein	27304	associated with	targeted
+16753	drug_protein	7955	target	targeted
+7955	disease_protein	27361	associated with	targeted
+16753	drug_protein	11193	target	targeted
+11193	disease_protein	27361	associated with	targeted
+16753	drug_protein	26	target	targeted
+26	disease_protein	27361	associated with	targeted
+14194	drug_protein	58746	target	targeted
+58746	disease_protein	27366	associated with	targeted
+14194	drug_protein	3354	target	targeted
+3354	disease_protein	27366	associated with	targeted
+14194	drug_protein	12538	target	targeted
+12538	disease_protein	27366	associated with	targeted
+14956	drug_protein	923	target	targeted
+923	disease_protein	27452	associated with	targeted
+14956	drug_protein	5433	target	targeted
+5433	disease_protein	27452	associated with	targeted
+14956	drug_protein	8769	target	targeted
+8769	disease_protein	27452	associated with	targeted
+17831	drug_protein	13360	target	targeted
+13360	disease_protein	27581	associated with	targeted
+17831	drug_protein	5032	target	targeted
+5032	disease_protein	27581	associated with	targeted
+17831	drug_protein	6612	target	targeted
+6612	disease_protein	27581	associated with	targeted
+15420	drug_protein	6829	target	targeted
+6829	disease_protein	27626	associated with	targeted
+15420	drug_protein	6309	target	targeted
+6309	disease_protein	27626	associated with	targeted
+15420	drug_protein	11725	target	targeted
+11725	disease_protein	27626	associated with	targeted
+14042	drug_protein	11011	target	targeted
+11011	disease_protein	27648	associated with	targeted
+14042	drug_protein	58506	target	targeted
+58506	disease_protein	27648	associated with	targeted
+14042	drug_protein	4756	target	targeted
+4756	disease_protein	27648	associated with	targeted
+15003	drug_protein	59646	target	targeted
+59646	disease_protein	27692	associated with	targeted
+15003	drug_protein	10257	target	targeted
+10257	disease_protein	27692	associated with	targeted
+15003	drug_protein	4360	target	targeted
+4360	disease_protein	27692	associated with	targeted
+14884	drug_protein	9337	target	targeted
+9337	disease_protein	27843	associated with	targeted
+14884	drug_protein	57591	target	targeted
+57591	disease_protein	27843	associated with	targeted
+14884	drug_protein	7772	target	targeted
+7772	disease_protein	27843	associated with	targeted
+15071	drug_protein	2584	target	targeted
+2584	disease_protein	27878	associated with	targeted
+15071	drug_protein	7097	target	targeted
+7097	disease_protein	27878	associated with	targeted
+15071	drug_protein	152	target	targeted
+152	disease_protein	27878	associated with	targeted
+20566	drug_protein	2811	target	targeted
+2811	disease_protein	27894	associated with	targeted
+20566	drug_protein	7055	target	targeted
+7055	disease_protein	27894	associated with	targeted
+20566	drug_protein	7123	target	targeted
+7123	disease_protein	27894	associated with	targeted
+14990	drug_protein	13841	target	targeted
+13841	disease_protein	27921	associated with	targeted
+14990	drug_protein	3839	target	targeted
+3839	disease_protein	27921	associated with	targeted
+14990	drug_protein	10283	target	targeted
+10283	disease_protein	27921	associated with	targeted
+14999	drug_protein	8790	target	targeted
+8790	disease_protein	27933	associated with	targeted
+14999	drug_protein	56559	target	targeted
+56559	disease_protein	27933	associated with	targeted
+14999	drug_protein	1814	target	targeted
+1814	disease_protein	27933	associated with	targeted
+15078	drug_protein	5982	target	targeted
+5982	disease_protein	28017	associated with	targeted
+15078	drug_protein	10178	target	targeted
+10178	disease_protein	28017	associated with	targeted
+15078	drug_protein	11624	target	targeted
+11624	disease_protein	28017	associated with	targeted
+17404	drug_protein	10442	target	targeted
+10442	disease_protein	28128	associated with	targeted
+17404	drug_protein	9226	target	targeted
+9226	disease_protein	28128	associated with	targeted
+17404	drug_protein	7852	target	targeted
+7852	disease_protein	28128	associated with	targeted
+14223	drug_protein	7105	target	targeted
+7105	disease_protein	28149	associated with	targeted
+14223	drug_protein	3725	target	targeted
+3725	disease_protein	28149	associated with	targeted
+14223	drug_protein	34101	target	targeted
+34101	disease_protein	28149	associated with	targeted
+17524	drug_protein	10989	target	targeted
+10989	disease_protein	28158	associated with	targeted
+17524	drug_protein	13169	target	targeted
+13169	disease_protein	28158	associated with	targeted
+17524	drug_protein	4555	target	targeted
+4555	disease_protein	28158	associated with	targeted
+14257	drug_protein	6662	target	targeted
+6662	disease_protein	28194	associated with	targeted
+14257	drug_protein	8686	target	targeted
+8686	disease_protein	28194	associated with	targeted
+14257	drug_protein	6784	target	targeted
+6784	disease_protein	28194	associated with	targeted
+14279	drug_protein	5453	target	targeted
+5453	disease_protein	28208	associated with	targeted
+14279	drug_protein	7198	target	targeted
+7198	disease_protein	28208	associated with	targeted
+14279	drug_protein	9700	target	targeted
+9700	disease_protein	28208	associated with	targeted
+15001	drug_protein	4933	target	targeted
+4933	disease_protein	28249	associated with	targeted
+15001	drug_protein	923	target	targeted
+923	disease_protein	28249	associated with	targeted
+15001	drug_protein	5169	target	targeted
+14934	drug_protein	34101	target	targeted
+34101	disease_protein	28313	associated with	targeted
+14934	drug_protein	10247	target	targeted
+10247	disease_protein	28313	associated with	targeted
+14934	drug_protein	611	target	targeted
+611	disease_protein	28313	associated with	targeted
+20288	drug_protein	2151	target	targeted
+2151	disease_protein	28374	associated with	targeted
+20288	drug_protein	9169	target	targeted
+9169	disease_protein	28374	associated with	targeted
+20288	drug_protein	7775	target	targeted
+7775	disease_protein	28374	associated with	targeted
+14161	drug_protein	3839	target	targeted
+3839	disease_protein	28402	associated with	targeted
+14161	drug_protein	11960	target	targeted
+11960	disease_protein	28402	associated with	targeted
+14161	drug_protein	1871	target	targeted
+1871	disease_protein	28402	associated with	targeted
+14302	drug_protein	5809	target	targeted
+5809	disease_protein	28441	associated with	targeted
+14302	drug_protein	5258	target	targeted
+5258	disease_protein	28441	associated with	targeted
+14302	drug_protein	10133	target	targeted
+10133	disease_protein	28441	associated with	targeted
+14308	drug_protein	412	target	targeted
+412	disease_protein	28448	associated with	targeted
+14308	drug_protein	763	target	targeted
+763	disease_protein	28448	associated with	targeted
+14308	drug_protein	4410	target	targeted
+4410	disease_protein	28448	associated with	targeted
+14951	drug_protein	12110	target	targeted
+12110	disease_protein	28547	associated with	targeted
+14951	drug_protein	902	target	targeted
+902	disease_protein	28547	associated with	targeted
+14951	drug_protein	9487	target	targeted
+15847	drug_protein	4908	target	targeted
+4908	disease_protein	28552	associated with	targeted
+15847	drug_protein	3955	target	targeted
+3955	disease_protein	28552	associated with	targeted
+15847	drug_protein	4308	target	targeted
+4308	disease_protein	28552	associated with	targeted
+15030	drug_protein	6440	target	targeted
+6440	disease_protein	28640	associated with	targeted
+15030	drug_protein	5978	target	targeted
+5978	disease_protein	28640	associated with	targeted
+15030	drug_protein	11630	target	targeted
+11630	disease_protein	28640	associated with	targeted
+15333	drug_protein	33803	target	targeted
+33803	disease_protein	28651	associated with	targeted
+15333	drug_protein	5248	target	targeted
+5248	disease_protein	28651	associated with	targeted
+15333	drug_protein	4610	target	targeted
+4610	disease_protein	28651	associated with	targeted
+17407	drug_protein	57957	target	targeted
+57957	disease_protein	28714	associated with	targeted
+17407	drug_protein	10260	target	targeted
+10260	disease_protein	28714	associated with	targeted
+17407	drug_protein	10124	target	targeted
+10124	disease_protein	28714	associated with	targeted
+14223	drug_protein	5824	target	targeted
+5824	disease_protein	28801	associated with	targeted
+14223	drug_protein	12255	target	targeted
+12255	disease_protein	28801	associated with	targeted
+14223	drug_protein	9246	target	targeted
+9246	disease_protein	28801	associated with	targeted
+14737	drug_protein	6069	target	targeted
+6069	disease_protein	28813	associated with	targeted
+14737	drug_protein	10797	target	targeted
+10797	disease_protein	28813	associated with	targeted
+14737	drug_protein	10745	target	targeted
+10745	disease_protein	28813	associated with	targeted
+14793	drug_protein	4608	target	targeted
+4608	disease_protein	28830	associated with	targeted
+14793	drug_protein	4171	target	targeted
+4171	disease_protein	28830	associated with	targeted
+14793	drug_protein	5849	target	targeted
+5849	disease_protein	28830	associated with	targeted
+14227	drug_protein	4804	target	targeted
+4804	disease_protein	28861	associated with	targeted
+14227	drug_protein	2092	target	targeted
+2092	disease_protein	28861	associated with	targeted
+14227	drug_protein	34094	target	targeted
+34094	disease_protein	28861	associated with	targeted
+20336	drug_protein	4916	target	targeted
+4916	disease_protein	28869	associated with	targeted
+20336	drug_protein	5735	target	targeted
+5735	disease_protein	28869	associated with	targeted
+20336	drug_protein	7489	target	targeted
+7489	disease_protein	28869	associated with	targeted
+14956	drug_protein	1320	target	targeted
+1320	disease_protein	28899	associated with	targeted
+14956	drug_protein	6699	target	targeted
+6699	disease_protein	28899	associated with	targeted
+14956	drug_protein	8573	target	targeted
+8573	disease_protein	28899	associated with	targeted
+14320	drug_protein	9683	target	targeted
+9683	disease_protein	28921	associated with	targeted
+14320	drug_protein	56684	target	targeted
+56684	disease_protein	28921	associated with	targeted
+14320	drug_protein	8040	target	targeted
+8040	disease_protein	28921	associated with	targeted
+14914	drug_protein	3800	target	targeted
+3800	disease_protein	28974	associated with	targeted
+14914	drug_protein	10857	target	targeted
+10857	disease_protein	28974	associated with	targeted
+14914	drug_protein	10386	target	targeted
+10386	disease_protein	28974	associated with	targeted
+15077	drug_protein	4356	target	targeted
+4356	disease_protein	29061	associated with	targeted
+15077	drug_protein	13982	target	targeted
+13982	disease_protein	29061	associated with	targeted
+15077	drug_protein	6000	target	targeted
+6000	disease_protein	29061	associated with	targeted
+14764	drug_protein	5859	target	targeted
+5859	disease_protein	29075	associated with	targeted
+14764	drug_protein	12971	target	targeted
+12971	disease_protein	29075	associated with	targeted
+14764	drug_protein	2021	target	targeted
+2021	disease_protein	29075	associated with	targeted
+14737	drug_protein	22092	target	targeted
+22092	disease_protein	29078	associated with	targeted
+14737	drug_protein	8374	target	targeted
+8374	disease_protein	29078	associated with	targeted
+14737	drug_protein	3003	target	targeted
+3003	disease_protein	29078	associated with	targeted
+14178	drug_protein	35186	target	targeted
+35186	disease_protein	29089	associated with	targeted
+14178	drug_protein	5403	target	targeted
+5403	disease_protein	29089	associated with	targeted
+14178	drug_protein	7822	target	targeted
+7822	disease_protein	29089	associated with	targeted
+14945	drug_protein	7558	target	targeted
+7558	disease_protein	29118	associated with	targeted
+14945	drug_protein	5104	target	targeted
+5104	disease_protein	29118	associated with	targeted
+14945	drug_protein	2155	target	targeted
+2155	disease_protein	29118	associated with	targeted
+14212	drug_protein	5294	target	targeted
+5294	disease_protein	29182	associated with	targeted
+14212	drug_protein	456	target	targeted
+456	disease_protein	29182	associated with	targeted
+14212	drug_protein	10367	target	targeted
+10367	disease_protein	29182	associated with	targeted
+14208	drug_protein	2080	target	targeted
+2080	disease_protein	29220	associated with	targeted
+14208	drug_protein	831	target	targeted
+831	disease_protein	29220	associated with	targeted
+14208	drug_protein	699	target	targeted
+699	disease_protein	29220	associated with	targeted
+17237	drug_protein	10998	target	targeted
+10998	disease_protein	29244	associated with	targeted
+17237	drug_protein	22043	target	targeted
+22043	disease_protein	29244	associated with	targeted
+17237	drug_protein	1969	target	targeted
+1969	disease_protein	29244	associated with	targeted
+14236	drug_protein	1296	target	targeted
+1296	disease_protein	29273	associated with	targeted
+14236	drug_protein	6283	target	targeted
+6283	disease_protein	29273	associated with	targeted
+14236	drug_protein	13721	target	targeted
+13721	disease_protein	29273	associated with	targeted
+14194	drug_protein	3375	target	targeted
+3375	disease_protein	29361	associated with	targeted
+14194	drug_protein	2983	target	targeted
+2983	disease_protein	29361	associated with	targeted
+14194	drug_protein	362	target	targeted
+362	disease_protein	29361	associated with	targeted
+16672	drug_protein	6801	target	targeted
+6801	disease_protein	29387	associated with	targeted
+16672	drug_protein	34094	target	targeted
+34094	disease_protein	29387	associated with	targeted
+16672	drug_protein	6541	target	targeted
+6541	disease_protein	29387	associated with	targeted
+17303	drug_protein	34632	target	targeted
+34632	disease_protein	29408	associated with	targeted
+17303	drug_protein	1237	target	targeted
+1237	disease_protein	29408	associated with	targeted
+17303	drug_protein	13910	target	targeted
+13910	disease_protein	29408	associated with	targeted
+14979	drug_protein	418	target	targeted
+418	disease_protein	29528	associated with	targeted
+14979	drug_protein	2387	target	targeted
+2387	disease_protein	29528	associated with	targeted
+14979	drug_protein	1205	target	targeted
+1205	disease_protein	29528	associated with	targeted
+14668	drug_protein	1069	target	targeted
+1069	disease_protein	29614	associated with	targeted
+14668	drug_protein	8267	target	targeted
+8267	disease_protein	29614	associated with	targeted
+14668	drug_protein	34409	target	targeted
+34409	disease_protein	29614	associated with	targeted
+14956	drug_protein	3903	target	targeted
+3903	disease_protein	29646	associated with	targeted
+14956	drug_protein	8643	target	targeted
+8643	disease_protein	29646	associated with	targeted
+14956	drug_protein	6740	target	targeted
+14038	drug_protein	9370	target	targeted
+9370	disease_protein	29709	associated with	targeted
+14038	drug_protein	3411	target	targeted
+3411	disease_protein	29709	associated with	targeted
+14038	drug_protein	5310	target	targeted
+5310	disease_protein	29709	associated with	targeted
+14040	drug_protein	8389	target	targeted
+8389	disease_protein	29715	associated with	targeted
+14040	drug_protein	59797	target	targeted
+59797	disease_protein	29715	associated with	targeted
+14040	drug_protein	3495	target	targeted
+3495	disease_protein	29715	associated with	targeted
+21239	drug_protein	3782	target	targeted
+3782	disease_protein	29771	associated with	targeted
+21239	drug_protein	8266	target	targeted
+8266	disease_protein	29771	associated with	targeted
+21239	drug_protein	7304	target	targeted
+7304	disease_protein	29771	associated with	targeted
+15116	drug_protein	5205	target	targeted
+5205	disease_protein	29854	associated with	targeted
+15116	drug_protein	4410	target	targeted
+4410	disease_protein	29854	associated with	targeted
+15116	drug_protein	1221	target	targeted
+1221	disease_protein	29854	associated with	targeted
+15559	drug_protein	12618	target	targeted
+12618	disease_protein	29865	associated with	targeted
+15559	drug_protein	2248	target	targeted
+2248	disease_protein	29865	associated with	targeted
+15559	drug_protein	12243	target	targeted
+12243	disease_protein	29865	associated with	targeted
+17231	drug_protein	58276	target	targeted
+58276	disease_protein	29887	associated with	targeted
+17231	drug_protein	8005	target	targeted
+8005	disease_protein	29887	associated with	targeted
+17231	drug_protein	5957	target	targeted
+5957	disease_protein	29887	associated with	targeted
+15012	drug_protein	11308	target	targeted
+11308	disease_protein	29993	associated with	targeted
+15012	drug_protein	11777	target	targeted
+11777	disease_protein	29993	associated with	targeted
+15012	drug_protein	35044	target	targeted
+35044	disease_protein	29993	associated with	targeted
+15144	drug_protein	10181	target	targeted
+10181	disease_protein	30034	associated with	targeted
+15144	drug_protein	2984	target	targeted
+2984	disease_protein	30034	associated with	targeted
+15144	drug_protein	11	target	targeted
+11	disease_protein	30034	associated with	targeted
+14275	drug_protein	1874	target	targeted
+1874	disease_protein	30039	associated with	targeted
+14275	drug_protein	57913	target	targeted
+57913	disease_protein	30039	associated with	targeted
+14275	drug_protein	4064	target	targeted
+4064	disease_protein	30039	associated with	targeted
+20473	drug_protein	11830	target	targeted
+11830	disease_protein	30075	associated with	targeted
+20473	drug_protein	521	target	targeted
+521	disease_protein	30075	associated with	targeted
+20473	drug_protein	10283	target	targeted
+10283	disease_protein	30075	associated with	targeted
+14942	drug_protein	3872	target	targeted
+3872	disease_protein	30093	associated with	targeted
+14942	drug_protein	1448	target	targeted
+1448	disease_protein	30093	associated with	targeted
+14942	drug_protein	6832	target	targeted
+6832	disease_protein	30093	associated with	targeted
+14320	drug_protein	7942	target	targeted
+7942	disease_protein	30382	associated with	targeted
+14320	drug_protein	7504	target	targeted
+7504	disease_protein	30382	associated with	targeted
+14320	drug_protein	7489	target	targeted
+7489	disease_protein	30382	associated with	targeted
+15025	drug_protein	680	target	targeted
+680	disease_protein	30447	associated with	targeted
+15025	drug_protein	13910	target	targeted
+13910	disease_protein	30447	associated with	targeted
+15025	drug_protein	34885	target	targeted
+34885	disease_protein	30447	associated with	targeted
+14993	drug_protein	1312	target	targeted
+1312	disease_protein	30449	associated with	targeted
+14993	drug_protein	3383	target	targeted
+3383	disease_protein	30449	associated with	targeted
+14993	drug_protein	8132	target	targeted
+8132	disease_protein	30449	associated with	targeted
+14954	drug_protein	3765	target	targeted
+3765	disease_protein	30486	associated with	targeted
+14954	drug_protein	10367	target	targeted
+10367	disease_protein	30486	associated with	targeted
+14954	drug_protein	2409	target	targeted
+2409	disease_protein	30486	associated with	targeted
+15012	drug_protein	59642	target	targeted
+59642	disease_protein	30494	associated with	targeted
+15012	drug_protein	1298	target	targeted
+1298	disease_protein	30494	associated with	targeted
+15012	drug_protein	497	target	targeted
+497	disease_protein	30494	associated with	targeted
+15413	drug_protein	502	target	targeted
+502	disease_protein	30654	associated with	targeted
+15413	drug_protein	8454	target	targeted
+8454	disease_protein	30654	associated with	targeted
+15413	drug_protein	34741	target	targeted
+34741	disease_protein	30654	associated with	targeted
+14542	drug_protein	2386	target	targeted
+2386	disease_protein	30664	associated with	targeted
+14542	drug_protein	2811	target	targeted
+2811	disease_protein	30664	associated with	targeted
+14542	drug_protein	3045	target	targeted
+3045	disease_protein	30664	associated with	targeted
+14543	drug_protein	1829	target	targeted
+1829	disease_protein	30715	associated with	targeted
+14543	drug_protein	6095	target	targeted
+6095	disease_protein	30715	associated with	targeted
+14543	drug_protein	12537	target	targeted
+12537	disease_protein	30715	associated with	targeted
+15095	drug_protein	6319	target	targeted
+6319	disease_protein	30749	associated with	targeted
+15095	drug_protein	7871	target	targeted
+7871	disease_protein	30749	associated with	targeted
+15095	drug_protein	996	target	targeted
+996	disease_protein	30749	associated with	targeted
+14251	drug_protein	6229	target	targeted
+6229	disease_protein	30800	associated with	targeted
+14251	drug_protein	29	target	targeted
+29	disease_protein	30800	associated with	targeted
+14251	drug_protein	4760	target	targeted
+4760	disease_protein	30800	associated with	targeted
+14758	drug_protein	9366	target	targeted
+9366	disease_protein	30826	associated with	targeted
+14758	drug_protein	2090	target	targeted
+2090	disease_protein	30826	associated with	targeted
+14758	drug_protein	6655	target	targeted
+6655	disease_protein	30826	associated with	targeted
+15002	drug_protein	79592	target	targeted
+79592	disease_protein	30892	associated with	targeted
+15002	drug_protein	2165	target	targeted
+2165	disease_protein	30892	associated with	targeted
+15002	drug_protein	3080	target	targeted
+3080	disease_protein	30892	associated with	targeted
+20651	drug_protein	2332	target	targeted
+2332	disease_protein	30905	associated with	targeted
+20651	drug_protein	8312	target	targeted
+8312	disease_protein	30905	associated with	targeted
+20651	drug_protein	9671	target	targeted
+9671	disease_protein	30905	associated with	targeted
+15025	drug_protein	59793	target	targeted
+59793	disease_protein	31116	associated with	targeted
+15025	drug_protein	2331	target	targeted
+2331	disease_protein	31116	associated with	targeted
+15025	drug_protein	5405	target	targeted
+5405	disease_protein	31116	associated with	targeted
+14320	drug_protein	2771	target	targeted
+2771	disease_protein	31137	associated with	targeted
+14320	drug_protein	10283	target	targeted
+10283	disease_protein	31137	associated with	targeted
+14320	drug_protein	8834	target	targeted
+8834	disease_protein	31137	associated with	targeted
+14956	drug_protein	13023	target	targeted
+13023	disease_protein	31181	associated with	targeted
+14956	drug_protein	438	target	targeted
+438	disease_protein	31181	associated with	targeted
+14956	drug_protein	4052	target	targeted
+4052	disease_protein	31181	associated with	targeted
+14198	drug_protein	10082	target	targeted
+10082	disease_protein	31283	associated with	targeted
+14198	drug_protein	1168	target	targeted
+1168	disease_protein	31283	associated with	targeted
+14198	drug_protein	7220	target	targeted
+7220	disease_protein	31283	associated with	targeted
+15002	drug_protein	34101	target	targeted
+34101	disease_protein	31298	associated with	targeted
+15002	drug_protein	9476	target	targeted
+9476	disease_protein	31298	associated with	targeted
+15002	drug_protein	243	target	targeted
+243	disease_protein	31298	associated with	targeted
+14954	drug_protein	12011	target	targeted
+12011	disease_protein	31380	associated with	targeted
+14954	drug_protein	4818	target	targeted
+4818	disease_protein	31380	associated with	targeted
+14954	drug_protein	6589	target	targeted
+6589	disease_protein	31380	associated with	targeted
+16844	drug_protein	1020	target	targeted
+1020	disease_protein	31395	associated with	targeted
+16844	drug_protein	10821	target	targeted
+10821	disease_protein	31395	associated with	targeted
+16844	drug_protein	4682	target	targeted
+4682	disease_protein	31395	associated with	targeted
+14962	drug_protein	383	target	targeted
+383	disease_protein	31408	associated with	targeted
+14962	drug_protein	34574	target	targeted
+34574	disease_protein	31408	associated with	targeted
+14962	drug_protein	6140	target	targeted
+6140	disease_protein	31408	associated with	targeted
+14955	drug_protein	1748	target	targeted
+1748	disease_protein	31477	associated with	targeted
+14955	drug_protein	6365	target	targeted
+6365	disease_protein	31477	associated with	targeted
+14955	drug_protein	13903	target	targeted
+13903	disease_protein	31477	associated with	targeted
+15254	drug_protein	4796	target	targeted
+4796	disease_protein	31523	associated with	targeted
+15254	drug_protein	13733	target	targeted
+13733	disease_protein	31523	associated with	targeted
+15254	drug_protein	1050	target	targeted
+1050	disease_protein	31523	associated with	targeted
+14419	drug_protein	10596	target	targeted
+10596	disease_protein	31531	associated with	targeted
+14419	drug_protein	12243	target	targeted
+12243	disease_protein	31531	associated with	targeted
+14419	drug_protein	3593	target	targeted
+3593	disease_protein	31531	associated with	targeted
+14032	drug_protein	4434	target	targeted
+4434	disease_protein	31723	associated with	targeted
+14032	drug_protein	11458	target	targeted
+11458	disease_protein	31723	associated with	targeted
+14032	drug_protein	56899	target	targeted
+56899	disease_protein	31723	associated with	targeted
+15176	drug_protein	3045	target	targeted
+3045	disease_protein	31756	associated with	targeted
+15176	drug_protein	5591	target	targeted
+5591	disease_protein	31756	associated with	targeted
+15176	drug_protein	4769	target	targeted
+4769	disease_protein	31756	associated with	targeted
+14023	drug_protein	5389	target	targeted
+5389	disease_protein	31790	associated with	targeted
+14023	drug_protein	36	target	targeted
+36	disease_protein	31790	associated with	targeted
+14023	drug_protein	5384	target	targeted
+5384	disease_protein	31790	associated with	targeted
+14038	drug_protein	1181	target	targeted
+1181	disease_protein	31850	associated with	targeted
+14038	drug_protein	1311	target	targeted
+1311	disease_protein	31850	associated with	targeted
+14038	drug_protein	3474	target	targeted
+3474	disease_protein	31850	associated with	targeted
+16672	drug_protein	2452	target	targeted
+2452	disease_protein	32033	associated with	targeted
+16672	drug_protein	6486	target	targeted
+6486	disease_protein	32033	associated with	targeted
+16672	drug_protein	811	target	targeted
+811	disease_protein	32033	associated with	targeted
+14979	drug_protein	8829	target	targeted
+8829	disease_protein	32149	associated with	targeted
+14979	drug_protein	6229	target	targeted
+6229	disease_protein	32149	associated with	targeted
+14979	drug_protein	6782	target	targeted
+6782	disease_protein	32149	associated with	targeted
+14481	drug_protein	11808	target	targeted
+11808	disease_protein	32325	associated with	targeted
+14481	drug_protein	57913	target	targeted
+57913	disease_protein	32325	associated with	targeted
+14481	drug_protein	1552	target	targeted
+1552	disease_protein	32325	associated with	targeted
+14973	drug_protein	7276	target	targeted
+7276	disease_protein	32326	associated with	targeted
+14973	drug_protein	3383	target	targeted
+3383	disease_protein	32326	associated with	targeted
+14973	drug_protein	8531	target	targeted
+8531	disease_protein	32326	associated with	targeted
+14517	drug_protein	1311	target	targeted
+1311	disease_protein	32354	associated with	targeted
+14517	drug_protein	13366	target	targeted
+13366	disease_protein	32354	associated with	targeted
+14517	drug_protein	1659	target	targeted
+1659	disease_protein	32354	associated with	targeted
+16672	drug_protein	7641	target	targeted
+7641	disease_protein	32384	associated with	targeted
+16672	drug_protein	10752	target	targeted
+10752	disease_protein	32384	associated with	targeted
+16672	drug_protein	2993	target	targeted
+2993	disease_protein	32384	associated with	targeted
+20207	drug_protein	101	target	targeted
+101	disease_protein	32393	associated with	targeted
+20207	drug_protein	5855	target	targeted
+5855	disease_protein	32393	associated with	targeted
+20207	drug_protein	5856	target	targeted
+5856	disease_protein	32393	associated with	targeted
+14963	drug_protein	7809	target	targeted
+7809	disease_protein	32456	associated with	targeted
+14963	drug_protein	8354	target	targeted
+8354	disease_protein	32456	associated with	targeted
+1460	disease_protein	32456	associated with	targeted
+14999	drug_protein	9441	target	targeted
+9441	disease_protein	32468	associated with	targeted
+14999	drug_protein	7650	target	targeted
+7650	disease_protein	32468	associated with	targeted
+14999	drug_protein	303	target	targeted
+303	disease_protein	32468	associated with	targeted
+14301	drug_protein	8237	target	targeted
+8237	disease_protein	32503	associated with	targeted
+14301	drug_protein	4732	target	targeted
+4732	disease_protein	32503	associated with	targeted
+14301	drug_protein	6848	target	targeted
+6848	disease_protein	32503	associated with	targeted
+20409	drug_protein	1097	target	targeted
+1097	disease_protein	32504	associated with	targeted
+20409	drug_protein	7811	target	targeted
+7811	disease_protein	32504	associated with	targeted
+20409	drug_protein	5990	target	targeted
+5990	disease_protein	32504	associated with	targeted
+20604	drug_protein	8857	target	targeted
+8857	disease_protein	32524	associated with	targeted
+20604	drug_protein	5203	target	targeted
+5203	disease_protein	32524	associated with	targeted
+20604	drug_protein	2406	target	targeted
+2406	disease_protein	32524	associated with	targeted
+14789	drug_protein	5310	target	targeted
+5310	disease_protein	32531	associated with	targeted
+14789	drug_protein	9476	target	targeted
+9476	disease_protein	32531	associated with	targeted
+14789	drug_protein	13299	target	targeted
+13299	disease_protein	32531	associated with	targeted
+14625	drug_protein	4906	target	targeted
+4906	disease_protein	32563	associated with	targeted
+14625	drug_protein	13292	target	targeted
+13292	disease_protein	32563	associated with	targeted
+14625	drug_protein	13999	target	targeted
+13999	disease_protein	32563	associated with	targeted
+14789	drug_protein	118	target	targeted
+118	disease_protein	32617	associated with	targeted
+14789	drug_protein	12005	target	targeted
+12005	disease_protein	32617	associated with	targeted
+14789	drug_protein	3228	target	targeted
+3228	disease_protein	32617	associated with	targeted
+15425	drug_protein	56899	target	targeted
+56899	disease_protein	32649	associated with	targeted
+15425	drug_protein	35186	target	targeted
+35186	disease_protein	32649	associated with	targeted
+15425	drug_protein	6674	target	targeted
+6674	disease_protein	32649	associated with	targeted
+14995	drug_protein	34777	target	targeted
+34777	disease_protein	32651	associated with	targeted
+14995	drug_protein	3314	target	targeted
+3314	disease_protein	32651	associated with	targeted
+14995	drug_protein	9391	target	targeted
+9391	disease_protein	32651	associated with	targeted
+15481	drug_protein	59372	target	targeted
+59372	disease_protein	32710	associated with	targeted
+15481	drug_protein	2058	target	targeted
+2058	disease_protein	32710	associated with	targeted
+15481	drug_protein	12876	target	targeted
+12876	disease_protein	32710	associated with	targeted
+14207	drug_protein	56528	target	targeted
+56528	disease_protein	32746	associated with	targeted
+14207	drug_protein	11133	target	targeted
+11133	disease_protein	32746	associated with	targeted
+14207	drug_protein	1258	target	targeted
+1258	disease_protein	32746	associated with	targeted
+15116	drug_protein	11147	target	targeted
+11147	disease_protein	32759	associated with	targeted
+15116	drug_protein	10179	target	targeted
+10179	disease_protein	32759	associated with	targeted
+15116	drug_protein	2699	target	targeted
+2699	disease_protein	32759	associated with	targeted
+14275	drug_protein	2889	target	targeted
+2889	disease_protein	32827	associated with	targeted
+14275	drug_protein	3057	target	targeted
+3057	disease_protein	32827	associated with	targeted
+14275	drug_protein	9525	target	targeted
+9525	disease_protein	32827	associated with	targeted
+15549	drug_protein	5877	target	targeted
+5877	disease_protein	32875	associated with	targeted
+15549	drug_protein	4103	target	targeted
+4103	disease_protein	32875	associated with	targeted
+15549	drug_protein	381	target	targeted
+381	disease_protein	32875	associated with	targeted
+14318	drug_protein	10945	target	targeted
+10945	disease_protein	32932	associated with	targeted
+14318	drug_protein	4188	target	targeted
+4188	disease_protein	32932	associated with	targeted
+14318	drug_protein	6151	target	targeted
+6151	disease_protein	32932	associated with	targeted
+14301	drug_protein	9866	target	targeted
+9866	disease_protein	32959	associated with	targeted
+14301	drug_protein	5642	target	targeted
+5642	disease_protein	32959	associated with	targeted
+14301	drug_protein	1362	target	targeted
+1362	disease_protein	32959	associated with	targeted
+15770	drug_protein	385	target	targeted
+385	disease_protein	32990	associated with	targeted
+15770	drug_protein	3509	target	targeted
+3509	disease_protein	32990	associated with	targeted
+15770	drug_protein	8362	target	targeted
+8362	disease_protein	32990	associated with	targeted
+15002	drug_protein	291	target	targeted
+291	disease_protein	33077	associated with	targeted
+15002	drug_protein	33803	target	targeted
+33803	disease_protein	33077	associated with	targeted
+15002	drug_protein	8345	target	targeted
+8345	disease_protein	33077	associated with	targeted
+15095	drug_protein	1988	target	targeted
+1988	disease_protein	33128	associated with	targeted
+15095	drug_protein	5299	target	targeted
+5299	disease_protein	33128	associated with	targeted
+15095	drug_protein	13824	target	targeted
+13824	disease_protein	33128	associated with	targeted
+14792	drug_protein	923	target	targeted
+923	disease_protein	33158	associated with	targeted
+14792	drug_protein	3202	target	targeted
+3202	disease_protein	33158	associated with	targeted
+14792	drug_protein	1311	target	targeted
+1311	disease_protein	33158	associated with	targeted
+15180	drug_protein	11983	target	targeted
+11983	disease_protein	33193	associated with	targeted
+15180	drug_protein	4829	target	targeted
+4829	disease_protein	33193	associated with	targeted
+15180	drug_protein	2801	target	targeted
+2801	disease_protein	33193	associated with	targeted
+14251	drug_protein	6097	target	targeted
+6097	disease_protein	33216	associated with	targeted
+14251	drug_protein	34852	target	targeted
+34852	disease_protein	33216	associated with	targeted
+14251	drug_protein	9506	target	targeted
+9506	disease_protein	33216	associated with	targeted
+15132	drug_protein	4091	target	targeted
+4091	disease_protein	33241	associated with	targeted
+15132	drug_protein	883	target	targeted
+883	disease_protein	33241	associated with	targeted
+15132	drug_protein	8317	target	targeted
+8317	disease_protein	33241	associated with	targeted
+14030	drug_protein	34668	target	targeted
+34668	disease_protein	33293	associated with	targeted
+14030	drug_protein	3509	target	targeted
+3509	disease_protein	33293	associated with	targeted
+14030	drug_protein	484	target	targeted
+484	disease_protein	33293	associated with	targeted
+15413	drug_protein	4991	target	targeted
+4991	disease_protein	33294	associated with	targeted
+15413	drug_protein	8620	target	targeted
+8620	disease_protein	33294	associated with	targeted
+15413	drug_protein	4794	target	targeted
+4794	disease_protein	33294	associated with	targeted
+14208	drug_protein	8473	target	targeted
+8473	disease_protein	33297	associated with	targeted
+14208	drug_protein	11706	target	targeted
+11706	disease_protein	33297	associated with	targeted
+14208	drug_protein	10608	target	targeted
+10608	disease_protein	33297	associated with	targeted
+20308	drug_protein	2209	target	targeted
+2209	disease_protein	33314	associated with	targeted
+20308	drug_protein	2499	target	targeted
+2499	disease_protein	33314	associated with	targeted
+20308	drug_protein	2984	target	targeted
+2984	disease_protein	33314	associated with	targeted
+14999	drug_protein	2581	target	targeted
+2581	disease_protein	33332	associated with	targeted
+14999	drug_protein	6699	target	targeted
+6699	disease_protein	33332	associated with	targeted
+14999	drug_protein	2494	target	targeted
+2494	disease_protein	33332	associated with	targeted
+15032	drug_protein	8065	target	targeted
+8065	disease_protein	33410	associated with	targeted
+15032	drug_protein	933	target	targeted
+933	disease_protein	33410	associated with	targeted
+15032	drug_protein	3772	target	targeted
+3772	disease_protein	33410	associated with	targeted
+15144	drug_protein	1013	target	targeted
+1013	disease_protein	33437	associated with	targeted
+15144	drug_protein	1665	target	targeted
+1665	disease_protein	33437	associated with	targeted
+15144	drug_protein	11246	target	targeted
+11246	disease_protein	33437	associated with	targeted
+14789	drug_protein	3879	target	targeted
+3879	disease_protein	33534	associated with	targeted
+14789	drug_protein	2033	target	targeted
+2033	disease_protein	33534	associated with	targeted
+14789	drug_protein	4760	target	targeted
+4760	disease_protein	33534	associated with	targeted
+16867	drug_protein	22042	target	targeted
+22042	disease_protein	33542	associated with	targeted
+16867	drug_protein	620	target	targeted
+620	disease_protein	33542	associated with	targeted
+16867	drug_protein	3300	target	targeted
+3300	disease_protein	33542	associated with	targeted
+14033	drug_protein	7475	target	targeted
+7475	disease_protein	33567	associated with	targeted
+14033	drug_protein	1151	target	targeted
+1151	disease_protein	33567	associated with	targeted
+14033	drug_protein	57467	target	targeted
+57467	disease_protein	33567	associated with	targeted
+14323	drug_protein	3793	target	targeted
+3793	disease_protein	33572	associated with	targeted
+14323	drug_protein	3122	target	targeted
+3122	disease_protein	33572	associated with	targeted
+14323	drug_protein	6903	target	targeted
+6903	disease_protein	33572	associated with	targeted
+14807	drug_protein	6084	target	targeted
+6084	disease_protein	33575	associated with	targeted
+14807	drug_protein	12653	target	targeted
+12653	disease_protein	33575	associated with	targeted
+14807	drug_protein	10559	target	targeted
+10559	disease_protein	33575	associated with	targeted
+14970	drug_protein	10084	target	targeted
+10084	disease_protein	33576	associated with	targeted
+14970	drug_protein	4015	target	targeted
+4015	disease_protein	33576	associated with	targeted
+14970	drug_protein	8778	target	targeted
+8778	disease_protein	33576	associated with	targeted
+15102	drug_protein	10124	target	targeted
+10124	disease_protein	33577	associated with	targeted
+15102	drug_protein	3085	target	targeted
+3085	disease_protein	33577	associated with	targeted
+15102	drug_protein	5838	target	targeted
+5838	disease_protein	33577	associated with	targeted
+14302	drug_protein	12594	target	targeted
+12594	disease_protein	33585	associated with	targeted
+14302	drug_protein	22103	target	targeted
+22103	disease_protein	33585	associated with	targeted
+14302	drug_protein	1083	target	targeted
+1083	disease_protein	33585	associated with	targeted
+14323	drug_protein	5191	target	targeted
+5191	disease_protein	33588	associated with	targeted
+14323	drug_protein	9075	target	targeted
+9075	disease_protein	33588	associated with	targeted
+14323	drug_protein	22013	target	targeted
+22013	disease_protein	33588	associated with	targeted
+16801	drug_protein	12366	target	targeted
+12366	disease_protein	33589	associated with	targeted
+16801	drug_protein	9954	target	targeted
+9954	disease_protein	33589	associated with	targeted
+16801	drug_protein	412	target	targeted
+412	disease_protein	33589	associated with	targeted
+15093	drug_protein	2850	target	targeted
+2850	disease_protein	33591	associated with	targeted
+15093	drug_protein	7513	target	targeted
+7513	disease_protein	33591	associated with	targeted
+15093	drug_protein	9179	target	targeted
+9179	disease_protein	33591	associated with	targeted
+14976	drug_protein	8484	target	targeted
+8484	disease_protein	33593	associated with	targeted
+14976	drug_protein	4282	target	targeted
+4282	disease_protein	33593	associated with	targeted
+14976	drug_protein	8288	target	targeted
+8288	disease_protein	33593	associated with	targeted
+14830	drug_protein	4819	target	targeted
+4819	disease_protein	33594	associated with	targeted
+14830	drug_protein	720	target	targeted
+720	disease_protein	33594	associated with	targeted
+14830	drug_protein	33772	target	targeted
+33772	disease_protein	33594	associated with	targeted
+14034	drug_protein	4508	target	targeted
+4508	disease_protein	33596	associated with	targeted
+14034	drug_protein	3931	target	targeted
+3931	disease_protein	33596	associated with	targeted
+14034	drug_protein	10113	target	targeted
+10113	disease_protein	33596	associated with	targeted
+14955	drug_protein	431	target	targeted
+431	disease_protein	33603	associated with	targeted
+14955	drug_protein	8998	target	targeted
+8998	disease_protein	33603	associated with	targeted
+14955	drug_protein	361	target	targeted
+14687	drug_protein	10482	target	targeted
+10482	disease_protein	33609	associated with	targeted
+14687	drug_protein	13083	target	targeted
+13083	disease_protein	33609	associated with	targeted
+14687	drug_protein	11441	target	targeted
+11441	disease_protein	33609	associated with	targeted
+15451	drug_protein	2120	target	targeted
+2120	disease_protein	33618	associated with	targeted
+15451	drug_protein	4770	target	targeted
+4770	disease_protein	33618	associated with	targeted
+15451	drug_protein	772	target	targeted
+772	disease_protein	33618	associated with	targeted
+15002	drug_protein	2947	target	targeted
+2947	disease_protein	33621	associated with	targeted
+15002	drug_protein	7962	target	targeted
+7962	disease_protein	33621	associated with	targeted
+15002	drug_protein	11297	target	targeted
+11297	disease_protein	33621	associated with	targeted
+15842	drug_protein	2813	target	targeted
+2813	disease_protein	33622	associated with	targeted
+15842	drug_protein	680	target	targeted
+680	disease_protein	33622	associated with	targeted
+15842	drug_protein	4569	target	targeted
+4569	disease_protein	33622	associated with	targeted
+20169	drug_protein	4621	target	targeted
+4621	disease_protein	33625	associated with	targeted
+20169	drug_protein	12777	target	targeted
+12777	disease_protein	33625	associated with	targeted
+20169	drug_protein	2399	target	targeted
+2399	disease_protein	33625	associated with	targeted
+14207	drug_protein	790	target	targeted
+790	disease_protein	33643	associated with	targeted
+14207	drug_protein	7926	target	targeted
+7926	disease_protein	33643	associated with	targeted
+14207	drug_protein	1423	target	targeted
+1423	disease_protein	33643	associated with	targeted
+14024	drug_protein	2099	target	targeted
+2099	disease_protein	33651	associated with	targeted
+14024	drug_protein	3732	target	targeted
+3732	disease_protein	33651	associated with	targeted
+14024	drug_protein	6662	target	targeted
+6662	disease_protein	33651	associated with	targeted
+20304	drug_protein	7319	target	targeted
+7319	disease_protein	33656	associated with	targeted
+20304	drug_protein	894	target	targeted
+894	disease_protein	33656	associated with	targeted
+20304	drug_protein	9897	target	targeted
+9897	disease_protein	33656	associated with	targeted
+14024	drug_protein	7006	target	targeted
+7006	disease_protein	33666	associated with	targeted
+14024	drug_protein	5383	target	targeted
+5383	disease_protein	33666	associated with	targeted
+14024	drug_protein	5767	target	targeted
+5767	disease_protein	33666	associated with	targeted
+14956	drug_protein	3352	target	targeted
+3352	disease_protein	33675	associated with	targeted
+14956	drug_protein	2948	target	targeted
+2948	disease_protein	33675	associated with	targeted
+14956	drug_protein	6589	target	targeted
+6589	disease_protein	33675	associated with	targeted
+19302	drug_protein	4105	target	targeted
+4105	disease_protein	33677	associated with	targeted
+19302	drug_protein	1102	target	targeted
+1102	disease_protein	33677	associated with	targeted
+19302	drug_protein	2938	target	targeted
+2938	disease_protein	33677	associated with	targeted
+19207	drug_protein	8035	target	targeted
+8035	disease_protein	33679	associated with	targeted
+19207	drug_protein	1221	target	targeted
+1221	disease_protein	33679	associated with	targeted
+19207	drug_protein	12667	target	targeted
+12667	disease_protein	33679	associated with	targeted
+15132	drug_protein	56528	target	targeted
+56528	disease_protein	33683	associated with	targeted
+15132	drug_protein	3148	target	targeted
+3148	disease_protein	33683	associated with	targeted
+15132	drug_protein	3820	target	targeted
+3820	disease_protein	33683	associated with	targeted
+15012	drug_protein	8583	target	targeted
+8583	disease_protein	33688	associated with	targeted
+15012	drug_protein	5255	target	targeted
+5255	disease_protein	33688	associated with	targeted
+15012	drug_protein	3216	target	targeted
+3216	disease_protein	33688	associated with	targeted
+14217	drug_protein	13706	target	targeted
+13706	disease_protein	33695	associated with	targeted
+14217	drug_protein	5032	target	targeted
+5032	disease_protein	33695	associated with	targeted
+14217	drug_protein	6808	target	targeted
+6808	disease_protein	33695	associated with	targeted
+16331	drug_protein	1192	target	targeted
+1192	disease_protein	33699	associated with	targeted
+16331	drug_protein	10590	target	targeted
+10590	disease_protein	33699	associated with	targeted
+16331	drug_protein	525	target	targeted
+525	disease_protein	33699	associated with	targeted
+14477	drug_protein	3705	target	targeted
+3705	disease_protein	33703	associated with	targeted
+14477	drug_protein	5875	target	targeted
+5875	disease_protein	33703	associated with	targeted
+14477	drug_protein	7164	target	targeted
+7164	disease_protein	33703	associated with	targeted
+14789	drug_protein	10170	target	targeted
+10170	disease_protein	33707	associated with	targeted
+14789	drug_protein	34961	target	targeted
+34961	disease_protein	33707	associated with	targeted
+14789	drug_protein	12150	target	targeted
+12150	disease_protein	33707	associated with	targeted
+14956	drug_protein	5485	target	targeted
+5485	disease_protein	33714	associated with	targeted
+14956	drug_protein	8035	target	targeted
+8035	disease_protein	33714	associated with	targeted
+14956	drug_protein	9366	target	targeted
+9366	disease_protein	33714	associated with	targeted
+14612	drug_protein	10821	target	targeted
+10821	disease_protein	35471	associated with	targeted
+14612	drug_protein	2951	target	targeted
+2951	disease_protein	35471	associated with	targeted
+14612	drug_protein	8667	target	targeted
+8667	disease_protein	35471	associated with	targeted
+14955	drug_protein	321	target	targeted
+321	disease_protein	35475	associated with	targeted
+14955	drug_protein	6947	target	targeted
+6947	disease_protein	35475	associated with	targeted
+14955	drug_protein	5811	target	targeted
+5811	disease_protein	35475	associated with	targeted
+14729	drug_protein	7252	target	targeted
+7252	disease_protein	35523	associated with	targeted
+14729	drug_protein	9829	target	targeted
+9829	disease_protein	35523	associated with	targeted
+14729	drug_protein	5226	target	targeted
+5226	disease_protein	35523	associated with	targeted
+14023	drug_protein	1026	target	targeted
+1026	disease_protein	35535	associated with	targeted
+14023	drug_protein	1739	target	targeted
+1739	disease_protein	35535	associated with	targeted
+14023	drug_protein	2123	target	targeted
+2123	disease_protein	35535	associated with	targeted
+14150	drug_protein	4336	target	targeted
+4336	disease_protein	35537	associated with	targeted
+14150	drug_protein	1455	target	targeted
+1455	disease_protein	35537	associated with	targeted
+14150	drug_protein	8946	target	targeted
+8946	disease_protein	35537	associated with	targeted
+17229	drug_protein	1014	target	targeted
+1014	disease_protein	35538	associated with	targeted
+17229	drug_protein	13331	target	targeted
+13331	disease_protein	35538	associated with	targeted
+17229	drug_protein	3994	target	targeted
+3994	disease_protein	35538	associated with	targeted
+20294	drug_protein	10997	target	targeted
+10997	disease_protein	35547	associated with	targeted
+20294	drug_protein	10593	target	targeted
+10593	disease_protein	35547	associated with	targeted
+20294	drug_protein	22049	target	targeted
+22049	disease_protein	35547	associated with	targeted
+14790	drug_protein	6977	target	targeted
+6977	disease_protein	35548	associated with	targeted
+14790	drug_protein	6438	target	targeted
+6438	disease_protein	35548	associated with	targeted
+14790	drug_protein	8441	target	targeted
+8441	disease_protein	35548	associated with	targeted
+14269	drug_protein	4010	target	targeted
+4010	disease_protein	35549	associated with	targeted
+14269	drug_protein	34852	target	targeted
+34852	disease_protein	35549	associated with	targeted
+14269	drug_protein	9306	target	targeted
+9306	disease_protein	35549	associated with	targeted
+20399	drug_protein	3199	target	targeted
+3199	disease_protein	35583	associated with	targeted
+20399	drug_protein	3043	target	targeted
+3043	disease_protein	35583	associated with	targeted
+20399	drug_protein	6202	target	targeted
+6202	disease_protein	35583	associated with	targeted
+15326	drug_protein	8093	target	targeted
+8093	disease_protein	35588	associated with	targeted
+15326	drug_protein	1741	target	targeted
+1741	disease_protein	35588	associated with	targeted
+15326	drug_protein	1312	target	targeted
+1312	disease_protein	35588	associated with	targeted
+14309	drug_protein	8825	target	targeted
+8825	disease_protein	35601	associated with	targeted
+14309	drug_protein	3475	target	targeted
+3475	disease_protein	35601	associated with	targeted
+14309	drug_protein	6229	target	targeted
+6229	disease_protein	35601	associated with	targeted
+15002	drug_protein	6778	target	targeted
+6778	disease_protein	35624	associated with	targeted
+15002	drug_protein	9333	target	targeted
+9333	disease_protein	35624	associated with	targeted
+15002	drug_protein	799	target	targeted
+799	disease_protein	35624	associated with	targeted
+14215	drug_protein	12629	target	targeted
+12629	disease_protein	35630	associated with	targeted
+14215	drug_protein	9525	target	targeted
+9525	disease_protein	35630	associated with	targeted
+14215	drug_protein	6856	target	targeted
+6856	disease_protein	35630	associated with	targeted
+14999	drug_protein	2310	target	targeted
+2310	disease_protein	35641	associated with	targeted
+14999	drug_protein	374	target	targeted
+374	disease_protein	35641	associated with	targeted
+14999	drug_protein	1675	target	targeted
+1675	disease_protein	35641	associated with	targeted
+14954	drug_protein	1012	target	targeted
+1012	disease_protein	35651	associated with	targeted
+14954	drug_protein	11324	target	targeted
+11324	disease_protein	35651	associated with	targeted
+14954	drug_protein	3841	target	targeted
+3841	disease_protein	35651	associated with	targeted
+14966	drug_protein	1596	target	targeted
+1596	disease_protein	35664	associated with	targeted
+14966	drug_protein	12607	target	targeted
+12607	disease_protein	35664	associated with	targeted
+14966	drug_protein	5268	target	targeted
+5268	disease_protein	35664	associated with	targeted
+14043	drug_protein	2540	target	targeted
+2540	disease_protein	35665	associated with	targeted
+14043	drug_protein	8232	target	targeted
+8232	disease_protein	35665	associated with	targeted
+14043	drug_protein	4101	target	targeted
+4101	disease_protein	35665	associated with	targeted
+15424	drug_protein	601	target	targeted
+601	disease_protein	35671	associated with	targeted
+15424	drug_protein	2688	target	targeted
+2688	disease_protein	35671	associated with	targeted
+15424	drug_protein	4315	target	targeted
+4315	disease_protein	35671	associated with	targeted
+14789	drug_protein	10120	target	targeted
+10120	disease_protein	35727	associated with	targeted
+14789	drug_protein	7445	target	targeted
+7445	disease_protein	35727	associated with	targeted
+14789	drug_protein	337	target	targeted
+337	disease_protein	35727	associated with	targeted
+14019	drug_protein	4814	target	targeted
+4814	disease_protein	35732	associated with	targeted
+14019	drug_protein	8302	target	targeted
+8302	disease_protein	35732	associated with	targeted
+14019	drug_protein	13571	target	targeted
+13571	disease_protein	35732	associated with	targeted
+14036	drug_protein	8040	target	targeted
+8040	disease_protein	35750	associated with	targeted
+14036	drug_protein	11356	target	targeted
+11356	disease_protein	35750	associated with	targeted
+14036	drug_protein	4475	target	targeted
+4475	disease_protein	35750	associated with	targeted
+15012	drug_protein	1613	target	targeted
+1613	disease_protein	35771	associated with	targeted
+15012	drug_protein	5413	target	targeted
+5413	disease_protein	35771	associated with	targeted
+15012	drug_protein	8570	target	targeted
+8570	disease_protein	35771	associated with	targeted
+18313	drug_protein	11138	target	targeted
+11138	disease_protein	35831	associated with	targeted
+18313	drug_protein	11960	target	targeted
+11960	disease_protein	35831	associated with	targeted
+18313	drug_protein	9025	target	targeted
+9025	disease_protein	35831	associated with	targeted
+15884	drug_protein	7543	target	targeted
+7543	disease_protein	35849	associated with	targeted
+15884	drug_protein	11514	target	targeted
+11514	disease_protein	35849	associated with	targeted
+15884	drug_protein	13045	target	targeted
+13045	disease_protein	35849	associated with	targeted
+14230	drug_protein	58737	target	targeted
+58737	disease_protein	35878	associated with	targeted
+14230	drug_protein	8077	target	targeted
+8077	disease_protein	35878	associated with	targeted
+14230	drug_protein	1771	target	targeted
+1771	disease_protein	35878	associated with	targeted
+14789	drug_protein	1148	target	targeted
+1148	disease_protein	35884	associated with	targeted
+14789	drug_protein	4137	target	targeted
+4137	disease_protein	35884	associated with	targeted
+14789	drug_protein	2634	target	targeted
+2634	disease_protein	35884	associated with	targeted
+15479	drug_protein	4282	target	targeted
+4282	disease_protein	35897	associated with	targeted
+15479	drug_protein	9557	target	targeted
+9557	disease_protein	35897	associated with	targeted
+15479	drug_protein	5292	target	targeted
+5292	disease_protein	35897	associated with	targeted
+15762	drug_protein	8665	target	targeted
+8665	disease_protein	35909	associated with	targeted
+15762	drug_protein	2546	target	targeted
+2546	disease_protein	35909	associated with	targeted
+15762	drug_protein	1970	target	targeted
+1970	disease_protein	35909	associated with	targeted
+14150	drug_protein	5660	target	targeted
+5660	disease_protein	35915	associated with	targeted
+14150	drug_protein	2091	target	targeted
+2091	disease_protein	35915	associated with	targeted
+14150	drug_protein	388	target	targeted
+388	disease_protein	35915	associated with	targeted
+14979	drug_protein	729	target	targeted
+14979	drug_protein	9965	target	targeted
+9965	disease_protein	35953	associated with	targeted
+14979	drug_protein	172	target	targeted
+15478	drug_protein	8321	target	targeted
+8321	disease_protein	35956	associated with	targeted
+15478	drug_protein	10692	target	targeted
+10692	disease_protein	35956	associated with	targeted
+15478	drug_protein	5198	target	targeted
+5198	disease_protein	35956	associated with	targeted
+14953	drug_protein	4104	target	targeted
+4104	disease_protein	35958	associated with	targeted
+14953	drug_protein	476	target	targeted
+14953	drug_protein	2243	target	targeted
+2243	disease_protein	35958	associated with	targeted
+14758	drug_protein	8570	target	targeted
+8570	disease_protein	35963	associated with	targeted
+14758	drug_protein	2857	target	targeted
+2857	disease_protein	35963	associated with	targeted
+14758	drug_protein	11114	target	targeted
+14793	drug_protein	34853	target	targeted
+34853	disease_protein	35970	associated with	targeted
+14793	drug_protein	6801	target	targeted
+6801	disease_protein	35970	associated with	targeted
+14793	drug_protein	10381	target	targeted
+10381	disease_protein	35970	associated with	targeted
+18312	drug_protein	2948	target	targeted
+2948	disease_protein	35983	associated with	targeted
+18312	drug_protein	9846	target	targeted
+9846	disease_protein	35983	associated with	targeted
+18312	drug_protein	11103	target	targeted
+11103	disease_protein	35983	associated with	targeted
+14019	drug_protein	5972	target	targeted
+5972	disease_protein	35988	associated with	targeted
+14019	drug_protein	989	target	targeted
+989	disease_protein	35988	associated with	targeted
+14019	drug_protein	12691	target	targeted
+12691	disease_protein	35988	associated with	targeted
+14608	drug_protein	6415	target	targeted
+6415	disease_protein	36000	associated with	targeted
+14608	drug_protein	9165	target	targeted
+9165	disease_protein	36000	associated with	targeted
+14608	drug_protein	13528	target	targeted
+13528	disease_protein	36000	associated with	targeted
+16495	drug_protein	2915	target	targeted
+2915	disease_protein	36004	associated with	targeted
+16495	drug_protein	7902	target	targeted
+7902	disease_protein	36004	associated with	targeted
+16495	drug_protein	4989	target	targeted
+4989	disease_protein	36004	associated with	targeted
+17148	drug_protein	7032	target	targeted
+7032	disease_protein	36026	associated with	targeted
+17148	drug_protein	3911	target	targeted
+3911	disease_protein	36026	associated with	targeted
+17148	drug_protein	8288	target	targeted
+8288	disease_protein	36026	associated with	targeted
+16209	drug_protein	6175	target	targeted
+6175	disease_protein	36035	associated with	targeted
+16209	drug_protein	34394	target	targeted
+34394	disease_protein	36035	associated with	targeted
+16209	drug_protein	2789	target	targeted
+2789	disease_protein	36035	associated with	targeted
+15442	drug_protein	1581	target	targeted
+1581	disease_protein	36046	associated with	targeted
+15442	drug_protein	4104	target	targeted
+4104	disease_protein	36046	associated with	targeted
+15442	drug_protein	40	target	targeted
+40	disease_protein	36046	associated with	targeted
+17229	drug_protein	2927	target	targeted
+2927	disease_protein	36048	associated with	targeted
+17229	drug_protein	5413	target	targeted
+5413	disease_protein	36048	associated with	targeted
+17229	drug_protein	5078	target	targeted
+5078	disease_protein	36048	associated with	targeted
+14186	drug_protein	8941	target	targeted
+8941	disease_protein	36050	associated with	targeted
+14186	drug_protein	5982	target	targeted
+5982	disease_protein	36050	associated with	targeted
+14186	drug_protein	2754	target	targeted
+2754	disease_protein	36050	associated with	targeted
+15003	drug_protein	1164	target	targeted
+1164	disease_protein	36088	associated with	targeted
+15003	drug_protein	2796	target	targeted
+2796	disease_protein	36088	associated with	targeted
+15003	drug_protein	5086	target	targeted
+5086	disease_protein	36088	associated with	targeted
+15147	drug_protein	9173	target	targeted
+9173	disease_protein	36091	associated with	targeted
+15147	drug_protein	34852	target	targeted
+34852	disease_protein	36091	associated with	targeted
+15147	drug_protein	6977	target	targeted
+6977	disease_protein	36091	associated with	targeted
+14230	drug_protein	66	target	targeted
+66	disease_protein	36106	associated with	targeted
+14230	drug_protein	9700	target	targeted
+9700	disease_protein	36106	associated with	targeted
+14230	drug_protein	2080	target	targeted
+2080	disease_protein	36106	associated with	targeted
+14794	drug_protein	757	target	targeted
+757	disease_protein	36112	associated with	targeted
+14794	drug_protein	12500	target	targeted
+12500	disease_protein	36112	associated with	targeted
+14794	drug_protein	2022	target	targeted
+2022	disease_protein	36112	associated with	targeted
+20351	drug_protein	3726	target	targeted
+3726	disease_protein	36117	associated with	targeted
+20351	drug_protein	2465	target	targeted
+2465	disease_protein	36117	associated with	targeted
+20351	drug_protein	57872	target	targeted
+57872	disease_protein	36117	associated with	targeted
+14049	drug_protein	33848	target	targeted
+33848	disease_protein	36129	associated with	targeted
+14049	drug_protein	6936	target	targeted
+6936	disease_protein	36129	associated with	targeted
+14049	drug_protein	8781	target	targeted
+8781	disease_protein	36129	associated with	targeted
+15067	drug_protein	6626	target	targeted
+6626	disease_protein	36140	associated with	targeted
+15067	drug_protein	10647	target	targeted
+10647	disease_protein	36140	associated with	targeted
+15067	drug_protein	2927	target	targeted
+2927	disease_protein	36140	associated with	targeted
+14509	drug_protein	13330	target	targeted
+13330	disease_protein	36147	associated with	targeted
+14509	drug_protein	9896	target	targeted
+9896	disease_protein	36147	associated with	targeted
+14509	drug_protein	6307	target	targeted
+6307	disease_protein	36147	associated with	targeted
+14320	drug_protein	1037	target	targeted
+1037	disease_protein	36172	associated with	targeted
+14320	drug_protein	4850	target	targeted
+4850	disease_protein	36172	associated with	targeted
+14320	drug_protein	1165	target	targeted
+1165	disease_protein	36172	associated with	targeted
+14961	drug_protein	34164	target	targeted
+34164	disease_protein	36194	associated with	targeted
+14961	drug_protein	7096	target	targeted
+7096	disease_protein	36194	associated with	targeted
+14961	drug_protein	4630	target	targeted
+4630	disease_protein	36194	associated with	targeted
+14852	drug_protein	4831	target	targeted
+4831	disease_protein	36209	associated with	targeted
+14852	drug_protein	3168	target	targeted
+3168	disease_protein	36209	associated with	targeted
+14852	drug_protein	8967	target	targeted
+8967	disease_protein	36209	associated with	targeted
+20403	drug_protein	8581	target	targeted
+8581	disease_protein	36214	associated with	targeted
+20403	drug_protein	6276	target	targeted
+6276	disease_protein	36214	associated with	targeted
+20403	drug_protein	7475	target	targeted
+7475	disease_protein	36214	associated with	targeted
+14956	drug_protein	7450	target	targeted
+7450	disease_protein	36216	associated with	targeted
+14956	drug_protein	5915	target	targeted
+5915	disease_protein	36216	associated with	targeted
+14956	drug_protein	3703	target	targeted
+3703	disease_protein	36216	associated with	targeted
+15315	drug_protein	5638	target	targeted
+5638	disease_protein	36265	associated with	targeted
+15315	drug_protein	11017	target	targeted
+11017	disease_protein	36265	associated with	targeted
+15315	drug_protein	699	target	targeted
+699	disease_protein	36265	associated with	targeted
+14219	drug_protein	10341	target	targeted
+10341	disease_protein	36272	associated with	targeted
+14219	drug_protein	35039	target	targeted
+35039	disease_protein	36272	associated with	targeted
+14219	drug_protein	11742	target	targeted
+11742	disease_protein	36272	associated with	targeted
+15479	drug_protein	6434	target	targeted
+6434	disease_protein	36286	associated with	targeted
+15479	drug_protein	1117	target	targeted
+1117	disease_protein	36286	associated with	targeted
+15479	drug_protein	2318	target	targeted
+2318	disease_protein	36286	associated with	targeted
+14033	drug_protein	4624	target	targeted
+4624	disease_protein	36302	associated with	targeted
+14033	drug_protein	7595	target	targeted
+7595	disease_protein	36302	associated with	targeted
+14033	drug_protein	3111	target	targeted
+3111	disease_protein	36302	associated with	targeted
+20362	drug_protein	2964	target	targeted
+2964	disease_protein	36315	associated with	targeted
+20362	drug_protein	11458	target	targeted
+11458	disease_protein	36315	associated with	targeted
+20362	drug_protein	7906	target	targeted
+7906	disease_protein	36315	associated with	targeted
+19380	drug_protein	8967	target	targeted
+8967	disease_protein	36322	associated with	targeted
+19380	drug_protein	3793	target	targeted
+3793	disease_protein	36322	associated with	targeted
+19380	drug_protein	7512	target	targeted
+7512	disease_protein	36322	associated with	targeted
+20207	drug_protein	34524	target	targeted
+34524	disease_protein	36334	associated with	targeted
+20207	drug_protein	7037	target	targeted
+7037	disease_protein	36334	associated with	targeted
+20207	drug_protein	4105	target	targeted
+4105	disease_protein	36334	associated with	targeted
+18312	drug_protein	5273	target	targeted
+5273	disease_protein	36339	associated with	targeted
+18312	drug_protein	9896	target	targeted
+9896	disease_protein	36339	associated with	targeted
+18312	drug_protein	957	target	targeted
+957	disease_protein	36339	associated with	targeted
+14758	drug_protein	1874	target	targeted
+1874	disease_protein	36425	associated with	targeted
+14758	drug_protein	3968	target	targeted
+3968	disease_protein	36425	associated with	targeted
+14758	drug_protein	13576	target	targeted
+13576	disease_protein	36425	associated with	targeted
+15002	drug_protein	59524	target	targeted
+59524	disease_protein	36432	associated with	targeted
+15002	drug_protein	5413	target	targeted
+5413	disease_protein	36432	associated with	targeted
+15002	drug_protein	1683	target	targeted
+1683	disease_protein	36432	associated with	targeted
+14027	drug_protein	2461	target	targeted
+2461	disease_protein	36436	associated with	targeted
+14027	drug_protein	10512	target	targeted
+10512	disease_protein	36436	associated with	targeted
+14027	drug_protein	959	target	targeted
+959	disease_protein	36436	associated with	targeted
+18036	drug_protein	6719	target	targeted
+6719	disease_protein	36442	associated with	targeted
+18036	drug_protein	13744	target	targeted
+13744	disease_protein	36442	associated with	targeted
+18036	drug_protein	33847	target	targeted
+33847	disease_protein	36442	associated with	targeted
+15039	drug_protein	8573	target	targeted
+8573	disease_protein	36450	associated with	targeted
+15039	drug_protein	7652	target	targeted
+7652	disease_protein	36450	associated with	targeted
+15039	drug_protein	9025	target	targeted
+9025	disease_protein	36450	associated with	targeted
+14789	drug_protein	2951	target	targeted
+2951	disease_protein	36536	associated with	targeted
+14789	drug_protein	3774	target	targeted
+3774	disease_protein	36536	associated with	targeted
+14789	drug_protein	3971	target	targeted
+3971	disease_protein	36536	associated with	targeted
+15032	drug_protein	4936	target	targeted
+4936	disease_protein	36584	associated with	targeted
+15032	drug_protein	3890	target	targeted
+3890	disease_protein	36584	associated with	targeted
+15032	drug_protein	9954	target	targeted
+9954	disease_protein	36584	associated with	targeted
+14023	drug_protein	6175	target	targeted
+6175	disease_protein	36593	associated with	targeted
+14023	drug_protein	6856	target	targeted
+6856	disease_protein	36593	associated with	targeted
+14023	drug_protein	13384	target	targeted
+13384	disease_protein	36593	associated with	targeted
+15060	drug_protein	6428	target	targeted
+6428	disease_protein	36604	associated with	targeted
+15060	drug_protein	10095	target	targeted
+10095	disease_protein	36604	associated with	targeted
+15060	drug_protein	29	target	targeted
+29	disease_protein	36604	associated with	targeted
+14021	drug_protein	79592	target	targeted
+79592	disease_protein	36644	associated with	targeted
+14021	drug_protein	66	target	targeted
+66	disease_protein	36644	associated with	targeted
+14021	drug_protein	7266	target	targeted
+7266	disease_protein	36644	associated with	targeted
+14794	drug_protein	34524	target	targeted
+34524	disease_protein	36724	associated with	targeted
+14794	drug_protein	5099	target	targeted
+5099	disease_protein	36724	associated with	targeted
+14794	drug_protein	199	target	targeted
+199	disease_protein	36724	associated with	targeted
+14963	drug_protein	6591	target	targeted
+6591	disease_protein	36743	associated with	targeted
+14963	drug_protein	5688	target	targeted
+5688	disease_protein	36743	associated with	targeted
+14963	drug_protein	7512	target	targeted
+7512	disease_protein	36743	associated with	targeted
+17101	drug_protein	13977	target	targeted
+13977	disease_protein	36750	associated with	targeted
+17101	drug_protein	8711	target	targeted
+8711	disease_protein	36750	associated with	targeted
+17101	drug_protein	10470	target	targeted
+10470	disease_protein	36750	associated with	targeted
+20300	drug_protein	22097	target	targeted
+22097	disease_protein	36785	associated with	targeted
+20300	drug_protein	6637	target	targeted
+6637	disease_protein	36785	associated with	targeted
+20300	drug_protein	4358	target	targeted
+4358	disease_protein	36785	associated with	targeted
+15030	drug_protein	294	target	targeted
+294	disease_protein	36792	associated with	targeted
+15030	drug_protein	9303	target	targeted
+9303	disease_protein	36792	associated with	targeted
+15030	drug_protein	33847	target	targeted
+33847	disease_protein	36792	associated with	targeted
+17524	drug_protein	3917	target	targeted
+3917	disease_protein	36794	associated with	targeted
+17524	drug_protein	10571	target	targeted
+10571	disease_protein	36794	associated with	targeted
+17524	drug_protein	1772	target	targeted
+1772	disease_protein	36794	associated with	targeted
+14945	drug_protein	9072	target	targeted
+9072	disease_protein	36812	associated with	targeted
+14945	drug_protein	4782	target	targeted
+4782	disease_protein	36812	associated with	targeted
+14945	drug_protein	22105	target	targeted
+22105	disease_protein	36812	associated with	targeted
+17524	drug_protein	3499	target	targeted
+3499	disease_protein	36825	associated with	targeted
+17524	drug_protein	9905	target	targeted
+9905	disease_protein	36825	associated with	targeted
+17524	drug_protein	337	target	targeted
+337	disease_protein	36825	associated with	targeted
+14999	drug_protein	390	target	targeted
+390	disease_protein	36855	associated with	targeted
+14999	drug_protein	4985	target	targeted
+4985	disease_protein	36855	associated with	targeted
+14999	drug_protein	10564	target	targeted
+10564	disease_protein	36855	associated with	targeted
+15187	drug_protein	13472	target	targeted
+13472	disease_protein	36881	associated with	targeted
+15187	drug_protein	3212	target	targeted
+3212	disease_protein	36881	associated with	targeted
+15187	drug_protein	8374	target	targeted
+8374	disease_protein	36881	associated with	targeted
+15822	drug_protein	13441	target	targeted
+13441	disease_protein	36893	associated with	targeted
+15822	drug_protein	34581	target	targeted
+34581	disease_protein	36893	associated with	targeted
+15822	drug_protein	5281	target	targeted
+5281	disease_protein	36893	associated with	targeted
+14980	drug_protein	3712	target	targeted
+3712	disease_protein	36924	associated with	targeted
+14980	drug_protein	8708	target	targeted
+8708	disease_protein	36924	associated with	targeted
+14980	drug_protein	381	target	targeted
+381	disease_protein	36924	associated with	targeted
+14207	drug_protein	6355	target	targeted
+6355	disease_protein	36935	associated with	targeted
+14207	drug_protein	56514	target	targeted
+56514	disease_protein	36935	associated with	targeted
+14207	drug_protein	748	target	targeted
+748	disease_protein	36935	associated with	targeted
+20481	drug_protein	1055	target	targeted
+1055	disease_protein	36954	associated with	targeted
+20481	drug_protein	8558	target	targeted
+8558	disease_protein	36954	associated with	targeted
+20481	drug_protein	6118	target	targeted
+6118	disease_protein	36954	associated with	targeted
+14945	drug_protein	33944	target	targeted
+33944	disease_protein	37082	associated with	targeted
+14945	drug_protein	8414	target	targeted
+8414	disease_protein	37082	associated with	targeted
+14945	drug_protein	5615	target	targeted
+5615	disease_protein	37082	associated with	targeted
+15325	drug_protein	4369	target	targeted
+4369	disease_protein	37128	associated with	targeted
+15325	drug_protein	2387	target	targeted
+2387	disease_protein	37128	associated with	targeted
+15325	drug_protein	7357	target	targeted
+7357	disease_protein	37128	associated with	targeted
+15107	drug_protein	4457	target	targeted
+4457	disease_protein	37150	associated with	targeted
+15107	drug_protein	2915	target	targeted
+2915	disease_protein	37150	associated with	targeted
+15107	drug_protein	5104	target	targeted
+5104	disease_protein	37150	associated with	targeted
+14956	drug_protein	7379	target	targeted
+7379	disease_protein	37152	associated with	targeted
+14956	drug_protein	35068	target	targeted
+35068	disease_protein	37152	associated with	targeted
+14956	drug_protein	2160	target	targeted
+2160	disease_protein	37152	associated with	targeted
+14419	drug_protein	6829	target	targeted
+6829	disease_protein	37180	associated with	targeted
+14419	drug_protein	1935	target	targeted
+1935	disease_protein	37180	associated with	targeted
+14419	drug_protein	2499	target	targeted
+2499	disease_protein	37180	associated with	targeted
+14868	drug_protein	57913	target	targeted
+57913	disease_protein	37273	associated with	targeted
+14868	drug_protein	4794	target	targeted
+4794	disease_protein	37273	associated with	targeted
+14868	drug_protein	5517	target	targeted
+5517	disease_protein	37273	associated with	targeted
+14945	drug_protein	5268	target	targeted
+5268	disease_protein	37423	associated with	targeted
+14945	drug_protein	1368	target	targeted
+1368	disease_protein	37423	associated with	targeted
+14945	drug_protein	11479	target	targeted
+11479	disease_protein	37423	associated with	targeted
+14789	drug_protein	2959	target	targeted
+2959	disease_protein	37466	associated with	targeted
+14789	drug_protein	5481	target	targeted
+5481	disease_protein	37466	associated with	targeted
+14789	drug_protein	6002	target	targeted
+6002	disease_protein	37466	associated with	targeted
+18590	drug_protein	1967	target	targeted
+1967	disease_protein	37549	associated with	targeted
+18590	drug_protein	1173	target	targeted
+1173	disease_protein	37549	associated with	targeted
+18590	drug_protein	56713	target	targeted
+56713	disease_protein	37549	associated with	targeted
+15462	drug_protein	1155	target	targeted
+1155	disease_protein	37564	associated with	targeted
+15462	drug_protein	9466	target	targeted
+9466	disease_protein	37564	associated with	targeted
+15462	drug_protein	11579	target	targeted
+11579	disease_protein	37564	associated with	targeted
+15074	drug_protein	1294	target	targeted
+1294	disease_protein	37573	associated with	targeted
+15074	drug_protein	11427	target	targeted
+11427	disease_protein	37573	associated with	targeted
+15074	drug_protein	4099	target	targeted
+4099	disease_protein	37573	associated with	targeted
+14201	drug_protein	8936	target	targeted
+8936	disease_protein	37574	associated with	targeted
+14201	drug_protein	6699	target	targeted
+6699	disease_protein	37574	associated with	targeted
+14201	drug_protein	5199	target	targeted
+5199	disease_protein	37574	associated with	targeted
+14938	drug_protein	12653	target	targeted
+12653	disease_protein	37604	associated with	targeted
+14938	drug_protein	2387	target	targeted
+14938	drug_protein	5078	target	targeted
+5078	disease_protein	37604	associated with	targeted
+14625	drug_protein	33774	target	targeted
+33774	disease_protein	37607	associated with	targeted
+14625	drug_protein	12128	target	targeted
+12128	disease_protein	37607	associated with	targeted
+14625	drug_protein	2790	target	targeted
+2790	disease_protein	37607	associated with	targeted
+14032	drug_protein	34741	target	targeted
+34741	disease_protein	37608	associated with	targeted
+14032	drug_protein	3070	target	targeted
+3070	disease_protein	37608	associated with	targeted
+14032	drug_protein	4003	target	targeted
+4003	disease_protein	37608	associated with	targeted
+14032	drug_protein	4101	target	targeted
+4101	disease_protein	37612	associated with	targeted
+14032	drug_protein	10269	target	targeted
+10269	disease_protein	37612	associated with	targeted
+14032	drug_protein	9485	target	targeted
+9485	disease_protein	37612	associated with	targeted
+20318	drug_protein	1284	target	targeted
+1284	disease_protein	37627	associated with	targeted
+20318	drug_protein	8231	target	targeted
+8231	disease_protein	37627	associated with	targeted
+20318	drug_protein	12005	target	targeted
+12005	disease_protein	37627	associated with	targeted
+14190	drug_protein	9965	target	targeted
+9965	disease_protein	37668	associated with	targeted
+14190	drug_protein	2382	target	targeted
+2382	disease_protein	37668	associated with	targeted
+14190	drug_protein	8	target	targeted
+8	disease_protein	37668	associated with	targeted
+14981	drug_protein	9700	target	targeted
+9700	disease_protein	37703	associated with	targeted
+14981	drug_protein	1193	target	targeted
+1193	disease_protein	37703	associated with	targeted
+14981	drug_protein	9473	target	targeted
+9473	disease_protein	37703	associated with	targeted
+14207	drug_protein	8757	target	targeted
+8757	disease_protein	37714	associated with	targeted
+14207	drug_protein	5660	target	targeted
+5660	disease_protein	37714	associated with	targeted
+14207	drug_protein	5605	target	targeted
+5605	disease_protein	37714	associated with	targeted
+14981	drug_protein	13441	target	targeted
+13441	disease_protein	37718	associated with	targeted
+14981	drug_protein	322	target	targeted
+322	disease_protein	37718	associated with	targeted
+14981	drug_protein	10082	target	targeted
+10082	disease_protein	37718	associated with	targeted
+14934	drug_protein	11	target	targeted
+11	disease_protein	37722	associated with	targeted
+14934	drug_protein	7951	target	targeted
+7951	disease_protein	37722	associated with	targeted
+14934	drug_protein	645	target	targeted
+645	disease_protein	37722	associated with	targeted
+14966	drug_protein	10692	target	targeted
+10692	disease_protein	37743	associated with	targeted
+14966	drug_protein	246	target	targeted
+246	disease_protein	37743	associated with	targeted
+14966	drug_protein	5778	target	targeted
+5778	disease_protein	37743	associated with	targeted
+14947	drug_protein	893	target	targeted
+893	disease_protein	37764	associated with	targeted
+14947	drug_protein	3672	target	targeted
+3672	disease_protein	37764	associated with	targeted
+14947	drug_protein	7197	target	targeted
+7197	disease_protein	37764	associated with	targeted
+15424	drug_protein	12594	target	targeted
+12594	disease_protein	37768	associated with	targeted
+15424	drug_protein	10452	target	targeted
+10452	disease_protein	37768	associated with	targeted
+15424	drug_protein	3632	target	targeted
+3632	disease_protein	37768	associated with	targeted
+14207	drug_protein	1611	target	targeted
+1611	disease_protein	37770	associated with	targeted
+14207	drug_protein	7302	target	targeted
+7302	disease_protein	37770	associated with	targeted
+14207	drug_protein	13528	target	targeted
+13528	disease_protein	37770	associated with	targeted
+14732	drug_protein	4113	target	targeted
+4113	disease_protein	37784	associated with	targeted
+14732	drug_protein	11849	target	targeted
+11849	disease_protein	37784	associated with	targeted
+14732	drug_protein	6745	target	targeted
+6745	disease_protein	37784	associated with	targeted
+15481	drug_protein	9412	target	targeted
+9412	disease_protein	37785	associated with	targeted
+15481	drug_protein	11779	target	targeted
+11779	disease_protein	37785	associated with	targeted
+15481	drug_protein	5101	target	targeted
+5101	disease_protein	37785	associated with	targeted
+14230	drug_protein	587	target	targeted
+587	disease_protein	37787	associated with	targeted
+14230	drug_protein	645	target	targeted
+645	disease_protein	37787	associated with	targeted
+14230	drug_protein	4143	target	targeted
+4143	disease_protein	37787	associated with	targeted
+15419	drug_protein	1260	target	targeted
+1260	disease_protein	37803	associated with	targeted
+15419	drug_protein	11673	target	targeted
+11673	disease_protein	37803	associated with	targeted
+15419	drug_protein	7072	target	targeted
+7072	disease_protein	37803	associated with	targeted
+14791	drug_protein	580	target	targeted
+14791	drug_protein	4258	target	targeted
+4258	disease_protein	37805	associated with	targeted
+14791	drug_protein	12389	target	targeted
+12389	disease_protein	37805	associated with	targeted
+16063	drug_protein	5860	target	targeted
+5860	disease_protein	37811	associated with	targeted
+16063	drug_protein	294	target	targeted
+294	disease_protein	37811	associated with	targeted
+16063	drug_protein	4879	target	targeted
+4879	disease_protein	37811	associated with	targeted
+15504	drug_protein	301	target	targeted
+301	disease_protein	37820	associated with	targeted
+15504	drug_protein	10367	target	targeted
+10367	disease_protein	37820	associated with	targeted
+15504	drug_protein	3841	target	targeted
+3841	disease_protein	37820	associated with	targeted
+15818	drug_protein	4616	target	targeted
+4616	disease_protein	37830	associated with	targeted
+15818	drug_protein	552	target	targeted
+552	disease_protein	37830	associated with	targeted
+15818	drug_protein	6522	target	targeted
+6522	disease_protein	37830	associated with	targeted
+14483	drug_protein	610	target	targeted
+610	disease_protein	37855	associated with	targeted
+14483	drug_protein	11497	target	targeted
+11497	disease_protein	37855	associated with	targeted
+14483	drug_protein	3903	target	targeted
+3903	disease_protein	37855	associated with	targeted
+14540	drug_protein	6858	target	targeted
+6858	disease_protein	37888	associated with	targeted
+14540	drug_protein	3474	target	targeted
+3474	disease_protein	37888	associated with	targeted
+14540	drug_protein	7090	target	targeted
+7090	disease_protein	37888	associated with	targeted
+14207	drug_protein	1546	target	targeted
+1546	disease_protein	37892	associated with	targeted
+14207	drug_protein	9017	target	targeted
+9017	disease_protein	37892	associated with	targeted
+14207	drug_protein	10983	target	targeted
+10983	disease_protein	37892	associated with	targeted
+14789	drug_protein	9333	target	targeted
+9333	disease_protein	37967	associated with	targeted
+14789	drug_protein	363	target	targeted
+363	disease_protein	37967	associated with	targeted
+14789	drug_protein	3138	target	targeted
+3138	disease_protein	37967	associated with	targeted
+14793	drug_protein	8231	target	targeted
+8231	disease_protein	37975	associated with	targeted
+14793	drug_protein	11256	target	targeted
+11256	disease_protein	37975	associated with	targeted
+14793	drug_protein	12012	target	targeted
+12012	disease_protein	37975	associated with	targeted
+14543	drug_protein	6914	target	targeted
+6914	disease_protein	38003	associated with	targeted
+14543	drug_protein	5789	target	targeted
+5789	disease_protein	38003	associated with	targeted
+14543	drug_protein	87	target	targeted
+87	disease_protein	38003	associated with	targeted
+15031	drug_protein	4803	target	targeted
+4803	disease_protein	38021	associated with	targeted
+15031	drug_protein	3879	target	targeted
+3879	disease_protein	38021	associated with	targeted
+15031	drug_protein	5029	target	targeted
+5029	disease_protein	38021	associated with	targeted
+14964	drug_protein	8477	target	targeted
+8477	disease_protein	38024	associated with	targeted
+14964	drug_protein	35044	target	targeted
+35044	disease_protein	38024	associated with	targeted
+14964	drug_protein	1070	target	targeted
+1070	disease_protein	38024	associated with	targeted
+14934	drug_protein	8018	target	targeted
+8018	disease_protein	38040	associated with	targeted
+14934	drug_protein	2915	target	targeted
+2915	disease_protein	38040	associated with	targeted
+14934	drug_protein	33774	target	targeted
+33774	disease_protein	38040	associated with	targeted
+20318	drug_protein	5004	target	targeted
+5004	disease_protein	38084	associated with	targeted
+20318	drug_protein	6438	target	targeted
+6438	disease_protein	38084	associated with	targeted
+20318	drug_protein	615	target	targeted
+615	disease_protein	38084	associated with	targeted
+14060	drug_protein	8671	target	targeted
+8671	disease_protein	38085	associated with	targeted
+14060	drug_protein	1342	target	targeted
+1342	disease_protein	38085	associated with	targeted
+14060	drug_protein	3400	target	targeted
+3400	disease_protein	38085	associated with	targeted
+20262	drug_protein	6309	target	targeted
+6309	disease_protein	38087	associated with	targeted
+20262	drug_protein	7408	target	targeted
+7408	disease_protein	38087	associated with	targeted
+20262	drug_protein	3464	target	targeted
+3464	disease_protein	38087	associated with	targeted
+14685	drug_protein	7350	target	targeted
+7350	disease_protein	38100	associated with	targeted
+14685	drug_protein	6992	target	targeted
+6992	disease_protein	38100	associated with	targeted
+14685	drug_protein	1369	target	targeted
+1369	disease_protein	38100	associated with	targeted
+14979	drug_protein	10922	target	targeted
+10922	disease_protein	38102	associated with	targeted
+14979	drug_protein	2165	target	targeted
+2165	disease_protein	38102	associated with	targeted
+14979	drug_protein	4201	target	targeted
+4201	disease_protein	38102	associated with	targeted
+14153	drug_protein	2729	target	targeted
+2729	disease_protein	38242	associated with	targeted
+14153	drug_protein	11310	target	targeted
+11310	disease_protein	38242	associated with	targeted
+14153	drug_protein	7907	target	targeted
+7907	disease_protein	38242	associated with	targeted
+15032	drug_protein	35316	target	targeted
+35316	disease_protein	38342	associated with	targeted
+15032	drug_protein	9657	target	targeted
+9657	disease_protein	38342	associated with	targeted
+15032	drug_protein	4441	target	targeted
+4441	disease_protein	38342	associated with	targeted
+15893	drug_protein	2481	target	targeted
+2481	disease_protein	38409	associated with	targeted
+15893	drug_protein	5876	target	targeted
+5876	disease_protein	38409	associated with	targeted
+15893	drug_protein	431	target	targeted
+431	disease_protein	38409	associated with	targeted
+15781	drug_protein	1294	target	targeted
+1294	disease_protein	38436	associated with	targeted
+15781	drug_protein	8778	target	targeted
+8778	disease_protein	38436	associated with	targeted
+15781	drug_protein	8581	target	targeted
+8581	disease_protein	38436	associated with	targeted
+14035	drug_protein	3922	target	targeted
+3922	disease_protein	38496	associated with	targeted
+14035	drug_protein	7509	target	targeted
+7509	disease_protein	38496	associated with	targeted
+14035	drug_protein	6964	target	targeted
+6964	disease_protein	38496	associated with	targeted
+14014	drug_protein	4441	target	targeted
+4441	disease_protein	38515	associated with	targeted
+14014	drug_protein	11898	target	targeted
+11898	disease_protein	38515	associated with	targeted
+14014	drug_protein	4827	target	targeted
+4827	disease_protein	38515	associated with	targeted
+14313	drug_protein	1671	target	targeted
+1671	disease_protein	38640	associated with	targeted
+14313	drug_protein	5798	target	targeted
+5798	disease_protein	38640	associated with	targeted
+14313	drug_protein	733	target	targeted
+733	disease_protein	38640	associated with	targeted
+20169	drug_protein	2667	target	targeted
+2667	disease_protein	38682	associated with	targeted
+20169	drug_protein	6390	target	targeted
+6390	disease_protein	38682	associated with	targeted
+20169	drug_protein	1118	target	targeted
+1118	disease_protein	38682	associated with	targeted
+14789	drug_protein	1186	target	targeted
+1186	disease_protein	38708	associated with	targeted
+14789	drug_protein	5012	target	targeted
+5012	disease_protein	38708	associated with	targeted
+14789	drug_protein	452	target	targeted
+452	disease_protein	38708	associated with	targeted
+15032	drug_protein	7568	target	targeted
+7568	disease_protein	38719	associated with	targeted
+15032	drug_protein	11923	target	targeted
+11923	disease_protein	38719	associated with	targeted
+15032	drug_protein	74	target	targeted
+74	disease_protein	38719	associated with	targeted
+14308	drug_protein	7655	target	targeted
+7655	disease_protein	38784	associated with	targeted
+14308	drug_protein	7374	target	targeted
+7374	disease_protein	38784	associated with	targeted
+14308	drug_protein	7117	target	targeted
+7117	disease_protein	38784	associated with	targeted
+14934	drug_protein	7852	target	targeted
+7852	disease_protein	38957	associated with	targeted
+14934	drug_protein	1373	target	targeted
+14934	drug_protein	12629	target	targeted
+12629	disease_protein	38957	associated with	targeted
+14184	drug_protein	10805	target	targeted
+10805	disease_protein	39015	associated with	targeted
+14184	drug_protein	7811	target	targeted
+7811	disease_protein	39015	associated with	targeted
+14184	drug_protein	6859	target	targeted
+6859	disease_protein	39015	associated with	targeted
+14736	drug_protein	5124	target	targeted
+5124	disease_protein	39124	associated with	targeted
+14736	drug_protein	13441	target	targeted
+13441	disease_protein	39124	associated with	targeted
+14736	drug_protein	1770	target	targeted
+1770	disease_protein	39124	associated with	targeted
+15205	drug_protein	1093	target	targeted
+1093	disease_protein	39171	associated with	targeted
+15205	drug_protein	56684	target	targeted
+56684	disease_protein	39171	associated with	targeted
+15205	drug_protein	2507	target	targeted
+2507	disease_protein	39171	associated with	targeted
+14018	drug_protein	8936	target	targeted
+8936	disease_protein	39208	associated with	targeted
+14018	drug_protein	1935	target	targeted
+1935	disease_protein	39208	associated with	targeted
+14018	drug_protein	22071	target	targeted
+22071	disease_protein	39208	associated with	targeted
+14019	drug_protein	9248	target	targeted
+9248	disease_protein	39245	associated with	targeted
+14019	drug_protein	56745	target	targeted
+56745	disease_protein	39245	associated with	targeted
+14019	drug_protein	10180	target	targeted
+10180	disease_protein	39245	associated with	targeted
+14942	drug_protein	8005	target	targeted
+8005	disease_protein	39261	associated with	targeted
+14942	drug_protein	10417	target	targeted
+10417	disease_protein	39261	associated with	targeted
+14942	drug_protein	4930	target	targeted
+4930	disease_protein	39261	associated with	targeted
+15132	drug_protein	7266	target	targeted
+7266	disease_protein	39365	associated with	targeted
+15132	drug_protein	56559	target	targeted
+56559	disease_protein	39365	associated with	targeted
+15132	drug_protein	12207	target	targeted
+12207	disease_protein	39365	associated with	targeted
+16640	drug_protein	33981	target	targeted
+33981	disease_protein	39484	associated with	targeted
+16640	drug_protein	4425	target	targeted
+4425	disease_protein	39484	associated with	targeted
+16640	drug_protein	161	target	targeted
+161	disease_protein	39484	associated with	targeted
+14036	drug_protein	2300	target	targeted
+2300	disease_protein	39506	associated with	targeted
+14036	drug_protein	4160	target	targeted
+4160	disease_protein	39506	associated with	targeted
+14036	drug_protein	2058	target	targeted
+2058	disease_protein	39506	associated with	targeted
+15842	drug_protein	2114	target	targeted
+2114	disease_protein	39524	associated with	targeted
+15842	drug_protein	34835	target	targeted
+34835	disease_protein	39524	associated with	targeted
+15842	drug_protein	9724	target	targeted
+9724	disease_protein	39524	associated with	targeted
+15071	drug_protein	4735	target	targeted
+4735	disease_protein	39533	associated with	targeted
+15071	drug_protein	12724	target	targeted
+12724	disease_protein	39533	associated with	targeted
+15071	drug_protein	3796	target	targeted
+3796	disease_protein	39533	associated with	targeted
+15293	drug_protein	6024	target	targeted
+6024	disease_protein	39537	associated with	targeted
+15293	drug_protein	6418	target	targeted
+6418	disease_protein	39537	associated with	targeted
+15293	drug_protein	4531	target	targeted
+4531	disease_protein	39537	associated with	targeted
+14310	drug_protein	9984	target	targeted
+9984	disease_protein	39540	associated with	targeted
+14310	drug_protein	57785	target	targeted
+57785	disease_protein	39540	associated with	targeted
+14310	drug_protein	4356	target	targeted
+4356	disease_protein	39540	associated with	targeted
+14032	drug_protein	1196	target	targeted
+1196	disease_protein	39546	associated with	targeted
+14032	drug_protein	118	target	targeted
+118	disease_protein	39546	associated with	targeted
+14032	drug_protein	13235	target	targeted
+13235	disease_protein	39546	associated with	targeted
+15031	drug_protein	210	target	targeted
+210	disease_protein	39600	associated with	targeted
+15031	drug_protein	4308	target	targeted
+4308	disease_protein	39600	associated with	targeted
+15031	drug_protein	6469	target	targeted
+6469	disease_protein	39600	associated with	targeted
+14948	drug_protein	931	target	targeted
+931	disease_protein	39603	associated with	targeted
+14948	drug_protein	589	target	targeted
+589	disease_protein	39603	associated with	targeted
+14948	drug_protein	34594	target	targeted
+34594	disease_protein	39603	associated with	targeted
+16085	drug_protein	3453	target	targeted
+3453	disease_protein	39609	associated with	targeted
+16085	drug_protein	8999	target	targeted
+8999	disease_protein	39609	associated with	targeted
+16085	drug_protein	9826	target	targeted
+9826	disease_protein	39609	associated with	targeted
+15147	drug_protein	58485	target	targeted
+58485	disease_protein	39622	associated with	targeted
+15147	drug_protein	2507	target	targeted
+2507	disease_protein	39622	associated with	targeted
+15147	drug_protein	9164	target	targeted
+9164	disease_protein	39622	associated with	targeted
+15451	drug_protein	33788	target	targeted
+33788	disease_protein	39699	associated with	targeted
+15451	drug_protein	887	target	targeted
+887	disease_protein	39699	associated with	targeted
+15451	drug_protein	2688	target	targeted
+2688	disease_protein	39699	associated with	targeted
+15480	drug_protein	2641	target	targeted
+2641	disease_protein	39701	associated with	targeted
+15480	drug_protein	10093	target	targeted
+10093	disease_protein	39701	associated with	targeted
+15480	drug_protein	31	target	targeted
+31	disease_protein	39701	associated with	targeted
+14207	drug_protein	4198	target	targeted
+4198	disease_protein	39728	associated with	targeted
+14207	drug_protein	11497	target	targeted
+11497	disease_protein	39728	associated with	targeted
+14207	drug_protein	5859	target	targeted
+5859	disease_protein	39728	associated with	targeted
+14970	drug_protein	2409	target	targeted
+2409	disease_protein	39773	associated with	targeted
+14970	drug_protein	388	target	targeted
+388	disease_protein	39773	associated with	targeted
+14970	drug_protein	3894	target	targeted
+3894	disease_protein	39773	associated with	targeted
+14309	drug_protein	1122	target	targeted
+1122	disease_protein	39805	associated with	targeted
+14309	drug_protein	22019	target	targeted
+22019	disease_protein	39805	associated with	targeted
+14309	drug_protein	4731	target	targeted
+4731	disease_protein	39805	associated with	targeted
+14040	drug_protein	2573	target	targeted
+2573	disease_protein	39808	associated with	targeted
+14040	drug_protein	6471	target	targeted
+6471	disease_protein	39808	associated with	targeted
+14040	drug_protein	9813	target	targeted
+9813	disease_protein	39808	associated with	targeted
+14995	drug_protein	11481	target	targeted
+11481	disease_protein	39809	associated with	targeted
+14995	drug_protein	11253	target	targeted
+11253	disease_protein	39809	associated with	targeted
+14995	drug_protein	11080	target	targeted
+11080	disease_protein	39809	associated with	targeted
+14147	drug_protein	3474	target	targeted
+3474	disease_protein	39820	associated with	targeted
+14147	drug_protein	6817	target	targeted
+6817	disease_protein	39820	associated with	targeted
+14147	drug_protein	9116	target	targeted
+9116	disease_protein	39820	associated with	targeted
+14794	drug_protein	58520	target	targeted
+58520	disease_protein	39821	associated with	targeted
+14794	drug_protein	8791	target	targeted
+8791	disease_protein	39821	associated with	targeted
+14794	drug_protein	1205	target	targeted
+1205	disease_protein	39821	associated with	targeted
+18643	drug_protein	674	target	targeted
+674	disease_protein	39836	associated with	targeted
+18643	drug_protein	3972	target	targeted
+3972	disease_protein	39836	associated with	targeted
+18643	drug_protein	4741	target	targeted
+4741	disease_protein	39836	associated with	targeted
+14979	drug_protein	1834	target	targeted
+1834	disease_protein	83752	associated with	targeted
+14979	drug_protein	10874	target	targeted
+10874	disease_protein	83752	associated with	targeted
+14979	drug_protein	10022	target	targeted
+10022	disease_protein	83752	associated with	targeted
+14269	drug_protein	9466	target	targeted
+9466	disease_protein	83753	associated with	targeted
+14269	drug_protein	1173	target	targeted
+1173	disease_protein	83753	associated with	targeted
+14269	drug_protein	4137	target	targeted
+4137	disease_protein	83753	associated with	targeted
+14955	drug_protein	4746	target	targeted
+4746	disease_protein	83754	associated with	targeted
+14955	drug_protein	6108	target	targeted
+6108	disease_protein	83754	associated with	targeted
+14955	drug_protein	34094	target	targeted
+34094	disease_protein	83754	associated with	targeted
+14207	drug_protein	1410	target	targeted
+1410	disease_protein	83757	associated with	targeted
+14207	drug_protein	22092	target	targeted
+22092	disease_protein	83757	associated with	targeted
+14207	drug_protein	7742	target	targeted
+7742	disease_protein	83757	associated with	targeted
+15077	drug_protein	1173	target	targeted
+1173	disease_protein	83758	associated with	targeted
+15077	drug_protein	2712	target	targeted
+2712	disease_protein	83758	associated with	targeted
+15077	drug_protein	12777	target	targeted
+12777	disease_protein	83758	associated with	targeted
+14934	drug_protein	1101	target	targeted
+1101	disease_protein	83760	associated with	targeted
+14934	drug_protein	189	target	targeted
+189	disease_protein	83760	associated with	targeted
+14934	drug_protein	396	target	targeted
+396	disease_protein	83760	associated with	targeted
+14688	drug_protein	2850	target	targeted
+2850	disease_protein	83767	associated with	targeted
+14688	drug_protein	4137	target	targeted
+4137	disease_protein	83767	associated with	targeted
+14688	drug_protein	4610	target	targeted
+4610	disease_protein	83767	associated with	targeted
+14738	drug_protein	5268	target	targeted
+5268	disease_protein	83769	associated with	targeted
+14738	drug_protein	11128	target	targeted
+11128	disease_protein	83769	associated with	targeted
+14738	drug_protein	1048	target	targeted
+1048	disease_protein	83769	associated with	targeted
+15031	drug_protein	883	target	targeted
+883	disease_protein	83770	associated with	targeted
+15031	drug_protein	698	target	targeted
+698	disease_protein	83770	associated with	targeted
+15031	drug_protein	1770	target	targeted
+1770	disease_protein	83770	associated with	targeted
+14273	drug_protein	973	target	targeted
+973	disease_protein	83771	associated with	targeted
+14273	drug_protein	6434	target	targeted
+6434	disease_protein	83771	associated with	targeted
+14273	drug_protein	11350	target	targeted
+11350	disease_protein	83771	associated with	targeted
+14020	drug_protein	6959	target	targeted
+6959	disease_protein	83772	associated with	targeted
+14020	drug_protein	1805	target	targeted
+1805	disease_protein	83772	associated with	targeted
+14020	drug_protein	828	target	targeted
+828	disease_protein	83772	associated with	targeted
+14732	drug_protein	13023	target	targeted
+13023	disease_protein	83773	associated with	targeted
+14732	drug_protein	12842	target	targeted
+12842	disease_protein	83773	associated with	targeted
+14732	drug_protein	1650	target	targeted
+1650	disease_protein	83773	associated with	targeted
+15060	drug_protein	6507	target	targeted
+6507	disease_protein	83774	associated with	targeted
+15060	drug_protein	2951	target	targeted
+2951	disease_protein	83774	associated with	targeted
+15060	drug_protein	59793	target	targeted
+59793	disease_protein	83774	associated with	targeted
+14625	drug_protein	188	target	targeted
+188	disease_protein	83775	associated with	targeted
+14625	drug_protein	6311	target	targeted
+6311	disease_protein	83775	associated with	targeted
+14625	drug_protein	22001	target	targeted
+22001	disease_protein	83775	associated with	targeted
+14934	drug_protein	10833	target	targeted
+10833	disease_protein	83776	associated with	targeted
+14934	drug_protein	8370	target	targeted
+8370	disease_protein	83776	associated with	targeted
+14934	drug_protein	1967	target	targeted
+1967	disease_protein	83776	associated with	targeted
+14789	drug_protein	8936	target	targeted
+8936	disease_protein	83777	associated with	targeted
+14789	drug_protein	9598	target	targeted
+9598	disease_protein	83777	associated with	targeted
+14789	drug_protein	11497	target	targeted
+11497	disease_protein	83777	associated with	targeted
+14223	drug_protein	10470	target	targeted
+10470	disease_protein	83778	associated with	targeted
+14223	drug_protein	10476	target	targeted
+10476	disease_protein	83778	associated with	targeted
+14223	drug_protein	7056	target	targeted
+7056	disease_protein	83778	associated with	targeted
+14158	drug_protein	9391	target	targeted
+9391	disease_protein	83781	associated with	targeted
+14158	drug_protein	12286	target	targeted
+12286	disease_protein	83781	associated with	targeted
+14158	drug_protein	1726	target	targeted
+1726	disease_protein	83781	associated with	targeted
+14035	drug_protein	22043	target	targeted
+22043	disease_protein	83784	associated with	targeted
+14035	drug_protein	59700	target	targeted
+59700	disease_protein	83784	associated with	targeted
+14035	drug_protein	12469	target	targeted
+12469	disease_protein	83784	associated with	targeted
+14038	drug_protein	231	target	targeted
+231	disease_protein	83787	associated with	targeted
+14038	drug_protein	8635	target	targeted
+8635	disease_protein	83787	associated with	targeted
+14038	drug_protein	11849	target	targeted
+11849	disease_protein	83787	associated with	targeted
+14625	drug_protein	8821	target	targeted
+8821	disease_protein	83790	associated with	targeted
+14625	drug_protein	11285	target	targeted
+11285	disease_protein	83790	associated with	targeted
+14625	drug_protein	59702	target	targeted
+59702	disease_protein	83790	associated with	targeted
+14323	drug_protein	8473	target	targeted
+8473	disease_protein	83791	associated with	targeted
+14323	drug_protein	5849	target	targeted
+5849	disease_protein	83791	associated with	targeted
+14323	drug_protein	4258	target	targeted
+4258	disease_protein	83791	associated with	targeted
+14791	drug_protein	58349	target	targeted
+58349	disease_protein	83792	associated with	targeted
+14791	drug_protein	8441	target	targeted
+8441	disease_protein	83792	associated with	targeted
+14791	drug_protein	6719	target	targeted
+6719	disease_protein	83792	associated with	targeted
+14970	drug_protein	10666	target	targeted
+10666	disease_protein	83793	associated with	targeted
+14970	drug_protein	5951	target	targeted
+5951	disease_protein	83793	associated with	targeted
+14970	drug_protein	10846	target	targeted
+10846	disease_protein	83793	associated with	targeted
+14040	drug_protein	6348	target	targeted
+6348	disease_protein	83794	associated with	targeted
+14040	drug_protein	33933	target	targeted
+33933	disease_protein	83794	associated with	targeted
+14040	drug_protein	8570	target	targeted
+8570	disease_protein	83794	associated with	targeted
+14021	drug_protein	58638	target	targeted
+58638	disease_protein	83795	associated with	targeted
+14021	drug_protein	11648	target	targeted
+11648	disease_protein	83795	associated with	targeted
+14021	drug_protein	2174	target	targeted
+2174	disease_protein	83795	associated with	targeted
+14789	drug_protein	1193	target	targeted
+1193	disease_protein	83796	associated with	targeted
+14789	drug_protein	3612	target	targeted
+3612	disease_protein	83796	associated with	targeted
+14789	drug_protein	6533	target	targeted
+6533	disease_protein	83796	associated with	targeted
+15025	drug_protein	11130	target	targeted
+11130	disease_protein	83799	associated with	targeted
+15025	drug_protein	10797	target	targeted
+10797	disease_protein	83799	associated with	targeted
+15025	drug_protein	2634	target	targeted
+2634	disease_protein	83799	associated with	targeted
+14793	drug_protein	9675	target	targeted
+9675	disease_protein	83800	associated with	targeted
+14793	drug_protein	851	target	targeted
+851	disease_protein	83800	associated with	targeted
+14793	drug_protein	1313	target	targeted
+1313	disease_protein	83800	associated with	targeted
+14336	drug_protein	3443	target	targeted
+3443	disease_protein	83805	associated with	targeted
+14336	drug_protein	12150	target	targeted
+12150	disease_protein	83805	associated with	targeted
+14336	drug_protein	13910	target	targeted
+13910	disease_protein	83805	associated with	targeted
+17539	drug_protein	13552	target	targeted
+13552	disease_protein	83808	associated with	targeted
+17539	drug_protein	21994	target	targeted
+21994	disease_protein	83808	associated with	targeted
+17539	drug_protein	1665	target	targeted
+1665	disease_protein	83808	associated with	targeted
+14481	drug_protein	2152	target	targeted
+2152	disease_protein	83811	associated with	targeted
+14481	drug_protein	8643	target	targeted
+8643	disease_protein	83811	associated with	targeted
+14481	drug_protein	773	target	targeted
+773	disease_protein	83811	associated with	targeted
+20218	drug_protein	9017	target	targeted
+9017	disease_protein	83812	associated with	targeted
+20218	drug_protein	59452	target	targeted
+59452	disease_protein	83812	associated with	targeted
+20218	drug_protein	59642	target	targeted
+59642	disease_protein	83812	associated with	targeted
+14504	drug_protein	1967	target	targeted
+1967	disease_protein	83816	associated with	targeted
+14504	drug_protein	9025	target	targeted
+9025	disease_protein	83816	associated with	targeted
+14504	drug_protein	11539	target	targeted
+11539	disease_protein	83816	associated with	targeted
+14793	drug_protein	3077	target	targeted
+3077	disease_protein	83817	associated with	targeted
+14793	drug_protein	7227	target	targeted
+7227	disease_protein	83817	associated with	targeted
+14793	drug_protein	2254	target	targeted
+2254	disease_protein	83817	associated with	targeted
+14604	drug_protein	6719	target	targeted
+6719	disease_protein	83819	associated with	targeted
+14604	drug_protein	6442	target	targeted
+6442	disease_protein	83819	associated with	targeted
+14604	drug_protein	4354	target	targeted
+4354	disease_protein	83819	associated with	targeted
+14956	drug_protein	4626	target	targeted
+4626	disease_protein	83820	associated with	targeted
+14956	drug_protein	9964	target	targeted
+9964	disease_protein	83820	associated with	targeted
+14956	drug_protein	2033	target	targeted
+2033	disease_protein	83820	associated with	targeted
+14945	drug_protein	8486	target	targeted
+8486	disease_protein	83821	associated with	targeted
+14945	drug_protein	2331	target	targeted
+2331	disease_protein	83821	associated with	targeted
+14945	drug_protein	8923	target	targeted
+8923	disease_protein	83821	associated with	targeted
+14764	drug_protein	10805	target	targeted
+10805	disease_protein	83822	associated with	targeted
+14764	drug_protein	6504	target	targeted
+6504	disease_protein	83822	associated with	targeted
+14764	drug_protein	4634	target	targeted
+4634	disease_protein	83822	associated with	targeted
+14287	drug_protein	4364	target	targeted
+4364	disease_protein	83823	associated with	targeted
+14287	drug_protein	9473	target	targeted
+9473	disease_protein	83823	associated with	targeted
+14287	drug_protein	3602	target	targeted
+3602	disease_protein	83823	associated with	targeted
+14956	drug_protein	11017	target	targeted
+11017	disease_protein	83824	associated with	targeted
+14956	drug_protein	7652	target	targeted
+7652	disease_protein	83824	associated with	targeted
+14956	drug_protein	3626	target	targeted
+3626	disease_protein	83824	associated with	targeted
+14792	drug_protein	8470	target	targeted
+8470	disease_protein	83826	associated with	targeted
+14792	drug_protein	34853	target	targeted
+34853	disease_protein	83826	associated with	targeted
+14792	drug_protein	34566	target	targeted
+34566	disease_protein	83826	associated with	targeted
+17831	drug_protein	2621	target	targeted
+2621	disease_protein	83827	associated with	targeted
+17831	drug_protein	9732	target	targeted
+9732	disease_protein	83827	associated with	targeted
+17831	drug_protein	2718	target	targeted
+2718	disease_protein	83827	associated with	targeted
+14720	drug_protein	9281	target	targeted
+9281	disease_protein	83829	associated with	targeted
+14720	drug_protein	6901	target	targeted
+6901	disease_protein	83829	associated with	targeted
+14720	drug_protein	59702	target	targeted
+59702	disease_protein	83829	associated with	targeted
+16687	drug_protein	34096	target	targeted
+34096	disease_protein	83830	associated with	targeted
+16687	drug_protein	5161	target	targeted
+5161	disease_protein	83830	associated with	targeted
+16687	drug_protein	12372	target	targeted
+12372	disease_protein	83830	associated with	targeted
+16074	drug_protein	6219	target	targeted
+6219	disease_protein	83834	associated with	targeted
+16074	drug_protein	8745	target	targeted
+8745	disease_protein	83834	associated with	targeted
+16074	drug_protein	13991	target	targeted
+13991	disease_protein	83834	associated with	targeted
+14038	drug_protein	3878	target	targeted
+3878	disease_protein	83835	associated with	targeted
+14038	drug_protein	12586	target	targeted
+12586	disease_protein	83835	associated with	targeted
+14038	drug_protein	2794	target	targeted
+2794	disease_protein	83835	associated with	targeted
+14934	drug_protein	7234	target	targeted
+7234	disease_protein	83840	associated with	targeted
+14934	drug_protein	1270	target	targeted
+1270	disease_protein	83840	associated with	targeted
+14934	drug_protein	10299	target	targeted
+10299	disease_protein	83840	associated with	targeted
+10901	disease_protein	83841	associated with	targeted
+14981	drug_protein	6655	target	targeted
+6655	disease_protein	83841	associated with	targeted
+14981	drug_protein	57808	target	targeted
+57808	disease_protein	83841	associated with	targeted
+14320	drug_protein	59733	target	targeted
+59733	disease_protein	83842	associated with	targeted
+14320	drug_protein	3267	target	targeted
+3267	disease_protein	83842	associated with	targeted
+14320	drug_protein	9173	target	targeted
+9173	disease_protein	83842	associated with	targeted
+20398	drug_protein	7568	target	targeted
+7568	disease_protein	83845	associated with	targeted
+20398	drug_protein	7363	target	targeted
+7363	disease_protein	83845	associated with	targeted
+20398	drug_protein	11011	target	targeted
+11011	disease_protein	83845	associated with	targeted
+15009	drug_protein	1871	target	targeted
+1871	disease_protein	83851	associated with	targeted
+15009	drug_protein	417	target	targeted
+417	disease_protein	83851	associated with	targeted
+15009	drug_protein	7197	target	targeted
+7197	disease_protein	83851	associated with	targeted
+15025	drug_protein	7342	target	targeted
+7342	disease_protein	83852	associated with	targeted
+15025	drug_protein	10221	target	targeted
+10221	disease_protein	83852	associated with	targeted
+15025	drug_protein	10666	target	targeted
+10666	disease_protein	83852	associated with	targeted
+14955	drug_protein	5961	target	targeted
+5961	disease_protein	83854	associated with	targeted
+14955	drug_protein	4804	target	targeted
+4804	disease_protein	83854	associated with	targeted
+14955	drug_protein	10452	target	targeted
+10452	disease_protein	83854	associated with	targeted
+14954	drug_protein	4101	target	targeted
+4101	disease_protein	83855	associated with	targeted
+14954	drug_protein	12178	target	targeted
+12178	disease_protein	83855	associated with	targeted
+14954	drug_protein	1269	target	targeted
+1269	disease_protein	83855	associated with	targeted
+15107	drug_protein	7408	target	targeted
+7408	disease_protein	83856	associated with	targeted
+15107	drug_protein	7342	target	targeted
+7342	disease_protein	83856	associated with	targeted
+15107	drug_protein	33772	target	targeted
+33772	disease_protein	83856	associated with	targeted
+15002	drug_protein	13160	target	targeted
+13160	disease_protein	83857	associated with	targeted
+15002	drug_protein	1977	target	targeted
+1977	disease_protein	83857	associated with	targeted
+15002	drug_protein	10998	target	targeted
+10998	disease_protein	83857	associated with	targeted
+15077	drug_protein	12876	target	targeted
+12876	disease_protein	83858	associated with	targeted
+15077	drug_protein	7340	target	targeted
+7340	disease_protein	83858	associated with	targeted
+15077	drug_protein	8994	target	targeted
+8994	disease_protein	83858	associated with	targeted
+14604	drug_protein	1258	target	targeted
+1258	disease_protein	83860	associated with	targeted
+14604	drug_protein	57913	target	targeted
+57913	disease_protein	83860	associated with	targeted
+14604	drug_protein	6206	target	targeted
+6206	disease_protein	83860	associated with	targeted
+15205	drug_protein	11273	target	targeted
+11273	disease_protein	83862	associated with	targeted
+15205	drug_protein	3140	target	targeted
+3140	disease_protein	83862	associated with	targeted
+15205	drug_protein	5389	target	targeted
+5389	disease_protein	83862	associated with	targeted
+20288	drug_protein	5507	target	targeted
+5507	disease_protein	83878	associated with	targeted
+20288	drug_protein	1831	target	targeted
+1831	disease_protein	83878	associated with	targeted
+20288	drug_protein	4782	target	targeted
+4782	disease_protein	83878	associated with	targeted
+16588	drug_protein	12286	target	targeted
+12286	disease_protein	83880	associated with	targeted
+16588	drug_protein	3513	target	targeted
+3513	disease_protein	83880	associated with	targeted
+16588	drug_protein	4410	target	targeted
+4410	disease_protein	83880	associated with	targeted
+14732	drug_protein	6471	target	targeted
+6471	disease_protein	83882	associated with	targeted
+14732	drug_protein	2125	target	targeted
+2125	disease_protein	83882	associated with	targeted
+14732	drug_protein	1324	target	targeted
+1324	disease_protein	83882	associated with	targeted
+14934	drug_protein	2384	target	targeted
+2384	disease_protein	83883	associated with	targeted
+14934	drug_protein	2839	target	targeted
+2839	disease_protein	83883	associated with	targeted
+14934	drug_protein	1369	target	targeted
+1369	disease_protein	83883	associated with	targeted
+16085	drug_protein	7822	target	targeted
+7822	disease_protein	83889	associated with	targeted
+16085	drug_protein	11798	target	targeted
+11798	disease_protein	83889	associated with	targeted
+16085	drug_protein	9563	target	targeted
+9563	disease_protein	83889	associated with	targeted
+14287	drug_protein	4160	target	targeted
+4160	disease_protein	83893	associated with	targeted
+14287	drug_protein	1848	target	targeted
+1848	disease_protein	83893	associated with	targeted
+14287	drug_protein	421	target	targeted
+421	disease_protein	83893	associated with	targeted
+16855	drug_protein	8570	target	targeted
+8570	disease_protein	83897	associated with	targeted
+16855	drug_protein	6417	target	targeted
+6417	disease_protein	83897	associated with	targeted
+16855	drug_protein	13515	target	targeted
+13515	disease_protein	83897	associated with	targeted
+14685	drug_protein	7117	target	targeted
+7117	disease_protein	83898	associated with	targeted
+14685	drug_protein	8725	target	targeted
+8725	disease_protein	83898	associated with	targeted
+14685	drug_protein	3981	target	targeted
+3981	disease_protein	83898	associated with	targeted
+14481	drug_protein	3135	target	targeted
+3135	disease_protein	83899	associated with	targeted
+14481	drug_protein	3419	target	targeted
+3419	disease_protein	83899	associated with	targeted
+14481	drug_protein	10478	target	targeted
+10478	disease_protein	83899	associated with	targeted
+15493	drug_protein	56	target	targeted
+56	disease_protein	83911	associated with	targeted
+15493	drug_protein	8415	target	targeted
+8415	disease_protein	83911	associated with	targeted
+15493	drug_protein	3726	target	targeted
+3726	disease_protein	83911	associated with	targeted
+14323	drug_protein	1908	target	targeted
+1908	disease_protein	83912	associated with	targeted
+14323	drug_protein	9179	target	targeted
+9179	disease_protein	83912	associated with	targeted
+14323	drug_protein	11758	target	targeted
+11758	disease_protein	83912	associated with	targeted
+14223	drug_protein	1004	target	targeted
+1004	disease_protein	83913	associated with	targeted
+14223	drug_protein	2549	target	targeted
+2549	disease_protein	83913	associated with	targeted
+14223	drug_protein	4995	target	targeted
+4995	disease_protein	83913	associated with	targeted
+16792	drug_protein	4991	target	targeted
+4991	disease_protein	83920	associated with	targeted
+16792	drug_protein	315	target	targeted
+315	disease_protein	83920	associated with	targeted
+16792	drug_protein	161	target	targeted
+161	disease_protein	83920	associated with	targeted
+20485	drug_protein	11868	target	targeted
+11868	disease_protein	83926	associated with	targeted
+20485	drug_protein	321	target	targeted
+321	disease_protein	83926	associated with	targeted
+20485	drug_protein	13878	target	targeted
+13878	disease_protein	83926	associated with	targeted
+14544	drug_protein	3016	target	targeted
+3016	disease_protein	83928	associated with	targeted
+14544	drug_protein	3878	target	targeted
+3878	disease_protein	83928	associated with	targeted
+14544	drug_protein	9281	target	targeted
+9281	disease_protein	83928	associated with	targeted
+14934	drug_protein	1237	target	targeted
+1237	disease_protein	83929	associated with	targeted
+14934	drug_protein	21982	target	targeted
+21982	disease_protein	83929	associated with	targeted
+14934	drug_protein	5930	target	targeted
+5930	disease_protein	83929	associated with	targeted
+14279	drug_protein	10666	target	targeted
+10666	disease_protein	83930	associated with	targeted
+14279	drug_protein	5354	target	targeted
+5354	disease_protein	83930	associated with	targeted
+14279	drug_protein	34164	target	targeted
+34164	disease_protein	83930	associated with	targeted
+14043	drug_protein	1940	target	targeted
+1940	disease_protein	83931	associated with	targeted
+14043	drug_protein	7605	target	targeted
+7605	disease_protein	83931	associated with	targeted
+14043	drug_protein	2111	target	targeted
+2111	disease_protein	83931	associated with	targeted
+14952	drug_protein	526	target	targeted
+526	disease_protein	83933	associated with	targeted
+14952	drug_protein	4804	target	targeted
+4804	disease_protein	83933	associated with	targeted
+14952	drug_protein	9556	target	targeted
+9556	disease_protein	83933	associated with	targeted
+14881	drug_protein	405	target	targeted
+405	disease_protein	83938	associated with	targeted
+14881	drug_protein	9826	target	targeted
+9826	disease_protein	83938	associated with	targeted
+14881	drug_protein	10390	target	targeted
+10390	disease_protein	83938	associated with	targeted
+14668	drug_protein	10390	target	targeted
+10390	disease_protein	83947	associated with	targeted
+14668	drug_protein	13976	target	targeted
+13976	disease_protein	83947	associated with	targeted
+14668	drug_protein	8163	target	targeted
+8163	disease_protein	83947	associated with	targeted
+14330	drug_protein	883	target	targeted
+883	disease_protein	83951	associated with	targeted
+14330	drug_protein	1365	target	targeted
+1365	disease_protein	83951	associated with	targeted
+14330	drug_protein	3314	target	targeted
+3314	disease_protein	83951	associated with	targeted
+14481	drug_protein	33900	target	targeted
+33900	disease_protein	83961	associated with	targeted
+14481	drug_protein	5344	target	targeted
+5344	disease_protein	83961	associated with	targeted
+14481	drug_protein	6903	target	targeted
+6903	disease_protein	83961	associated with	targeted
+20289	drug_protein	477	target	targeted
+477	disease_protein	83965	associated with	targeted
+20289	drug_protein	2739	target	targeted
+2739	disease_protein	83965	associated with	targeted
+20289	drug_protein	12842	target	targeted
+12842	disease_protein	83965	associated with	targeted
+14992	drug_protein	10417	target	targeted
+10417	disease_protein	83970	associated with	targeted
+14992	drug_protein	9074	target	targeted
+9074	disease_protein	83970	associated with	targeted
+14992	drug_protein	3383	target	targeted
+3383	disease_protein	83970	associated with	targeted
+15387	drug_protein	9306	target	targeted
+9306	disease_protein	83971	associated with	targeted
+15387	drug_protein	2250	target	targeted
+2250	disease_protein	83971	associated with	targeted
+15387	drug_protein	8068	target	targeted
+8068	disease_protein	83971	associated with	targeted
+14237	drug_protein	5215	target	targeted
+5215	disease_protein	83972	associated with	targeted
+14237	drug_protein	4633	target	targeted
+4633	disease_protein	83972	associated with	targeted
+14237	drug_protein	1070	target	targeted
+1070	disease_protein	83972	associated with	targeted
+20410	drug_protein	5924	target	targeted
+5924	disease_protein	83974	associated with	targeted
+20410	drug_protein	665	target	targeted
+665	disease_protein	83974	associated with	targeted
+20410	drug_protein	9813	target	targeted
+9813	disease_protein	83974	associated with	targeted
+16066	drug_protein	7640	target	targeted
+7640	disease_protein	83976	associated with	targeted
+16066	drug_protein	362	target	targeted
+362	disease_protein	83976	associated with	targeted
+16066	drug_protein	39	target	targeted
+39	disease_protein	83976	associated with	targeted
+14042	drug_protein	12128	target	targeted
+12128	disease_protein	83979	associated with	targeted
+14042	drug_protein	7511	target	targeted
+7511	disease_protein	83979	associated with	targeted
+14042	drug_protein	388	target	targeted
+388	disease_protein	83979	associated with	targeted
+20424	drug_protein	9137	target	targeted
+9137	disease_protein	83984	associated with	targeted
+20424	drug_protein	893	target	targeted
+893	disease_protein	83984	associated with	targeted
+20424	drug_protein	9306	target	targeted
+9306	disease_protein	83984	associated with	targeted
+14451	drug_protein	1693	target	targeted
+1693	disease_protein	83986	associated with	targeted
+14451	drug_protein	5778	target	targeted
+5778	disease_protein	83986	associated with	targeted
+14451	drug_protein	12816	target	targeted
+12816	disease_protein	83986	associated with	targeted
+15456	drug_protein	10156	target	targeted
+10156	disease_protein	83988	associated with	targeted
+15456	drug_protein	3419	target	targeted
+3419	disease_protein	83988	associated with	targeted
+15456	drug_protein	5292	target	targeted
+5292	disease_protein	83988	associated with	targeted
+15101	drug_protein	5209	target	targeted
+5209	disease_protein	83989	associated with	targeted
+15101	drug_protein	8068	target	targeted
+8068	disease_protein	83989	associated with	targeted
+15101	drug_protein	34394	target	targeted
+34394	disease_protein	83989	associated with	targeted
+15322	drug_protein	589	target	targeted
+589	disease_protein	83993	associated with	targeted
+15322	drug_protein	417	target	targeted
+417	disease_protein	83993	associated with	targeted
+15322	drug_protein	7319	target	targeted
+7319	disease_protein	83993	associated with	targeted
+14945	drug_protein	10478	target	targeted
+10478	disease_protein	83995	associated with	targeted
+14945	drug_protein	11049	target	targeted
+11049	disease_protein	83995	associated with	targeted
+14945	drug_protein	10910	target	targeted
+10910	disease_protein	83995	associated with	targeted
+20351	drug_protein	12215	target	targeted
+12215	disease_protein	84005	associated with	targeted
+20351	drug_protein	7340	target	targeted
+7340	disease_protein	84005	associated with	targeted
+20351	drug_protein	4063	target	targeted
+4063	disease_protein	84005	associated with	targeted
+14167	drug_protein	5865	target	targeted
+5865	disease_protein	84006	associated with	targeted
+14167	drug_protein	7475	target	targeted
+7475	disease_protein	84006	associated with	targeted
+14167	drug_protein	1670	target	targeted
+1670	disease_protein	84006	associated with	targeted
+15334	drug_protein	4985	target	targeted
+4985	disease_protein	84007	associated with	targeted
+15334	drug_protein	12110	target	targeted
+12110	disease_protein	84007	associated with	targeted
+15334	drug_protein	59793	target	targeted
+59793	disease_protein	84007	associated with	targeted
+20428	drug_protein	281	target	targeted
+281	disease_protein	84009	associated with	targeted
+20428	drug_protein	5169	target	targeted
+5169	disease_protein	84009	associated with	targeted
+20428	drug_protein	22017	target	targeted
+22017	disease_protein	84009	associated with	targeted
+15456	drug_protein	4198	target	targeted
+4198	disease_protein	84012	associated with	targeted
+15456	drug_protein	1324	target	targeted
+1324	disease_protein	84012	associated with	targeted
+15456	drug_protein	12188	target	targeted
+12188	disease_protein	84012	associated with	targeted
+15383	drug_protein	3474	target	targeted
+3474	disease_protein	84014	associated with	targeted
+15383	drug_protein	1662	target	targeted
+1662	disease_protein	84014	associated with	targeted
+15383	drug_protein	13313	target	targeted
+13313	disease_protein	84014	associated with	targeted
+20139	drug_protein	13506	target	targeted
+13506	disease_protein	84019	associated with	targeted
+20139	drug_protein	6533	target	targeted
+6533	disease_protein	84019	associated with	targeted
+20139	drug_protein	4509	target	targeted
+4509	disease_protein	84019	associated with	targeted
+14542	drug_protein	6411	target	targeted
+6411	disease_protein	84024	associated with	targeted
+14542	drug_protein	5824	target	targeted
+5824	disease_protein	84024	associated with	targeted
+14542	drug_protein	566	target	targeted
+566	disease_protein	84024	associated with	targeted
+14964	drug_protein	4977	target	targeted
+4977	disease_protein	84025	associated with	targeted
+14964	drug_protein	11136	target	targeted
+11136	disease_protein	84025	associated with	targeted
+14964	drug_protein	34365	target	targeted
+34365	disease_protein	84025	associated with	targeted
+14194	drug_protein	7742	target	targeted
+7742	disease_protein	84026	associated with	targeted
+14194	drug_protein	8192	target	targeted
+8192	disease_protein	84026	associated with	targeted
+14194	drug_protein	10798	target	targeted
+10798	disease_protein	84026	associated with	targeted
+14826	drug_protein	7335	target	targeted
+7335	disease_protein	84027	associated with	targeted
+14826	drug_protein	10390	target	targeted
+10390	disease_protein	84027	associated with	targeted
+14826	drug_protein	6831	target	targeted
+6831	disease_protein	84027	associated with	targeted
+14625	drug_protein	22019	target	targeted
+22019	disease_protein	84028	associated with	targeted
+14625	drug_protein	1810	target	targeted
+1810	disease_protein	84028	associated with	targeted
+14625	drug_protein	8785	target	targeted
+8785	disease_protein	84028	associated with	targeted
+15032	drug_protein	2789	target	targeted
+2789	disease_protein	84030	associated with	targeted
+15032	drug_protein	748	target	targeted
+748	disease_protein	84030	associated with	targeted
+15032	drug_protein	12651	target	targeted
+12651	disease_protein	84030	associated with	targeted
+15293	drug_protein	2101	target	targeted
+2101	disease_protein	84031	associated with	targeted
+15293	drug_protein	826	target	targeted
+826	disease_protein	84031	associated with	targeted
+15293	drug_protein	1805	target	targeted
+1805	disease_protein	84031	associated with	targeted
+15038	drug_protein	5263	target	targeted
+5263	disease_protein	84038	associated with	targeted
+15038	drug_protein	9930	target	targeted
+9930	disease_protein	84038	associated with	targeted
+15038	drug_protein	2820	target	targeted
+2820	disease_protein	84038	associated with	targeted
+14014	drug_protein	1448	target	targeted
+1448	disease_protein	84040	associated with	targeted
+14014	drug_protein	2225	target	targeted
+2225	disease_protein	84040	associated with	targeted
+14014	drug_protein	9624	target	targeted
+9624	disease_protein	84040	associated with	targeted
+14432	drug_protein	34777	target	targeted
+34777	disease_protein	84044	associated with	targeted
+14432	drug_protein	7750	target	targeted
+7750	disease_protein	84044	associated with	targeted
+14432	drug_protein	2587	target	targeted
+2587	disease_protein	84044	associated with	targeted
+20208	drug_protein	9379	target	targeted
+9379	disease_protein	84048	associated with	targeted
+20208	drug_protein	5385	target	targeted
+5385	disease_protein	84048	associated with	targeted
+20208	drug_protein	9829	target	targeted
+9829	disease_protein	84048	associated with	targeted
+14336	drug_protein	2984	target	targeted
+2984	disease_protein	84058	associated with	targeted
+14336	drug_protein	5413	target	targeted
+5413	disease_protein	84058	associated with	targeted
+14336	drug_protein	11225	target	targeted
+11225	disease_protein	84058	associated with	targeted
+20417	drug_protein	13531	target	targeted
+13531	disease_protein	84059	associated with	targeted
+20417	drug_protein	5517	target	targeted
+5517	disease_protein	84059	associated with	targeted
+20417	drug_protein	4746	target	targeted
+4746	disease_protein	84059	associated with	targeted
+16734	drug_protein	29	target	targeted
+29	disease_protein	84065	associated with	targeted
+16734	drug_protein	931	target	targeted
+931	disease_protein	84065	associated with	targeted
+16734	drug_protein	246	target	targeted
+246	disease_protein	84065	associated with	targeted
+14178	drug_protein	33895	target	targeted
+33895	disease_protein	84069	associated with	targeted
+14178	drug_protein	12213	target	targeted
+12213	disease_protein	84069	associated with	targeted
+14178	drug_protein	9003	target	targeted
+9003	disease_protein	84069	associated with	targeted
+14309	drug_protein	1644	target	targeted
+1644	disease_protein	84072	associated with	targeted
+14309	drug_protein	57831	target	targeted
+57831	disease_protein	84072	associated with	targeted
+14309	drug_protein	11742	target	targeted
+11742	disease_protein	84072	associated with	targeted
+14208	drug_protein	10178	target	targeted
+10178	disease_protein	84076	associated with	targeted
+14208	drug_protein	5018	target	targeted
+5018	disease_protein	84076	associated with	targeted
+14208	drug_protein	1124	target	targeted
+1124	disease_protein	84076	associated with	targeted
+14279	drug_protein	9333	target	targeted
+9333	disease_protein	84077	associated with	targeted
+14279	drug_protein	1305	target	targeted
+1305	disease_protein	84077	associated with	targeted
+14279	drug_protein	2155	target	targeted
+2155	disease_protein	84077	associated with	targeted
+15300	drug_protein	6848	target	targeted
+6848	disease_protein	84078	associated with	targeted
+15300	drug_protein	13938	target	targeted
+13938	disease_protein	84078	associated with	targeted
+15300	drug_protein	10343	target	targeted
+10343	disease_protein	84078	associated with	targeted
+15397	drug_protein	1945	target	targeted
+1945	disease_protein	84079	associated with	targeted
+15397	drug_protein	33794	target	targeted
+33794	disease_protein	84079	associated with	targeted
+15397	drug_protein	2918	target	targeted
+2918	disease_protein	84079	associated with	targeted
+14261	drug_protein	10356	target	targeted
+10356	disease_protein	84081	associated with	targeted
+14261	drug_protein	396	target	targeted
+396	disease_protein	84081	associated with	targeted
+14261	drug_protein	8464	target	targeted
+8464	disease_protein	84081	associated with	targeted
+20146	drug_protein	13457	target	targeted
+13457	disease_protein	84087	associated with	targeted
+20146	drug_protein	34016	target	targeted
+34016	disease_protein	84087	associated with	targeted
+20146	drug_protein	1671	target	targeted
+1671	disease_protein	84087	associated with	targeted
+14222	drug_protein	5962	target	targeted
+5962	disease_protein	84093	associated with	targeted
+14222	drug_protein	12465	target	targeted
+12465	disease_protein	84093	associated with	targeted
+14222	drug_protein	13299	target	targeted
+13299	disease_protein	84093	associated with	targeted
+19045	drug_protein	8114	target	targeted
+8114	disease_protein	84097	associated with	targeted
+19045	drug_protein	35036	target	targeted
+35036	disease_protein	84097	associated with	targeted
+19045	drug_protein	12842	target	targeted
+12842	disease_protein	84097	associated with	targeted
+20212	drug_protein	1476	target	targeted
+1476	disease_protein	84111	associated with	targeted
+20212	drug_protein	4055	target	targeted
+4055	disease_protein	84111	associated with	targeted
+20212	drug_protein	7632	target	targeted
+7632	disease_protein	84111	associated with	targeted
+14188	drug_protein	2929	target	targeted
+2929	disease_protein	84113	associated with	targeted
+14188	drug_protein	58206	target	targeted
+58206	disease_protein	84113	associated with	targeted
+14188	drug_protein	34500	target	targeted
+34500	disease_protein	84113	associated with	targeted
+16147	drug_protein	8999	target	targeted
+8999	disease_protein	84124	associated with	targeted
+16147	drug_protein	4490	target	targeted
+4490	disease_protein	84124	associated with	targeted
+16147	drug_protein	2999	target	targeted
+2999	disease_protein	84124	associated with	targeted
+14207	drug_protein	12599	target	targeted
+12599	disease_protein	84145	associated with	targeted
+14207	drug_protein	58903	target	targeted
+58903	disease_protein	84145	associated with	targeted
+14207	drug_protein	13299	target	targeted
+13299	disease_protein	84145	associated with	targeted
+14945	drug_protein	9281	target	targeted
+9281	disease_protein	84146	associated with	targeted
+14945	drug_protein	1815	target	targeted
+1815	disease_protein	84146	associated with	targeted
+14945	drug_protein	9222	target	targeted
+9222	disease_protein	84146	associated with	targeted
+15002	drug_protein	22092	target	targeted
+22092	disease_protein	84150	associated with	targeted
+15002	drug_protein	5618	target	targeted
+5618	disease_protein	84150	associated with	targeted
+15002	drug_protein	1023	target	targeted
+1023	disease_protein	84150	associated with	targeted
+14194	drug_protein	8538	target	targeted
+8538	disease_protein	84156	associated with	targeted
+14194	drug_protein	2754	target	targeted
+2754	disease_protein	84156	associated with	targeted
+14194	drug_protein	9248	target	targeted
+9248	disease_protein	84156	associated with	targeted
+15413	drug_protein	58525	target	targeted
+58525	disease_protein	84157	associated with	targeted
+15413	drug_protein	13031	target	targeted
+13031	disease_protein	84157	associated with	targeted
+15413	drug_protein	2311	target	targeted
+2311	disease_protein	84157	associated with	targeted
+17739	drug_protein	1312	target	targeted
+1312	disease_protein	84162	associated with	targeted
+17739	drug_protein	34086	target	targeted
+34086	disease_protein	84162	associated with	targeted
+17739	drug_protein	13174	target	targeted
+13174	disease_protein	84162	associated with	targeted
+16962	drug_protein	383	target	targeted
+383	disease_protein	84168	associated with	targeted
+16962	drug_protein	8165	target	targeted
+8165	disease_protein	84168	associated with	targeted
+16962	drug_protein	2700	target	targeted
+2700	disease_protein	84168	associated with	targeted
+19045	drug_protein	59371	target	targeted
+59371	disease_protein	84169	associated with	targeted
+19045	drug_protein	9267	target	targeted
+9267	disease_protein	84169	associated with	targeted
+19045	drug_protein	4678	target	targeted
+4678	disease_protein	84169	associated with	targeted
+14934	drug_protein	58514	target	targeted
+58514	disease_protein	84171	associated with	targeted
+14934	drug_protein	10523	target	targeted
+10523	disease_protein	84171	associated with	targeted
+14934	drug_protein	2835	target	targeted
+2835	disease_protein	84171	associated with	targeted
+14058	drug_protein	12586	target	targeted
+12586	disease_protein	84185	associated with	targeted
+14058	drug_protein	8	target	targeted
+8	disease_protein	84185	associated with	targeted
+14058	drug_protein	1534	target	targeted
+1534	disease_protein	84185	associated with	targeted
+14148	drug_protein	8832	target	targeted
+8832	disease_protein	84190	associated with	targeted
+14148	drug_protein	1987	target	targeted
+1987	disease_protein	84190	associated with	targeted
+14148	drug_protein	11256	target	targeted
+11256	disease_protein	84190	associated with	targeted
+14956	drug_protein	11806	target	targeted
+11806	disease_protein	84192	associated with	targeted
+14956	drug_protein	2242	target	targeted
+2242	disease_protein	84192	associated with	targeted
+14956	drug_protein	5667	target	targeted
+5667	disease_protein	84192	associated with	targeted
+14958	drug_protein	2839	target	targeted
+2839	disease_protein	84207	associated with	targeted
+14958	drug_protein	10247	target	targeted
+10247	disease_protein	84207	associated with	targeted
+14958	drug_protein	7829	target	targeted
+7829	disease_protein	84207	associated with	targeted
+14194	drug_protein	59452	target	targeted
+59452	disease_protein	84238	associated with	targeted
+14194	drug_protein	6841	target	targeted
+6841	disease_protein	84238	associated with	targeted
+14194	drug_protein	11185	target	targeted
+11185	disease_protein	84238	associated with	targeted
+14956	drug_protein	568	target	targeted
+568	disease_protein	84242	associated with	targeted
+14956	drug_protein	6753	target	targeted
+6753	disease_protein	84242	associated with	targeted
+14956	drug_protein	11665	target	targeted
+11665	disease_protein	84242	associated with	targeted
+15413	drug_protein	34255	target	targeted
+34255	disease_protein	84243	associated with	targeted
+15413	drug_protein	3256	target	targeted
+3256	disease_protein	84243	associated with	targeted
+15413	drug_protein	189	target	targeted
+189	disease_protein	84243	associated with	targeted
+14868	drug_protein	1842	target	targeted
+1842	disease_protein	84244	associated with	targeted
+14868	drug_protein	2223	target	targeted
+2223	disease_protein	84244	associated with	targeted
+14868	drug_protein	10838	target	targeted
+10838	disease_protein	84244	associated with	targeted
+14911	drug_protein	34094	target	targeted
+34094	disease_protein	84255	associated with	targeted
+14911	drug_protein	9813	target	targeted
+9813	disease_protein	84255	associated with	targeted
+14911	drug_protein	11049	target	targeted
+11049	disease_protein	84255	associated with	targeted
+19298	drug_protein	4369	target	targeted
+4369	disease_protein	84262	associated with	targeted
+19298	drug_protein	12460	target	targeted
+12460	disease_protein	84262	associated with	targeted
+19298	drug_protein	10093	target	targeted
+10093	disease_protein	84262	associated with	targeted
+14956	drug_protein	1165	target	targeted
+1165	disease_protein	84296	associated with	targeted
+14956	drug_protein	2951	target	targeted
+2951	disease_protein	84296	associated with	targeted
+14956	drug_protein	6966	target	targeted
+6966	disease_protein	84296	associated with	targeted
+14162	drug_protein	4988	target	targeted
+4988	disease_protein	84297	associated with	targeted
+14162	drug_protein	2984	target	targeted
+2984	disease_protein	84297	associated with	targeted
+14162	drug_protein	5205	target	targeted
+5205	disease_protein	84297	associated with	targeted
+20424	drug_protein	58449	target	targeted
+58449	disease_protein	84301	associated with	targeted
+20424	drug_protein	12283	target	targeted
+12283	disease_protein	84301	associated with	targeted
+20424	drug_protein	4933	target	targeted
+4933	disease_protein	84301	associated with	targeted
+17575	drug_protein	4447	target	targeted
+4447	disease_protein	84314	associated with	targeted
+17575	drug_protein	3972	target	targeted
+3972	disease_protein	84314	associated with	targeted
+17575	drug_protein	34060	target	targeted
+34060	disease_protein	84314	associated with	targeted
+19777	drug_protein	800	target	targeted
+800	disease_protein	84333	associated with	targeted
+19777	drug_protein	6461	target	targeted
+6461	disease_protein	84333	associated with	targeted
+19777	drug_protein	2466	target	targeted
+2466	disease_protein	84333	associated with	targeted
