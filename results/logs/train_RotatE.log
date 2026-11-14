@@ -1,0 +1,5 @@
+/Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+Loaded split in 1s: 4,048,136 train triples, 129,375 entities, device=mps
+epoch   5 loss=0.0544 valid MRR=0.0469 H@10=0.0841 (252s)
+epoch  10 loss=0.0331 valid MRR=0.0644 H@10=0.1033 (294s)
