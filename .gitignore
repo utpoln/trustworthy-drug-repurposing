@@ -42,3 +42,6 @@ data/processed/**/*.tsv.gz
 
 # Large LLM provenance logs (archive separately, e.g. Zenodo)
 results/runs/llm/**/*.jsonl
+
+# live LLM run logs
+results/logs/llm_*.log
