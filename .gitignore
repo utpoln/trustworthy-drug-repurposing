@@ -36,3 +36,6 @@ paper/*.out
 paper/*.bbl
 paper/*.blg
 paper/*.synctex.gz
+
+# Processed data: keep small metadata/splits, not the big graph files
+data/processed/**/*.tsv.gz

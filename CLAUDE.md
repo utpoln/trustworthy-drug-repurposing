@@ -60,4 +60,8 @@ scripts/           one-off utilities (e.g. test_mindrouter.py)
 ## Status
 - [x] Scaffold, venv, git
 - [x] MindRouter connection test (`scripts/test_mindrouter.py`)
-- [ ] Everything else: not started (on purpose)
+- [x] PrimeKG v2.1 downloaded, md5 verified; stats in `results/tables/primekg_stats.md` (`src/kg/explore.py`)
+- [x] Splits (`src/kg/split.py`, seed 42): 7,510 / 939 / 939 indication edges (train/valid/test);
+      off-label/contraindication edges for held-out pairs removed from train (50 edges).
+      Outputs in `data/processed/primekg_v2.1_seed42/` (large `.tsv.gz` files are git-ignored; rerun the script to rebuild them)
+- [ ] Link prediction (PyKEEN), then path retrieval, LLM re-ranking, evaluation, then paper (LaTeX)
