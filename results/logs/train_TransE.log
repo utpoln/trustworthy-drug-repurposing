@@ -1,0 +1,37 @@
+/Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+Loaded split in 2s: 4,048,136 train triples, 129,375 entities, device=mps
+epoch   5 loss=0.0354 valid MRR=0.0217 H@10=0.0532 (176s)
+epoch  10 loss=0.0306 valid MRR=0.0497 H@10=0.1033 (170s)
+epoch  15 loss=0.0286 valid MRR=0.0589 H@10=0.1129 (171s)
+epoch  20 loss=0.0275 valid MRR=0.0680 H@10=0.1161 (170s)
+epoch  25 loss=0.0268 valid MRR=0.0843 H@10=0.1502 (174s)
+epoch  30 loss=0.0264 valid MRR=0.0844 H@10=0.1502 (172s)
+epoch  35 loss=0.0261 valid MRR=0.0815 H@10=0.1534 (170s)
+epoch  40 loss=0.0260 valid MRR=0.0704 H@10=0.1363 (172s)
+epoch  45 loss=0.0258 valid MRR=0.0778 H@10=0.1416 (174s)
+Early stopping.
+{
+  "model": "TransE",
+  "best_epoch": 30,
+  "valid": {
+    "n": 939,
+    "MRR": 0.084372728316202,
+    "Hits@1": 0.04579339723109691,
+    "Hits@3": 0.08732694355697551,
+    "Hits@10": 0.1501597444089457,
+    "mean_rank": 505.4419595314164,
+    "median_rank": 159.0
+  },
+  "test": {
+    "n": 939,
+    "MRR": 0.09553735807208068,
+    "Hits@1": 0.05218317358892439,
+    "Hits@3": 0.09904153354632587,
+    "Hits@10": 0.17145899893503727,
+    "mean_rank": 479.9776357827476,
+    "median_rank": 157.0
+  },
+  "train_minutes": 25.9
+}
+Saved run to /Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/results/runs/kge/TransE_seed42

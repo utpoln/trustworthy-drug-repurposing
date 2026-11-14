@@ -3,3 +3,35 @@
 Loaded split in 1s: 4,048,136 train triples, 129,375 entities, device=mps
 epoch   5 loss=0.0544 valid MRR=0.0469 H@10=0.0841 (252s)
 epoch  10 loss=0.0331 valid MRR=0.0644 H@10=0.1033 (294s)
+epoch  15 loss=0.0295 valid MRR=0.0808 H@10=0.1416 (329s)
+epoch  20 loss=0.0277 valid MRR=0.1010 H@10=0.1693 (360s)
+epoch  25 loss=0.0265 valid MRR=0.1356 H@10=0.2194 (374s)
+epoch  30 loss=0.0257 valid MRR=0.1562 H@10=0.2439 (368s)
+epoch  35 loss=0.0250 valid MRR=0.1478 H@10=0.2599 (363s)
+epoch  40 loss=0.0245 valid MRR=0.1732 H@10=0.2843 (356s)
+epoch  45 loss=0.0241 valid MRR=0.1677 H@10=0.2865 (348s)
+epoch  50 loss=0.0238 valid MRR=0.1687 H@10=0.3014 (350s)
+{
+  "model": "RotatE",
+  "best_epoch": 40,
+  "valid": {
+    "n": 939,
+    "MRR": 0.1731721800522916,
+    "Hits@1": 0.11395101171458999,
+    "Hits@3": 0.18636847710330137,
+    "Hits@10": 0.28434504792332266,
+    "mean_rank": 439.58466453674123,
+    "median_rank": 66.0
+  },
+  "test": {
+    "n": 939,
+    "MRR": 0.17864933789902948,
+    "Hits@1": 0.11395101171458999,
+    "Hits@3": 0.19275825346112885,
+    "Hits@10": 0.29605963791267303,
+    "mean_rank": 343.2454739084132,
+    "median_rank": 48.0
+  },
+  "train_minutes": 56.7
+}
+Saved run to /Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/results/runs/kge/RotatE_seed42

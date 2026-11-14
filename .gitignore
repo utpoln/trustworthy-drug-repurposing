@@ -39,3 +39,6 @@ paper/*.synctex.gz
 
 # Processed data: keep small metadata/splits, not the big graph files
 data/processed/**/*.tsv.gz
+
+# Large LLM provenance logs (archive separately, e.g. Zenodo)
+results/runs/llm/**/*.jsonl
