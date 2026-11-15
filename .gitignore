@@ -53,3 +53,9 @@ data/processed/txgnn*/
 results/runs/txgnn/**/model/
 results/runs/txgnn/**/*.npz
 results/runs/txgnn/**/*.pkl
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/build.log

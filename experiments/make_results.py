@@ -67,8 +67,13 @@ def md_table(rows, cols):
     return "\n".join(out) + "\n"
 
 
+def tex_cell(v):
+    t = str(v).replace("%", r"\%").replace("->", r"$\to$").replace("±", r"$\pm$").replace("_", r"\_")
+    return {"platt": "Platt", "isotonic": "isotonic", "temperature": "temperature"}.get(t, t)
+
+
 def tex_rows(rows, cols):
-    return "\n".join(" & ".join(str(r[c]) for c in cols) + r" \\" for r in rows) + "\n"
+    return "\n".join(" & ".join(tex_cell(r[c]) for c in cols) + r" \\" for r in rows) + "\n"
 
 
 def write(name, rows, cols, title):
@@ -266,18 +271,25 @@ def recalibration(res):
             rows.append({"Model": name, "Map": mname, "Params": ps, **cal_fmt(o[mname])})
         out[slug] = o
     res["recalibration"] = out
-    write("recalibration", rows, ["Model", "Map", "Params", "MeanConf", "ECE", "Brier", "AUROC"],
+    write("recalibration", rows, ["Model", "Map", "Params", "MeanConf", "ECE", "ECE-m", "Brier", "AUROC"],
           "Test-set calibration of grounded LLM confidence after maps fitted on the validation split "
           "(100 validation diseases, top-20 candidates)")
 
 
+def ece_mass(c, y, bins=10):
+    """ECE with equal-count bins (robust when scores pile up in one equal-width bin)."""
+    order = np.argsort(c, kind="stable")
+    return float(sum(len(g) / len(c) * abs(c[g].mean() - y[g].mean()) for g in np.array_split(order, bins)))
+
+
 def cal_summary(c, y):
     from src.eval.rerank import auroc, ece
-    return {"ECE": ece(c, y), "Brier": float(np.mean((c - y) ** 2)), "AUROC": auroc(c, y), "mean_conf": float(c.mean())}
+    return {"ECE": ece(c, y), "ECE_mass": ece_mass(c, y), "Brier": float(np.mean((c - y) ** 2)),
+            "AUROC": auroc(c, y), "mean_conf": float(c.mean())}
 
 
 def cal_fmt(c):
-    return {"MeanConf": f"{c['mean_conf']:.3f}", "ECE": f"{c['ECE']:.3f}",
+    return {"MeanConf": f"{c['mean_conf']:.3f}", "ECE": f"{c['ECE']:.3f}", "ECE-m": f"{c['ECE_mass']:.3f}",
             "Brier": f"{c['Brier']:.3f}", "AUROC": f"{c['AUROC']:.3f}"}
 
 
