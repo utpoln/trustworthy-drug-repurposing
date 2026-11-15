@@ -55,6 +55,9 @@ def main() -> None:
     ap.add_argument("--reuse-from", type=Path, default=None,
                     help="clean-run JSONL: reuse its record when the prompt is identical (saves calls)")
     args = ap.parse_args()
+    args.kge_run = args.kge_run.resolve()
+    if args.graph is not None:
+        args.graph = args.graph.resolve()
 
     topk_file = args.kge_run / f"{args.split}_topk.jsonl"
     diseases = [json.loads(l) for l in open(topk_file)]
