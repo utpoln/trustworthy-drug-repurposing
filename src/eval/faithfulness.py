@@ -61,8 +61,15 @@ def statements(record: dict) -> List[dict]:
         if isinstance(c, dict) and c.get("text"):
             cited = [str(x).strip() for x in (c.get("paths") or [])]
             out.append({"text": str(c["text"]), "cited": cited, "source": "claim"})
-    for s in split_sentences(str(parsed.get("mechanism") or "")):
-        out.append({"text": s, "cited": [], "source": "mechanism"})
+    mech = parsed.get("mechanism")
+    if isinstance(mech, list):  # grounded-v2: sentences with their own citations
+        for m in mech:
+            if isinstance(m, dict) and m.get("text"):
+                out.append({"text": str(m["text"]), "source": "mechanism",
+                            "cited": [str(x).strip() for x in (m.get("paths") or [])]})
+    else:
+        for s in split_sentences(str(mech or "")):
+            out.append({"text": s, "cited": [], "source": "mechanism"})
     for i, s in enumerate(out):
         s["id"] = f"S{i + 1}"
     return out

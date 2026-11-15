@@ -44,12 +44,25 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--limit-diseases", type=int, default=None)
     ap.add_argument("--tag", default="clean")
+    ap.add_argument("--split", choices=["test", "valid"], default="test",
+                    help="which held-out split's top-k candidates to score (valid: for recalibration)")
+    ap.add_argument("--sample-diseases", type=int, default=None,
+                    help="score a seeded random sample of diseases (same sampler as run_judge)")
+    ap.add_argument("--sample-seed", type=int, default=7)
+    ap.add_argument("--prompt", choices=sorted(prompts.GROUNDED), default="v1",
+                    help="grounded prompt version (v2: every mechanism sentence cites paths)")
     ap.add_argument("--reuse-from", type=Path, default=None,
                     help="clean-run JSONL: reuse its record when the prompt is identical (saves calls)")
     args = ap.parse_args()
 
-    topk_file = args.kge_run / "test_topk.jsonl"
+    topk_file = args.kge_run / f"{args.split}_topk.jsonl"
     diseases = [json.loads(l) for l in open(topk_file)]
+    if args.sample_diseases:
+        import numpy as np
+        all_d = sorted(r["disease"] for r in diseases)
+        rng = np.random.default_rng(args.sample_seed)
+        keep = set(rng.choice(all_d, size=min(args.sample_diseases, len(all_d)), replace=False).tolist())
+        diseases = [r for r in diseases if r["disease"] in keep]
     if args.limit_diseases:
         diseases = diseases[: args.limit_diseases]
 
@@ -100,7 +113,7 @@ def main() -> None:
         if args.mode == "grounded":
             paths, counts = find_paths(g, c["drug"], rec["disease"], args.max_paths, args.path_weight_exp)
             pdicts = [path_to_dict(g, p) for p in paths]
-            system, user = prompts.grounded(disease, drug, [p["text"] for p in pdicts])
+            system, user = prompts.grounded(disease, drug, [p["text"] for p in pdicts], args.prompt)
         else:
             pdicts, counts = [], None
             system, user = prompts.no_paths(disease, drug)
@@ -124,7 +137,7 @@ def main() -> None:
             "mode": args.mode,
             **static,
             "paths": pdicts, "path_counts": counts,
-            "prompt": {"version": prompts.PROMPT_VERSION, "system": system, "user": user,
+            "prompt": {"version": prompts.version(args.mode, args.prompt), "system": system, "user": user,
                        "sha": sha},
             "llm": {"model": args.model, "endpoint": BASE_URL, "temperature": 0.0,
                     "raw": r["content"], "reasoning": r["reasoning"], "finish_reason": r["finish_reason"],
