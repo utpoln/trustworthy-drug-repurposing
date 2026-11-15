@@ -1,0 +1,14 @@
+# Calibration of LLM confidence over all disease-candidate pairs (base rate 0.035)
+
+| Model | Mode | Parse | MeanConf | ECE | Brier | AUROC |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B | no paths | 1.000 | 0.274 | 0.239 | 0.188 | 0.820 |
+| Qwen3.8-27B | grounded | 1.000 | 0.303 | 0.268 | 0.145 | 0.860 |
+| Gemma-4-31B | no paths | 1.000 | 0.314 | 0.279 | 0.199 | 0.813 |
+| Gemma-4-31B | grounded | 0.999 | 0.328 | 0.293 | 0.152 | 0.868 |
+| Qwen3.5-122B | no paths | 1.000 | 0.298 | 0.263 | 0.193 | 0.821 |
+| Qwen3.5-122B | grounded | 1.000 | 0.329 | 0.294 | 0.146 | 0.857 |
+| gpt-oss-120B | no paths | 1.000 | 0.241 | 0.206 | 0.111 | 0.815 |
+| gpt-oss-120B | grounded | 1.000 | 0.291 | 0.257 | 0.110 | 0.802 |
+| Kimi-K3 | no paths | 1.000 | 0.237 | 0.202 | 0.132 | 0.839 |
+| Kimi-K3 | grounded | 0.999 | 0.271 | 0.236 | 0.113 | 0.902 |

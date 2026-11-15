@@ -1,0 +1,9 @@
+# Retrieval-time random poisoning (5% fake drug-protein / disease-protein edges; 100 diseases)
+
+| Model | Pairs | Gold MRR | Gold H@1 | Fake in paths | Cites fake |
+|---|---|---|---|---|---|
+| Qwen3.8-27B | 185 | 0.265 -> 0.264 | 0.205 -> 0.205 | 0.024 | 0.021 |
+| Gemma-4-31B | 185 | 0.271 -> 0.271 | 0.216 -> 0.216 | 0.024 | 0.024 |
+| Qwen3.5-122B | 185 | 0.250 -> 0.253 | 0.189 -> 0.195 | 0.024 | 0.021 |
+| gpt-oss-120B | 185 | 0.214 -> 0.213 | 0.151 -> 0.151 | 0.024 | 0.017 |
+| Kimi-K3 | 185 | 0.254 -> 0.271 | 0.184 -> 0.216 | 0.024 | 0.024 |
