@@ -69,6 +69,6 @@ scripts/           one-off utilities (e.g. test_mindrouter.py)
 - [x] All tables: `python -m experiments.make_results`; figures: `python -m experiments.make_figures`
 - [x] Manuscript draft `paper/main.tex` (MDPI template); build locally with `cd paper && tectonic -X compile main.tex`
       (no Ghostscript locally: EPS logos replaced by `paper/build_stub/` under XeTeX only; Overleaf/pdflatex uses real logos)
-- [ ] Disease-held-out split (`python -m src.kg.split --by disease`; set `KG_SPLIT=data/processed/primekg_v2.1_disease_seed42` for all scripts): RotatE, TxGNN, LLM runs -> paper Section 4.5
+- [x] Disease-held-out split (`python -m src.kg.split --by disease`; set `KG_SPLIT=data/processed/primekg_v2.1_disease_seed42` for all scripts): RotatE, TxGNN, LLM runs -> paper Section 4.5
 - [ ] Human labels for 126 faithfulness statements (`results/human_eval/faithfulness_sheet.csv`) -> Cohen's kappa
 - [ ] Remaining `\TODO{}` items in `paper/main.tex` (affiliation, model-card citations, GenAI disclosure, repo DOI)

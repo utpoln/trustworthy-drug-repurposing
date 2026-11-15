@@ -387,6 +387,79 @@ def robustness(res):
           "Retrieval-time random poisoning (5% fake drug-protein / disease-protein edges; 100 diseases)")
 
 
+# ----------------------------------------------------------------- disease-held-out split
+def disease_split(res):
+    """Zero-shot diseases: no drug-disease edge of a test disease is in training."""
+    tr = pd.read_csv(KGE / "RotatE_seed42_disease" / "test_ranks.tsv", sep="\t") \
+        .sort_values("disease", kind="stable").reset_index(drop=True)
+    boot = Boot(tr["disease"].to_numpy())
+    kge = tr["kge_rank"].to_numpy(float)
+    rows, out = [], {"n_pairs": len(tr), "n_diseases": int(tr["disease"].nunique()),
+                     "gold_in_topk": float(np.mean(kge <= K))}
+
+    def row(name, ranks, ref=None, ref2=None):
+        m = ranking_metrics(ranks)
+        r = {"Method": name, "MRR": f"{m['MRR']:.3f}", "H@1": f"{m['Hits@1']:.3f}",
+             "H@10": f"{m['Hits@10']:.3f}", "dKGE": "–", "dNoPaths": "–"}
+        o = {"metrics": m}
+        for key, base in (("dKGE", ref), ("dNoPaths", ref2)):
+            if base is not None:
+                d = 1 / ranks - 1 / base
+                o[key] = {"mean": float(d.mean()), "ci": boot.ci(d)}
+                r[key] = fmt_ci(d.mean(), o[key]["ci"])
+        rows.append(r)
+        return o
+
+    txf = ROOT / "results" / "runs" / "txgnn" / "TxGNN_seed42_disease" / "test_ranks.tsv"
+    if txf.exists():
+        tx = pd.read_csv(txf, sep="\t").set_index(["disease", "drug"]).loc[
+            list(zip(tr["disease"], tr["drug"]))]["kge_rank"].to_numpy(float)
+        out["TxGNN"] = row("TxGNN (graph only)", tx)
+        out["TxGNN"]["gold_in_topk"] = float(np.mean(tx <= K))
+    out["RotatE"] = row("RotatE (graph only)", kge)
+    cal_rows = []
+    for slug, name in MODELS:
+        files = {m: LLM / "disease" / m / f"{slug}.jsonl" for m in ("no_paths", "grounded")}
+        if not all(f.exists() for f in files.values()):
+            continue
+        L = {m: load_llm(f) for m, f in files.items()}
+        if any(len(l) < out["n_diseases"] * K for l in L.values()):
+            print(f"disease split: {name} incomplete, skipped"); continue
+        R = {}
+        for m in L:
+            rr = rerank_ranks(L[m], tr, K)
+            assert np.array_equal(np.array(rr["kge"], float), kge)
+            R[m] = np.array(rr["llm"], float)
+        cal = {m: calibration(L[m]) for m in L}
+        out[slug] = {"no_paths": row(f"{name} no paths", R["no_paths"], kge),
+                     "grounded": row(f"{name} + KG paths", R["grounded"], kge, R["no_paths"]),
+                     "calibration": {m: {k: cal[m][k] for k in ("parse_rate", "mean_conf", "ECE", "AUROC")}
+                                     for m in cal}}
+        for m in ("no_paths", "grounded"):
+            c = cal[m]
+            cal_rows.append({"Model": name, "Mode": m.replace("_", " "), "Parse": f"{c['parse_rate']:.3f}",
+                             "MeanConf": f"{c['mean_conf']:.3f}", "ECE": f"{c['ECE']:.3f}",
+                             "AUROC": f"{c['AUROC']:.3f}"})
+    # paths are retrieved deterministically, so any model's grounded log has the same paths:
+    # share of pairs with a path drug -> (indication/off-label) -> related disease -> ... -> target
+    ref = LLM / "disease" / "grounded" / f"{MODELS[1][0]}.jsonl"
+    if ref.exists():
+        an = Counter()
+        with open(ref) as fh:
+            for line in fh:
+                r = json.loads(line)
+                an[(r["is_gold"], "n")] += 1
+                an[(r["is_gold"], "analogy")] += any(p["node_types"][1] == "disease" for p in r["paths"])
+        out["related_disease_path"] = {"gold": an[(True, "analogy")] / an[(True, "n")],
+                                       "non_gold": an[(False, "analogy")] / an[(False, "n")]}
+    res["disease_split"] = out
+    write("disease_accuracy", rows, ["Method", "MRR", "H@1", "H@10", "dKGE", "dNoPaths"],
+          f"Disease-held-out split: {len(tr)} indications of {out['n_diseases']} unseen diseases "
+          f"(re-ranking RotatE top-{K}; dMRR with 95% disease-bootstrap CI)")
+    write("disease_calibration", cal_rows, ["Model", "Mode", "Parse", "MeanConf", "ECE", "AUROC"],
+          "Disease-held-out split: calibration of LLM confidence")
+
+
 def main():
     TAB.mkdir(parents=True, exist_ok=True); TEX.mkdir(parents=True, exist_ok=True)
     res = {"k": K, "bootstrap": {"resamples": B, "unit": "disease", "seed": SEED}}
@@ -396,10 +469,12 @@ def main():
     kge_seeds(res)
     prompt_v2(res)
     recalibration(res)
+    disease_split(res)
     (TAB / "results.json").write_text(json.dumps(res, indent=1, default=float))
     for f in ("accuracy", "calibration", "faithfulness", "robustness_kge",
               "robustness_llm_targeted", "robustness_llm_random", "prompt_v2_accuracy",
-              "prompt_v2_faithfulness", "recalibration", "kge_seeds"):
+              "prompt_v2_faithfulness", "recalibration", "kge_seeds", "disease_accuracy",
+              "disease_calibration"):
         print((TAB / f"{f}.md").read_text())
 
 

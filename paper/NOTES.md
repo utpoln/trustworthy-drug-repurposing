@@ -33,3 +33,13 @@
   recommender needs. TxGNN is designed/tuned for zero-shot (disease-held-out) splits, not this random split. State this fairly.
 - Deviations: pretraining batch 4,096 (paper 1,024), CPU only, one seed. Pretrain 246 min, finetune 21 min.
 - Not used as a candidate generator for the LLM: only 12.6% of gold drugs reach its top-20 (vs 37.7% for RotatE).
+
+## Disease-held-out split (Section 4.5)
+- `python -m src.kg.split --by disease`; all scripts with `KG_SPLIT=data/processed/primekg_v2.1_disease_seed42`.
+  136 test diseases (876 indications), 137 valid; all drug-disease edges of held-out diseases removed (4,126).
+- RotatE MRR 0.109 (gold in top-20 24.3%); TxGNN MRR 0.040, H@10 0.102 (13.5% in top-20) -> TxGNN does not overtake RotatE.
+- Grounded LLMs: MRR 0.148-0.190, dMRR vs RotatE +0.039..+0.082 (all CIs > 0); paths vs no paths +0.034..+0.054
+  for 4/5 models, gpt-oss +0.006 [-0.015, +0.025] (same pattern as random split).
+- No path has a drug<->held-out-disease edge (checked). 99.5% of gold pairs with paths have a
+  drug -indication/off-label-> related disease -parent/child-> ... target path (non-gold: 40.6%):
+  the zero-shot signal is ontology-neighbour transfer. Stated as limitation (vii).

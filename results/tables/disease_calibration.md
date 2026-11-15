@@ -1,0 +1,14 @@
+# Disease-held-out split: calibration of LLM confidence
+
+| Model | Mode | Parse | MeanConf | ECE | AUROC |
+|---|---|---|---|---|---|
+| Qwen3.8-27B | no paths | 1.000 | 0.149 | 0.076 | 0.858 |
+| Qwen3.8-27B | grounded | 1.000 | 0.206 | 0.133 | 0.947 |
+| Gemma-4-31B | no paths | 1.000 | 0.203 | 0.130 | 0.859 |
+| Gemma-4-31B | grounded | 0.999 | 0.225 | 0.152 | 0.962 |
+| Qwen3.5-122B | no paths | 1.000 | 0.171 | 0.098 | 0.887 |
+| Qwen3.5-122B | grounded | 1.000 | 0.220 | 0.147 | 0.955 |
+| gpt-oss-120B | no paths | 1.000 | 0.164 | 0.091 | 0.879 |
+| gpt-oss-120B | grounded | 1.000 | 0.191 | 0.118 | 0.933 |
+| Kimi-K3 | no paths | 1.000 | 0.136 | 0.063 | 0.907 |
+| Kimi-K3 | grounded | 1.000 | 0.173 | 0.102 | 0.962 |

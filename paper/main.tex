@@ -42,7 +42,7 @@
 \address{$^{1}$ \quad \TODO{affiliation}}
 \corres{Correspondence: \TODO{e-mail}}
 
-\abstract{Drug repurposing can be framed as a recommendation problem: for each disease, rank existing drugs by how likely they are to treat it. Knowledge-graph (KG) embedding models give useful rankings but no reasons, while large language models (LLMs) give fluent reasons that may be invented. We study a two-stage recommender that keeps the two roles apart. A RotatE model trained on PrimeKG proposes the top-20 drugs for each disease; for each candidate we retrieve up to ten 2--3-hop KG paths, and an LLM must explain the candidate using only those paths, cite them, and return a confidence that re-ranks the list. Every recommendation is logged with full provenance. On 939 held-out indications, grounded re-ranking raises MRR from 0.179 to 0.247--0.264 for four of five LLMs, and the paths add 0.03--0.05 MRR over the same LLMs without paths. Cited claims are almost always supported by the cited paths (97--99\%), but free-text mechanisms are not (14--28\% supported); requiring every mechanism sentence to cite paths raises this to 88--91\% at a small cost in accuracy. Raw confidences are badly over-confident (ECE 0.24--0.29) yet rank well (AUROC 0.80--0.90), and a two-parameter Platt map fitted on validation diseases reduces ECE to below 0.015. Grounding is also a vulnerability: three fake KG chains per decoy drug lift it to the top rank for up to 20\% of diseases, and the LLM cites the fake edges in over 98\% of those explanations. \TODO{one sentence on the disease-held-out split once results are in.}}
+\abstract{Drug repurposing can be framed as a recommendation problem: for each disease, rank existing drugs by how likely they are to treat it. Knowledge-graph (KG) embedding models give useful rankings but no reasons, while large language models (LLMs) give fluent reasons that may be invented. We study a two-stage recommender that keeps the two roles apart. A RotatE model trained on PrimeKG proposes the top-20 drugs for each disease; for each candidate we retrieve up to ten 2--3-hop KG paths, and an LLM must explain the candidate using only those paths, cite them, and return a confidence that re-ranks the list. Every recommendation is logged with full provenance. On 939 held-out indications, grounded re-ranking raises MRR from 0.179 to 0.247--0.264 for four of five LLMs, and the paths add 0.03--0.05 MRR over the same LLMs without paths. Cited claims are almost always supported by the cited paths (97--99\%), but free-text mechanisms are not (14--28\% supported); requiring every mechanism sentence to cite paths raises this to 88--91\% at a small cost in accuracy. Raw confidences are badly over-confident (ECE 0.24--0.29) yet rank well (AUROC 0.80--0.90), and a two-parameter Platt map fitted on validation diseases reduces ECE to below 0.015. Grounding is also a vulnerability: three fake KG chains per decoy drug lift it to the top rank for up to 20\% of diseases, and the LLM cites the fake edges in over 98\% of those explanations. On 136 diseases whose drug edges are all withheld from training, grounded re-ranking raises MRR from 0.109 to 0.148--0.190, the paths add 0.03--0.05 MRR for four of five LLMs, and the gain comes almost entirely from paths through indications of ontologically related diseases; TxGNN, designed for this setting, reaches MRR 0.040 in our protocol.}
 
 \keyword{drug repurposing; recommender systems; knowledge graphs; large language models; retrieval-augmented generation; explainability; faithfulness; calibration; data poisoning; provenance}
 
@@ -135,7 +135,7 @@ A second prompt (v2) replaces the free-text mechanism with a list of sentences, 
 %======================================================================
 \section{Results}
 %======================================================================
-\subsection{Accuracy}
+\subsection{Accuracy}\label{sec:accuracy}
 Table~\ref{tab:accuracy} and Figure~\ref{fig:accuracy} summarise accuracy. RotatE is the strongest graph-only model (MRR 0.179, Hits@10 0.296); over three seeds it reaches MRR $0.176\pm0.009$ (Table~\ref{tab:seeds}). Grounded re-ranking improves MRR significantly over RotatE for four of five LLMs, by $+0.068$ to $+0.085$ (Qwen3.8-27B 0.264, Gemma-4-31B 0.262, Kimi-K3 0.260, Qwen3.5-122B 0.247), about eight to ten times the seed standard deviation. Most of the improvement is at the top of the list: Hits@1 rises from 0.114 to 0.182--0.209.
 
 The no-paths baseline separates the contribution of the paths from the LLM's prior knowledge. Without paths, the same LLMs reach MRR 0.200--0.216, i.e.\ $+0.02$ to $+0.04$ over RotatE with intervals that mostly touch zero. Adding the paths gives a further $+0.031$ to $+0.052$, significant for the same four models. gpt-oss-120B is the exception: it gains nothing from the paths (\dmrr{} $+0.002$, CI $[-0.016, 0.020]$). The smaller dense models do as well as the much larger MoE models; within the Qwen family the 27B dense model is slightly better than the 122B MoE model. Fusing the RotatE and LLM rankings with RRF never helps: it is always below the LLM ranking alone.
@@ -309,7 +309,38 @@ Post-hoc maps fitted on 100 validation diseases confirm this (Table~\ref{tab:rec
 \end{table}
 
 \subsection{Disease-Held-Out Split}\label{sec:zeroshot}
-\TODO{RotatE, TxGNN and the five LLMs (with and without paths) on the disease-held-out split: accuracy table, whether TxGNN overtakes RotatE in this setting, and whether the paths still help when the KG holds no treatment edges for the test diseases.}
+Table~\ref{tab:disease} repeats the accuracy comparison on the disease-held-out split, where the KG contains no indication, contraindication or off-label edge for any test disease. The same pipeline is retrained end to end: RotatE and TxGNN on the new training graph, path retrieval on that graph, and all five LLMs with and without paths on the new RotatE top 20 (2,720 pairs per model and mode). We verified that no retrieved path contains an edge between a drug and a held-out disease.
+
+The task is harder for the graph models: RotatE drops to MRR 0.109 (random split: 0.179) and only 24.3\% of gold drugs reach its top 20. TxGNN, although designed for diseases without known treatments, does not overtake RotatE in our protocol (MRR 0.040, Hits@10 0.102; 13.5\% of gold drugs in its top 20), so the ranking gap seen on the random split persists.
+
+LLM re-ranking helps more here than on the random split in relative terms. All five grounded LLMs improve on RotatE (\dmrr{} $+0.039$ to $+0.082$, all CIs above zero), and for four of them the paths add a significant $+0.034$ to $+0.054$ MRR over the same model without paths; gpt-oss-120B again gains nothing from the paths ($+0.006$ [$-0.015$, $+0.025$]), consistent with Section~\ref{sec:accuracy}. Without paths the LLMs gain only $+0.023$ to $+0.041$, and in this setting a no-paths gain can come only from the LLM's prior knowledge, not from the graph. Grounded confidences also separate gold from non-gold candidates better than on the random split (AUROC 0.93--0.96 vs.\ 0.86--0.91 without paths; Table~\ref{tab:disease_cal}), but they remain over-confident (ECE 0.10--0.15).
+
+\textbf{Where the zero-shot evidence comes from.} With treatment edges removed, the most informative paths are analogies: the candidate is indicated for (or used off-label for) a disease that is linked to the target disease by a parent/child ontology edge. Such a path exists for 99.5\% of the gold pairs in the top 20 that have any path, and for 40.6\% of the non-gold pairs. The LLMs therefore mostly transfer indications from neighbouring diseases in the ontology. This is a legitimate and interpretable signal for an unseen disease---and the explanation names the related disease---but it means that this split measures transfer to diseases that have treated relatives, not repurposing for diseases with no treated neighbours.
+
+\begin{table}[H]
+\caption{Accuracy on the disease-held-out split (876 indications of 136 test diseases with no drug--disease edges in training). LLM rows re-rank the RotatE top 20; \dmrr{} columns as in Table~\ref{tab:accuracy}.\label{tab:disease}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\small
+\begin{tabularx}{\fulllength}{lcccCC}
+\toprule
+\textbf{Method} & \textbf{MRR} & \textbf{H@1} & \textbf{H@10} & \textbf{\dmrr{} vs.\ RotatE} & \textbf{\dmrr{} vs.\ no paths}\\
+\midrule
+\tabinput{tables/disease_accuracy.tex}
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\begin{table}[H]
+\caption{Calibration of LLM confidence on the disease-held-out split (all 2,720 pairs per model and mode; raw confidences, no recalibration).\label{tab:disease_cal}}
+\begin{tabularx}{\textwidth}{llCCCC}
+\toprule
+\textbf{Model} & \textbf{Mode} & \textbf{Parse rate} & \textbf{Mean conf.} & \textbf{ECE} & \textbf{AUROC}\\
+\midrule
+\tabinput{tables/disease_calibration.tex}
+\bottomrule
+\end{tabularx}
+\end{table}
 
 %======================================================================
 \section{Discussion}
@@ -322,12 +353,12 @@ Post-hoc maps fitted on 100 validation diseases confirm this (Table~\ref{tab:rec
 
 \textbf{Grounding moves trust to the graph.} The poisoning results show the other side of faithfulness: a grounded LLM is only as reliable as its evidence. A few planted edges promote a decoy with a well-cited explanation, and aggregate accuracy hides the attack. Provenance logging makes such failures traceable---every cited path can be traced to its source edge---but does not prevent them. Practical defences include checking cited edges against source databases, flagging candidates whose support rests on few recently added edges, and monitoring decoy-style rank changes.
 
-\textbf{Limitations.} (i) \emph{Memorisation.} Most test indications are approved uses that the LLMs have likely seen during training~\cite{carlini2021extracting}. The no-paths baseline estimates this effect (+0.02--0.04 MRR over RotatE); the grounding gain is measured on top of it, but absolute LLM accuracy on truly novel repurposing hypotheses may be lower. The disease-held-out split partly addresses this for the KG side but not for LLM pre-training. (ii) \emph{LLM judge.} Faithfulness labels come from one LLM judge, which errs in both directions; we validate it against a single annotator on 126 statements. (iii) \emph{Re-ranking ceiling.} Only 37.7\% of gold drugs are in the RotatE top 20, so re-ranking cannot help the rest. (iv) \emph{Single graph and split.} Results are for one KG and one random split (plus the disease-held-out split); LLM results use one RotatE seed, and two of three RotatE seeds were still improving at the 50-epoch limit. (v) \emph{TxGNN} was run with a larger pre-training batch than published and one seed, on CPU. (vi) Prompt v2 was tested on two models and 100 diseases.
+\textbf{Limitations.} (i) \emph{Memorisation.} Most test indications are approved uses that the LLMs have likely seen during training~\cite{carlini2021extracting}. The no-paths baseline estimates this effect (+0.02--0.04 MRR over RotatE); the grounding gain is measured on top of it, but absolute LLM accuracy on truly novel repurposing hypotheses may be lower. The disease-held-out split removes the answer from the graph but not from LLM pre-training; there the no-paths gain (+0.02--0.04) bounds the prior-knowledge effect. (ii) \emph{LLM judge.} Faithfulness labels come from one LLM judge, which errs in both directions; we validate it against a single annotator on 126 statements. (iii) \emph{Re-ranking ceiling.} Only 37.7\% of gold drugs are in the RotatE top 20, so re-ranking cannot help the rest. (iv) \emph{Single graph and split.} Results are for one KG and one random split (plus the disease-held-out split); LLM results use one RotatE seed, and two of three RotatE seeds were still improving at the 50-epoch limit. (v) \emph{TxGNN} was run with a larger pre-training batch than published and one seed, on CPU. (vi) Prompt v2 was tested on two models and 100 diseases. (vii) \emph{Disease split.} Held-out diseases keep their ontology edges, and many have closely related treated diseases; the zero-shot gains rely largely on these neighbours (Section~\ref{sec:zeroshot}), so a split that withholds whole disease areas~\cite{huang2024txgnn} would be harder.
 
 %======================================================================
 \section{Conclusions}
 %======================================================================
-We framed drug repurposing as a KG-grounded recommendation task and evaluated not only accuracy but faithfulness, calibration and robustness across five LLMs. Grounded LLM re-ranking improves a strong KG-embedding recommender, and the paths themselves contribute to the gain. Explanations are faithful when every sentence must cite evidence, and confidences become calibrated with a simple validation-fitted map. The same grounding, however, allows a handful of planted edges to promote a decoy with a convincing, well-cited explanation. Trustworthy repurposing recommenders therefore need sentence-level citation, recalibrated confidence, full provenance and checks on the integrity of the graph itself.
+We framed drug repurposing as a KG-grounded recommendation task and evaluated not only accuracy but faithfulness, calibration and robustness across five LLMs. Grounded LLM re-ranking improves a strong KG-embedding recommender, and the paths themselves contribute to the gain, also for diseases with no treatment edges in the graph, where the evidence is mostly the indications of related diseases. Explanations are faithful when every sentence must cite evidence, and confidences become calibrated with a simple validation-fitted map. The same grounding, however, allows a handful of planted edges to promote a decoy with a convincing, well-cited explanation. Trustworthy repurposing recommenders therefore need sentence-level citation, recalibrated confidence, full provenance and checks on the integrity of the graph itself.
 
 \vspace{6pt}
 

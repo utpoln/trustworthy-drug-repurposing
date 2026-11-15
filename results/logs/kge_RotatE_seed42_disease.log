@@ -1,0 +1,37 @@
+/Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py:759: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, device pinned memory won't be used.
+  super().__init__(loader)
+Loaded split in 2s: 4,044,115 train triples, 129,375 entities, device=mps
+epoch   5 loss=0.0543 valid MRR=0.0330 H@10=0.0718 (325s)
+epoch  10 loss=0.0331 valid MRR=0.0447 H@10=0.0803 (423s)
+epoch  15 loss=0.0295 valid MRR=0.0589 H@10=0.0982 (455s)
+epoch  20 loss=0.0277 valid MRR=0.0458 H@10=0.0898 (439s)
+epoch  25 loss=0.0265 valid MRR=0.0569 H@10=0.1024 (442s)
+epoch  30 loss=0.0257 valid MRR=0.0619 H@10=0.0993 (438s)
+epoch  35 loss=0.0251 valid MRR=0.0680 H@10=0.1235 (441s)
+epoch  40 loss=0.0246 valid MRR=0.0600 H@10=0.1014 (432s)
+epoch  45 loss=0.0242 valid MRR=0.0623 H@10=0.1098 (435s)
+epoch  50 loss=0.0239 valid MRR=0.0709 H@10=0.1162 (436s)
+{
+  "model": "RotatE",
+  "best_epoch": 50,
+  "valid": {
+    "n": 947,
+    "MRR": 0.07089777310663291,
+    "Hits@1": 0.04012671594508976,
+    "Hits@3": 0.07286166842661035,
+    "Hits@10": 0.11615628299894404,
+    "mean_rank": 1153.1214361140444,
+    "median_rank": 407.0
+  },
+  "test": {
+    "n": 876,
+    "MRR": 0.1088160556116933,
+    "Hits@1": 0.06278538812785388,
+    "Hits@3": 0.11986301369863013,
+    "Hits@10": 0.1917808219178082,
+    "mean_rank": 1050.8264840182649,
+    "median_rank": 189.5
+  },
+  "train_minutes": 71.3
+}
+Saved run to /Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/results/runs/kge/RotatE_seed42_disease

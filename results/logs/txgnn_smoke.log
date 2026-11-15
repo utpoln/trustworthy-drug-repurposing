@@ -1,0 +1,71 @@
+graph built in 22s: Graph(num_nodes={'anatomy': 14035, 'biological_process': 28642, 'cellular_component': 4176, 'disease': 17080, 'drug': 7957, 'effect/phenotype': 15311, 'exposure': 818, 'gene/protein': 27671, 'molecular_function': 11169, 'pathway': 2516},
+      num_edges={('anatomy', 'anatomy_anatomy', 'anatomy'): 28064, ('anatomy', 'rev_anatomy_protein_absent', 'gene/protein'): 19887, ('anatomy', 'rev_anatomy_protein_present', 'gene/protein'): 1518203, ('biological_process', 'bioprocess_bioprocess', 'biological_process'): 105772, ('biological_process', 'rev_bioprocess_protein', 'gene/protein'): 144805, ('biological_process', 'rev_exposure_bioprocess', 'exposure'): 1625, ('cellular_component', 'cellcomp_cellcomp', 'cellular_component'): 9690, ('cellular_component', 'rev_cellcomp_protein', 'gene/protein'): 83402, ('cellular_component', 'rev_exposure_cellcomp', 'exposure'): 10, ('disease', 'disease_disease', 'disease'): 64388, ('disease', 'disease_phenotype_negative', 'effect/phenotype'): 1193, ('disease', 'disease_phenotype_positive', 'effect/phenotype'): 150317, ('disease', 'rev_contraindication', 'drug'): 30653, ('disease', 'rev_disease_protein', 'gene/protein'): 80411, ('disease', 'rev_exposure_disease', 'exposure'): 2304, ('disease', 'rev_indication', 'drug'): 7510, ('disease', 'rev_off-label use', 'drug'): 2540, ('drug', 'contraindication', 'disease'): 30653, ('drug', 'drug_drug', 'drug'): 2672628, ('drug', 'drug_effect', 'effect/phenotype'): 64784, ('drug', 'drug_protein', 'gene/protein'): 25468, ('drug', 'indication', 'disease'): 7510, ('drug', 'off-label use', 'disease'): 2540, ('effect/phenotype', 'phenotype_phenotype', 'effect/phenotype'): 37472, ('effect/phenotype', 'rev_disease_phenotype_negative', 'disease'): 1193, ('effect/phenotype', 'rev_disease_phenotype_positive', 'disease'): 150317, ('effect/phenotype', 'rev_drug_effect', 'drug'): 64784, ('effect/phenotype', 'rev_phenotype_protein', 'gene/protein'): 3330, ('exposure', 'exposure_bioprocess', 'biological_process'): 1625, ('exposure', 'exposure_cellcomp', 'cellular_component'): 10, ('exposure', 'exposure_disease', 'disease'): 2304, ('exposure', 'exposure_exposure', 'exposure'): 4140, ('exposure', 'exposure_molfunc', 'molecular_function'): 45, ('exposure', 'exposure_protein', 'gene/protein'): 1212, ('gene/protein', 'anatomy_protein_absent', 'anatomy'): 19887, ('gene/protein', 'anatomy_protein_present', 'anatomy'): 1518203, ('gene/protein', 'bioprocess_protein', 'biological_process'): 144805, ('gene/protein', 'cellcomp_protein', 'cellular_component'): 83402, ('gene/protein', 'disease_protein', 'disease'): 80411, ('gene/protein', 'molfunc_protein', 'molecular_function'): 69530, ('gene/protein', 'pathway_protein', 'pathway'): 42646, ('gene/protein', 'phenotype_protein', 'effect/phenotype'): 3330, ('gene/protein', 'protein_protein', 'gene/protein'): 642150, ('gene/protein', 'rev_drug_protein', 'drug'): 25468, ('gene/protein', 'rev_exposure_protein', 'exposure'): 1212, ('molecular_function', 'molfunc_molfunc', 'molecular_function'): 27148, ('molecular_function', 'rev_exposure_molfunc', 'exposure'): 45, ('molecular_function', 'rev_molfunc_protein', 'gene/protein'): 69530, ('pathway', 'pathway_pathway', 'pathway'): 5070, ('pathway', 'rev_pathway_protein', 'gene/protein'): 42646},
+      metagraph=[('anatomy', 'anatomy', 'anatomy_anatomy'), ('anatomy', 'gene/protein', 'rev_anatomy_protein_absent'), ('anatomy', 'gene/protein', 'rev_anatomy_protein_present'), ('gene/protein', 'anatomy', 'anatomy_protein_absent'), ('gene/protein', 'anatomy', 'anatomy_protein_present'), ('gene/protein', 'biological_process', 'bioprocess_protein'), ('gene/protein', 'cellular_component', 'cellcomp_protein'), ('gene/protein', 'disease', 'disease_protein'), ('gene/protein', 'molecular_function', 'molfunc_protein'), ('gene/protein', 'pathway', 'pathway_protein'), ('gene/protein', 'effect/phenotype', 'phenotype_protein'), ('gene/protein', 'gene/protein', 'protein_protein'), ('gene/protein', 'drug', 'rev_drug_protein'), ('gene/protein', 'exposure', 'rev_exposure_protein'), ('biological_process', 'biological_process', 'bioprocess_bioprocess'), ('biological_process', 'gene/protein', 'rev_bioprocess_protein'), ('biological_process', 'exposure', 'rev_exposure_bioprocess'), ('exposure', 'biological_process', 'exposure_bioprocess'), ('exposure', 'cellular_component', 'exposure_cellcomp'), ('exposure', 'disease', 'exposure_disease'), ('exposure', 'exposure', 'exposure_exposure'), ('exposure', 'molecular_function', 'exposure_molfunc'), ('exposure', 'gene/protein', 'exposure_protein'), ('cellular_component', 'cellular_component', 'cellcomp_cellcomp'), ('cellular_component', 'gene/protein', 'rev_cellcomp_protein'), ('cellular_component', 'exposure', 'rev_exposure_cellcomp'), ('disease', 'disease', 'disease_disease'), ('disease', 'effect/phenotype', 'disease_phenotype_negative'), ('disease', 'effect/phenotype', 'disease_phenotype_positive'), ('disease', 'drug', 'rev_contraindication'), ('disease', 'drug', 'rev_indication'), ('disease', 'drug', 'rev_off-label use'), ('disease', 'gene/protein', 'rev_disease_protein'), ('disease', 'exposure', 'rev_exposure_disease'), ('effect/phenotype', 'effect/phenotype', 'phenotype_phenotype'), ('effect/phenotype', 'disease', 'rev_disease_phenotype_negative'), ('effect/phenotype', 'disease', 'rev_disease_phenotype_positive'), ('effect/phenotype', 'drug', 'rev_drug_effect'), ('effect/phenotype', 'gene/protein', 'rev_phenotype_protein'), ('drug', 'disease', 'contraindication'), ('drug', 'disease', 'indication'), ('drug', 'disease', 'off-label use'), ('drug', 'drug', 'drug_drug'), ('drug', 'effect/phenotype', 'drug_effect'), ('drug', 'gene/protein', 'drug_protein'), ('molecular_function', 'molecular_function', 'molfunc_molfunc'), ('molecular_function', 'exposure', 'rev_exposure_molfunc'), ('molecular_function', 'gene/protein', 'rev_molfunc_protein'), ('pathway', 'pathway', 'pathway_pathway'), ('pathway', 'gene/protein', 'rev_pathway_protein')])
+Creating minibatch pretraining dataloader...
+Start pre-training with #param: 1015000
+Epoch: 0 LR: 0.00050 Loss 0.6932, Train Micro AUROC 0.4998 Train Micro AUPRC 0.5048 Train Macro AUROC 0.5016 Train Macro AUPRC 0.5001
+----- AUROC Performance in Each Relation -----
+('disease', 'rev_contraindication', 'drug'): 0.4870317572514557
+('disease', 'rev_indication', 'drug'): 0.4680867764418858
+('disease', 'rev_off-label use', 'drug'): 0.5126704228408457
+('drug', 'contraindication', 'disease'): 0.5237737959064943
+('drug', 'indication', 'disease'): 0.5253585809245019
+('drug', 'off-label use', 'disease'): 0.49283952817905635
+----- AUPRC Performance in Each Relation -----
+('disease', 'rev_contraindication', 'drug'): 0.4879992327865871
+('disease', 'rev_indication', 'drug'): 0.4695542236817797
+('disease', 'rev_off-label use', 'drug'): 0.5023424868377409
+('drug', 'contraindication', 'disease'): 0.5166860786933564
+('drug', 'indication', 'disease'): 0.5257482162940715
+('drug', 'off-label use', 'disease'): 0.49818559720076255
+----------------------------------------------
+Validation.....
+Epoch: 0 LR: 0.00050 Validation Loss 0.6929,  Validation Micro AUROC 0.5180 Validation Micro AUPRC 0.5078 Validation Macro AUROC 0.5207 Validation Macro AUPRC 0.5101 (Best Macro AUROC 0.5207)
+----- AUROC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.5107517003678035
+('drug', 'indication', 'disease'): 0.5306661631060166
+----- AUPRC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.49615929030543315
+('drug', 'indication', 'disease'): 0.5240167014742824
+----------------------------------------------
+Validation.....
+Epoch: 2 LR: 0.00050 Validation Loss 0.6925,  Validation Micro AUROC 0.5413 Validation Micro AUPRC 0.5276 Validation Macro AUROC 0.5418 Validation Macro AUPRC 0.5288 (Best Macro AUROC 0.5418)
+----- AUROC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.5456652387773456
+('drug', 'indication', 'disease'): 0.5379246949998924
+----- AUPRC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.5276644395875028
+('drug', 'indication', 'disease'): 0.5299522521491311
+----------------------------------------------
+Testing...
+Testing Loss 0.6925 Testing Micro AUROC 0.5421 Testing Micro AUPRC 0.5230 Testing Macro AUROC 0.5431 Testing Macro AUPRC 0.5243
+----- AUROC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.5529044901958783
+('drug', 'indication', 'disease'): 0.5332724297141613
+----- AUPRC Performance in Each Relation -----
+('disease', 'rev_indication', 'drug'): 0.5233444409444515
+('drug', 'indication', 'disease'): 0.525227559931481
+----------------------------------------------
+pretrain 0.0 min, finetune 0.8 min
+  scored 50/496 diseases
+  scored 100/496 diseases
+  scored 150/496 diseases
+  scored 200/496 diseases
+  scored 250/496 diseases
+  scored 300/496 diseases
+  scored 350/496 diseases
+  scored 400/496 diseases
+  scored 450/496 diseases
+  scored 496/496 diseases
+  scored 50/518 diseases
+  scored 100/518 diseases
+  scored 150/518 diseases
+  scored 200/518 diseases
+  scored 250/518 diseases
+  scored 300/518 diseases
+  scored 350/518 diseases
+  scored 400/518 diseases
+  scored 450/518 diseases
+  scored 500/518 diseases
+  scored 518/518 diseases
+done in 3.4 min -> /Users/kallolnaha/Documents/mix_projects/mindrouter/MDPI/trustworthy-drug-repurposing/results/runs/txgnn/smoke

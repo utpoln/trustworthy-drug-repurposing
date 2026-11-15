@@ -1,0 +1,29 @@
+{
+  "data": "data/processed/txgnn_disease_seed42",
+  "name": "TxGNN_seed42_disease",
+  "pretrain_epochs": "2",
+  "pretrain_batch": "4096",
+  "finetune_epochs": "500",
+  "valid_per_n": "20",
+  "seed": "42",
+  "chunk": "50",
+  "max_pretrain_steps": "None",
+  "skip_train": "False",
+  "txgnn_commit": "0e0203c",
+  "model_config": {
+    "n_hid": 100,
+    "n_inp": 100,
+    "n_out": 100,
+    "proto": true,
+    "proto_num": 3,
+    "attention": false,
+    "sim_measure": "all_nodes_profile",
+    "bert_measure": "disease_name",
+    "agg_measure": "rarity",
+    "num_walks": 200,
+    "walk_mode": "bit",
+    "path_length": 2
+  },
+  "pretrain_min": 213.04535303910572,
+  "finetune_min": 20.254506413141886
+}

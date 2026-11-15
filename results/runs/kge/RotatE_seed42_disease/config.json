@@ -1,0 +1,52 @@
+{
+  "model": "RotatE",
+  "dim": 256,
+  "epochs": 50,
+  "batch_size": 8192,
+  "lr": 0.001,
+  "negatives": 16,
+  "eval_every": 5,
+  "patience": 3,
+  "topk": 50,
+  "seed": 42,
+  "device": "mps",
+  "split": "data/processed/primekg_v2.1_disease_seed42",
+  "max_triples": null,
+  "tag": "_disease",
+  "train_file": "data/processed/primekg_v2.1_disease_seed42/train.tsv.gz",
+  "n_train_triples": 4044115,
+  "split_meta": {
+    "created_utc": "2026-11-15T07:48:19+00:00",
+    "data_version": "PrimeKG v2.1 (Harvard Dataverse doi:10.7910/DVN/IXA7BM, kg.csv id 6180620)",
+    "source_md5": "aac8191d4fbc5bf09cdf8c3c78b4e75f",
+    "seed": 42,
+    "split_by": "disease",
+    "ratios": {
+      "train": 0.8,
+      "valid": 0.1,
+      "test": 0.1
+    },
+    "n_nodes": 129375,
+    "n_canonical_triples": 4050064,
+    "n_relations": 30,
+    "indication": {
+      "total": 9388,
+      "train": 7565,
+      "valid": 947,
+      "test": 876,
+      "test_diseases": 136,
+      "test_drugs": 533
+    },
+    "train_triples": 4044115,
+    "leakage_edges_removed": {
+      "contraindication": 3648,
+      "off-label use": 478
+    },
+    "heldout_with_entity_unseen_in_train": {
+      "valid": 5,
+      "test": 10
+    }
+  },
+  "started_utc": "2026-11-15T07:48:55+00:00",
+  "torch": "2.15.0"
+}
