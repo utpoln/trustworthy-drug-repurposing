@@ -1,5 +1,6 @@
-% NOTE (author): verify every entry (authors, pages, DOI) before submission.
-% Entries marked TODO need a detail checked or a model card / report added.
+% Audited 2026-11-15 against Crossref / arXiv / Hugging Face (see paper/REFERENCE_AUDIT.md).
+% MDPI's style prints "In Proceedings of the" before every booktitle, so booktitles below
+% do not start with "Proceedings of the".
 
 @article{pushpakom2019,
   author  = {Pushpakom, Sudeep and Iorio, Francesco and Eyers, Patrick A. and Escott, K. Jane and Hopper, Shirley and Wells, Andrew and Doig, Andrew and Guilliams, Tim and Latimer, Joanna and McNamee, Christine and Norris, Alan and Sanseau, Philippe and Cavalla, David and Pirmohamed, Munir},
@@ -7,7 +8,9 @@
   journal = {Nature Reviews Drug Discovery},
   year    = {2019},
   volume  = {18},
-  pages   = {41--58}
+  number  = {1},
+  pages   = {41--58},
+  doi     = {10.1038/nrd.2018.168}
 }
 
 @article{chandak2023primekg,
@@ -16,7 +19,8 @@
   journal = {Scientific Data},
   year    = {2023},
   volume  = {10},
-  pages   = {67}
+  pages   = {67},
+  doi     = {10.1038/s41597-023-01960-3}
 }
 
 @article{huang2024txgnn,
@@ -25,7 +29,9 @@
   journal = {Nature Medicine},
   year    = {2024},
   volume  = {30},
-  pages   = {3601--3613}
+  number  = {12},
+  pages   = {3601--3613},
+  doi     = {10.1038/s41591-024-03233-x}
 }
 
 @article{himmelstein2017hetionet,
@@ -34,7 +40,8 @@
   journal = {eLife},
   year    = {2017},
   volume  = {6},
-  pages   = {e26726}
+  pages   = {e26726},
+  doi     = {10.7554/eLife.26726}
 }
 
 @article{zitnik2018decagon,
@@ -44,20 +51,22 @@
   year    = {2018},
   volume  = {34},
   number  = {13},
-  pages   = {i457--i466}
+  pages   = {i457--i466},
+  doi     = {10.1093/bioinformatics/bty294}
 }
 
 @inproceedings{bordes2013transe,
   author    = {Bordes, Antoine and Usunier, Nicolas and Garcia-Dur{\'a}n, Alberto and Weston, Jason and Yakhnenko, Oksana},
   title     = {Translating Embeddings for Modeling Multi-relational Data},
-  booktitle = {Advances in Neural Information Processing Systems 26 (NeurIPS)},
-  year      = {2013}
+  booktitle = {Advances in Neural Information Processing Systems 26 (NeurIPS 2013)},
+  year      = {2013},
+  pages     = {2787--2795}
 }
 
 @inproceedings{sun2019rotate,
   author    = {Sun, Zhiqing and Deng, Zhi-Hong and Nie, Jian-Yun and Tang, Jian},
   title     = {{RotatE}: Knowledge Graph Embedding by Relational Rotation in Complex Space},
-  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  booktitle = {7th International Conference on Learning Representations (ICLR 2019)},
   year      = {2019}
 }
 
@@ -74,9 +83,10 @@
 @inproceedings{wang2019kgat,
   author    = {Wang, Xiang and He, Xiangnan and Cao, Yixin and Liu, Meng and Chua, Tat-Seng},
   title     = {{KGAT}: Knowledge Graph Attention Network for Recommendation},
-  booktitle = {Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  booktitle = {25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining (KDD '19)},
   year      = {2019},
-  pages     = {950--958}
+  pages     = {950--958},
+  doi       = {10.1145/3292500.3330989}
 }
 
 @article{zhang2020explainable,
@@ -86,7 +96,8 @@
   year    = {2020},
   volume  = {14},
   number  = {1},
-  pages   = {1--101}
+  pages   = {1--101},
+  doi     = {10.1561/1500000066}
 }
 
 @article{wu2024llmrec,
@@ -95,14 +106,17 @@
   journal = {World Wide Web},
   year    = {2024},
   volume  = {27},
-  pages   = {60}
+  number  = {5},
+  pages   = {60},
+  doi     = {10.1007/s11280-024-01291-2}
 }
 
 @inproceedings{lewis2020rag,
   author    = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe},
   title     = {Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
-  booktitle = {Advances in Neural Information Processing Systems 33 (NeurIPS)},
-  year      = {2020}
+  booktitle = {Advances in Neural Information Processing Systems 33 (NeurIPS 2020)},
+  year      = {2020},
+  pages     = {9459--9474}
 }
 
 @article{pan2024unifying,
@@ -112,7 +126,8 @@
   year    = {2024},
   volume  = {36},
   number  = {7},
-  pages   = {3580--3599}
+  pages   = {3580--3599},
+  doi     = {10.1109/TKDE.2024.3352100}
 }
 
 @article{ji2023hallucination,
@@ -122,27 +137,34 @@
   year    = {2023},
   volume  = {55},
   number  = {12},
-  pages   = {1--38}
+  pages   = {1--38},
+  doi     = {10.1145/3571730}
 }
 
 @inproceedings{es2024ragas,
   author    = {Es, Shahul and James, Jithin and Espinosa-Anke, Luis and Schockaert, Steven},
-  title     = {{RAGAS}: Automated Evaluation of Retrieval Augmented Generation},
-  booktitle = {Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations},
-  year      = {2024}
+  title     = {{RAGAs}: Automated Evaluation of Retrieval Augmented Generation},
+  booktitle = {18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations (EACL 2024)},
+  year      = {2024},
+  pages     = {150--158},
+  doi       = {10.18653/v1/2024.eacl-demo.16}
 }
 
 @inproceedings{zheng2023judge,
   author    = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
   title     = {Judging {LLM}-as-a-Judge with {MT-Bench} and {Chatbot Arena}},
-  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS), Datasets and Benchmarks Track},
-  year      = {2023}
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track},
+  year      = {2023},
+  pages     = {46595--46623},
+  doi       = {10.52202/075280-2020}
 }
 
 @inproceedings{guo2017calibration,
   author    = {Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
   title     = {On Calibration of Modern Neural Networks},
-  booktitle = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+  booktitle = {34th International Conference on Machine Learning (ICML 2017)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
   year      = {2017},
   pages     = {1321--1330}
 }
@@ -151,7 +173,9 @@
   author    = {Platt, John C.},
   title     = {Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods},
   booktitle = {Advances in Large Margin Classifiers},
+  editor    = {Smola, Alexander J. and Bartlett, Peter and Sch{\"o}lkopf, Bernhard and Schuurmans, Dale},
   publisher = {MIT Press},
+  address   = {Cambridge, MA, USA},
   year      = {1999},
   pages     = {61--74}
 }
@@ -159,61 +183,67 @@
 @inproceedings{zadrozny2002,
   author    = {Zadrozny, Bianca and Elkan, Charles},
   title     = {Transforming Classifier Scores into Accurate Multiclass Probability Estimates},
-  booktitle = {Proceedings of the 8th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  booktitle = {8th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '02)},
   year      = {2002},
-  pages     = {694--699}
+  pages     = {694--699},
+  doi       = {10.1145/775047.775151}
 }
 
 @inproceedings{naeini2015ece,
-  author    = {Naeini, Mahdi Pakdaman and Cooper, Gregory F. and Hauskrecht, Milos},
+  author    = {Pakdaman Naeini, Mahdi and Cooper, Gregory F. and Hauskrecht, Milos},
   title     = {Obtaining Well Calibrated Probabilities Using {Bayesian} Binning},
-  booktitle = {Proceedings of the 29th AAAI Conference on Artificial Intelligence},
+  booktitle = {29th AAAI Conference on Artificial Intelligence (AAAI-15)},
   year      = {2015},
-  pages     = {2901--2907}
+  pages     = {2901--2907},
+  doi       = {10.1609/aaai.v29i1.9602}
 }
 
 @article{kadavath2022know,
-  author  = {Kadavath, Saurav and others},
+  author  = {Kadavath, Saurav and Conerly, Tom and Askell, Amanda and Henighan, Tom and Drain, Dawn and Perez, Ethan and Schiefer, Nicholas and Hatfield-Dodds, Zac and DasSarma, Nova and others},
   title   = {Language Models (Mostly) Know What They Know},
-  journal = {arXiv preprint arXiv:2207.05221},
-  year    = {2022}
+  journal = {arXiv},
+  year    = {2022},
+  note    = {arXiv:2207.05221}
 }
 
 @inproceedings{xiong2024uncertainty,
   author    = {Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan},
   title     = {Can {LLMs} Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in {LLMs}},
-  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  booktitle = {12th International Conference on Learning Representations (ICLR 2024)},
   year      = {2024}
 }
 
 @inproceedings{cormack2009rrf,
   author    = {Cormack, Gordon V. and Clarke, Charles L. A. and B{\"u}ttcher, Stefan},
   title     = {Reciprocal Rank Fusion Outperforms {Condorcet} and Individual Rank Learning Methods},
-  booktitle = {Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  booktitle = {32nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '09)},
   year      = {2009},
-  pages     = {758--759}
+  pages     = {758--759},
+  doi       = {10.1145/1571941.1572114}
 }
 
 @inproceedings{zugner2018nettack,
   author    = {Z{\"u}gner, Daniel and Akbarnejad, Amir and G{\"u}nnemann, Stephan},
   title     = {Adversarial Attacks on Neural Networks for Graph Data},
-  booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  booktitle = {24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining (KDD '18)},
   year      = {2018},
-  pages     = {2847--2856}
+  pages     = {2847--2856},
+  doi       = {10.1145/3219819.3220078}
 }
 
 @inproceedings{zhang2019kgepoison,
   author    = {Zhang, Hengtong and Zheng, Tianhang and Gao, Jing and Miao, Chenglin and Su, Lu and Li, Yaliang and Ren, Kui},
   title     = {Data Poisoning Attack against Knowledge Graph Embedding},
-  booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence (IJCAI)},
+  booktitle = {28th International Joint Conference on Artificial Intelligence (IJCAI-19)},
   year      = {2019},
-  pages     = {4853--4859}
+  pages     = {4853--4859},
+  doi       = {10.24963/ijcai.2019/674}
 }
 
 @inproceedings{carlini2021extracting,
   author    = {Carlini, Nicholas and Tram{\`e}r, Florian and Wallace, Eric and Jagielski, Matthew and Herbert-Voss, Ariel and Lee, Katherine and Roberts, Adam and Brown, Tom and Song, Dawn and Erlingsson, {\'U}lfar and Oprea, Alina and Raffel, Colin},
   title     = {Extracting Training Data from Large Language Models},
-  booktitle = {Proceedings of the 30th USENIX Security Symposium},
+  booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
   year      = {2021},
   pages     = {2633--2650}
 }
@@ -223,7 +253,8 @@
   title     = {An Introduction to the Bootstrap},
   publisher = {Chapman \& Hall},
   address   = {New York, NY, USA},
-  year      = {1993}
+  year      = {1993},
+  doi       = {10.1007/978-1-4899-4541-9}
 }
 
 @article{cohen1960kappa,
@@ -233,22 +264,64 @@
   year    = {1960},
   volume  = {20},
   number  = {1},
-  pages   = {37--46}
-}
-
-@article{openai2025gptoss,
-  author  = {{OpenAI}},
-  title   = {gpt-oss-120b \& gpt-oss-20b Model Card},
-  journal = {arXiv preprint arXiv:2508.10925},
-  year    = {2025},
-  note    = {TODO: verify}
+  pages   = {37--46},
+  doi     = {10.1177/001316446002000104}
 }
 
 @inproceedings{sheneman2026mindrouter,
   author    = {Sheneman, Lucas},
   title     = {{MindRouter}: Open-Source {LLM} Inference Gateway for Institutional {AI} Sovereignty},
-  booktitle = {Proceedings of the Practice and Experience in Advanced Research Computing 2026 (PEARC '26)},
+  booktitle = {Practice and Experience in Advanced Research Computing 2026 (PEARC '26)},
   pages     = {1--4},
   year      = {2026},
   doi       = {10.1145/3785462.3815861}
+}
+
+% ---- model reports / cards (models compared, and the faithfulness judge)
+@article{openai2025gptoss,
+  author  = {{OpenAI}},
+  title   = {gpt-oss-120b \& gpt-oss-20b Model Card},
+  journal = {arXiv},
+  year    = {2025},
+  note    = {arXiv:2508.10925}
+}
+
+@article{gemma2026gemma4,
+  author  = {{Gemma Team}},
+  title   = {Gemma 4 Technical Report},
+  journal = {arXiv},
+  year    = {2026},
+  note    = {arXiv:2607.02770}
+}
+
+@article{kimi2026k3,
+  author  = {{Kimi Team}},
+  title   = {Kimi {K3}: Open Frontier Intelligence},
+  journal = {arXiv},
+  year    = {2026},
+  note    = {arXiv:2607.24653}
+}
+
+@article{nvidia2026nemotron3super,
+  author  = {{NVIDIA}},
+  title   = {Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning},
+  journal = {arXiv},
+  year    = {2026},
+  note    = {arXiv:2604.12374}
+}
+
+@misc{qwen2026qwen35,
+  author       = {{Qwen Team}},
+  title        = {{Qwen3.5-122B-A10B} Model Card},
+  year         = {2026},
+  howpublished = {\url{https://huggingface.co/Qwen/Qwen3.5-122B-A10B}},
+  note         = {Accessed 15 November 2026}
+}
+
+@misc{qwen2026qwen38,
+  author       = {{Qwen Team}},
+  title        = {{Qwen3.8-27B} Model Card},
+  year         = {2026},
+  howpublished = {\url{https://huggingface.co/Qwen/Qwen3.8-27B}},
+  note         = {Accessed 15 November 2026}
 }

@@ -13,6 +13,7 @@
     \else\ifx\mdpi@f\mdpi@b\mdpi@orig@includegraphics[#1]{build_stub/logo-updates.pdf}%
     \else\mdpi@orig@includegraphics[#1]{#2}\fi\fi}\makeatother
 \fi
+\usepackage{xurl}  % break long URLs (repository link)
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,fit}
 \newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
@@ -116,7 +117,7 @@ For each test disease we take the top $k=20$ RotatE candidates. For each disease
 \subsection{Grounded Explanation and Re-Ranking}
 Each pair is sent to the LLM with a system prompt (Appendix~\ref{app:prompts}) that requires it to (i) use only the given paths, (ii) give a list of claims, each citing the path IDs that state it, (iii) write a short mechanism built from the claims, and (iv) output a confidence in $[0,1]$ that the drug is an effective treatment. The response must be a single JSON object. In the \emph{no-paths} baseline the same LLM receives only the disease and drug names and returns a mechanism and a confidence. All calls use temperature 0 and a 4,096-token limit; reasoning traces are discarded before parsing. Candidates are re-ranked by confidence, with ties broken by the RotatE rank; unparsable responses get confidence 0. We also report reciprocal rank fusion (RRF, $k=60$)~\cite{cormack2009rrf} of the RotatE and LLM rankings. Because only the top 20 are re-ranked, gold drugs outside the top 20 keep their RotatE rank; 37.7\% of test pairs have the gold drug inside the top 20, which bounds what re-ranking can achieve.
 
-We compare five open-weight LLMs served through the University of Idaho MindRouter gateway~\cite{sheneman2026mindrouter}, an OpenAI-compatible vLLM endpoint: Qwen3.8-27B (dense), Gemma-4-31B (dense), Qwen3.5-122B (mixture-of-experts, MoE), gpt-oss-120B (MoE)~\cite{openai2025gptoss} and Kimi-K3 (MoE, the largest) \TODO{cite model cards / technical reports for Qwen3.5, Qwen3.8, Gemma 4, Kimi K3}. This set spans four model families, dense and MoE designs, and a within-family size comparison (Qwen3.8-27B vs.\ Qwen3.5-122B).
+We compare five open-weight LLMs served through the University of Idaho MindRouter gateway~\cite{sheneman2026mindrouter}, an OpenAI-compatible vLLM endpoint: Qwen3.8-27B (dense)~\cite{qwen2026qwen38}, Gemma-4-31B (dense)~\cite{gemma2026gemma4}, Qwen3.5-122B (mixture-of-experts, MoE)~\cite{qwen2026qwen35}, gpt-oss-120B (MoE)~\cite{openai2025gptoss} and Kimi-K3 (MoE, the largest)~\cite{kimi2026k3}. This set spans four model families, dense and MoE designs, and a within-family size comparison (Qwen3.8-27B vs.\ Qwen3.5-122B).
 
 \subsection{Provenance}
 Every LLM call writes one JSON record containing: the PrimeKG release and file hash, the split directory, the KG model run and checkpoint, the LLM identifier, the prompt template version and full prompt text, the retrieved paths with their weights, the raw response (including any reasoning text), the parsed output, latency, token counts and a UTC timestamp. All tables in this paper are regenerated from these records by a single script.
@@ -124,7 +125,7 @@ Every LLM call writes one JSON record containing: the PrimeKG release and file h
 \subsection{Evaluation}
 \textbf{Accuracy.} We report MRR and Hits@\{1,3,10\} over the 939 test pairs. Differences between methods are given with 95\% percentile confidence intervals from a paired cluster bootstrap over test diseases (2,000 resamples)~\cite{efron1993bootstrap}, so that pairs of the same disease are resampled together.
 
-\textbf{Faithfulness.} For 100 test diseases sampled at random (2,000 pairs per model) we split each explanation into statements: each cited claim, and each sentence of the mechanism. A judge LLM outside the compared set (Nemotron-3-Super-120B) labels every statement \textsc{supported}, \textsc{partial} or \textsc{unsupported} given the paths---only the cited paths for cited statements, any path otherwise---and is told not to use outside knowledge (Appendix~\ref{app:prompts}). We also check that every cited ID exists. To validate the judge, the first author labelled a stratified sample of 126 statements (three models $\times$ \{claim, mechanism\} $\times$ three judge labels) without seeing the judge's labels; we report agreement as Cohen's $\kappa$~\cite{cohen1960kappa}. \TODO{human-label results; if the labels start from the AI-drafted sheet, say so here (``labels drafted by an AI assistant and checked by the first author'').}
+\textbf{Faithfulness.} For 100 test diseases sampled at random (2,000 pairs per model) we split each explanation into statements: each cited claim, and each sentence of the mechanism. A judge LLM outside the compared set (Nemotron-3-Super-120B~\cite{nvidia2026nemotron3super}) labels every statement \textsc{supported}, \textsc{partial} or \textsc{unsupported} given the paths---only the cited paths for cited statements, any path otherwise---and is told not to use outside knowledge (Appendix~\ref{app:prompts}). We also check that every cited ID exists. To validate the judge, the first author labelled a stratified sample of 126 statements (three models $\times$ \{claim, mechanism\} $\times$ three judge labels) without seeing the judge's labels; we report agreement as Cohen's $\kappa$~\cite{cohen1960kappa}. \TODO{human-label results; if the labels start from the AI-drafted sheet, say so here (``labels drafted by an AI assistant and checked by the first author'').}
 
 A second prompt (v2) replaces the free-text mechanism with a list of sentences, each of which must cite the paths it restates, or state that the paths do not establish a mechanism. We run v2 with Qwen3.8-27B and Gemma-4-31B on the same 100 diseases.
 
@@ -371,7 +372,7 @@ We framed drug repurposing as a KG-grounded recommendation task and evaluated no
 
 \informedconsent{Not applicable.}
 
-\dataavailability{PrimeKG v2.1 is available from Harvard Dataverse (doi:10.7910/DVN/IXA7BM). Code, prompts, split definitions and provenance logs are available at \url{https://github.com/utpoln/trustworthy-drug-repurposing} \TODO{archive DOI (e.g.\ Zenodo) for the submitted version}.}
+\dataavailability{PrimeKG v2.1 is available from Harvard Dataverse (\url{https://doi.org/10.7910/DVN/IXA7BM}). Code, prompts, split definitions and provenance logs are available in the GitHub repository \url{https://github.com/utpoln/trustworthy-drug-repurposing} \TODO{archive DOI (e.g.\ Zenodo) for the submitted version}.}
 
 % AUTHOR CONFIRMATION REQUIRED: the GenAI statement must match how the AI assistant was actually used.
 \acknowledgments{The authors thank the University of Idaho Research Computing team for access to the MindRouter API gateway~\cite{sheneman2026mindrouter} used for all model inference in this study. Separately from the LLMs evaluated in this study, during its preparation the authors used Claude (Anthropic; Claude Opus 5.5) through the Claude Code environment as an AI assistant. It wrote and executed code for the data splits, candidate generation, path retrieval, LLM and judge runs, poisoning experiments and statistical analysis; drafted manuscript text, tables, figure code and bibliography entries; and drafted labels for the judge-validation sample. The authors defined the study's aims and design, reviewed each design decision, and checked the code, results, references and text. The authors take full responsibility for the content of this publication.}
@@ -398,7 +399,9 @@ RRF & Reciprocal rank fusion
 \appendixstart
 \appendix
 \section{Prompts}\label{app:prompts}
-The full prompt texts (grounded v1 and v2, no-paths, and judge) are given in the repository (\texttt{src/llm/prompts.py}, \texttt{src/eval/faithfulness.py}); their template versions are recorded in every provenance record. \TODO{paste the grounded-v1 system prompt and the judge prompt here verbatim.}
+All prompts are reproduced verbatim below (long lines wrapped for print; wrapped continuation lines are indented). Placeholders in braces are filled per request; in the user prompt, \texttt{\{paths\}} is the numbered list \texttt{P1: \ldots}, \texttt{P2: \ldots} of path texts, and in the judge prompt each statement is followed by its cited path IDs or \texttt{[cites: none]}. The template version is recorded in every provenance record. Source: \texttt{src/llm/prompts.py} and \texttt{src/eval/faithfulness.py}.
+
+\input{tables/prompts_appendix.tex}
 
 \begin{adjustwidth}{-\extralength}{0cm}
 \reftitle{References}
