@@ -40,7 +40,9 @@ def load_llm(path: Path) -> pd.DataFrame:
                          "error": r["llm"]["error"]})
     df = pd.DataFrame(rows)
     # keep the last successful record per pair (reruns append)
-    df = df.sort_values("error", na_position="last").drop_duplicates(["disease", "drug"], keep="first")
+    df["_ok"] = df["error"].isna() & df["confidence"].notna()
+    df = (df.reset_index().sort_values(["_ok", "index"], ascending=[False, False])
+            .drop_duplicates(["disease", "drug"], keep="first").drop(columns=["_ok", "index"]))
     return df
 
 
