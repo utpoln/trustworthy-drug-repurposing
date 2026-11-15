@@ -220,6 +220,25 @@ def prompt_v2(res):
           f"Faithfulness, prompt v1 vs v2 (v2: every mechanism sentence must cite paths; judge {JUDGE})")
 
 
+# ----------------------------------------------------------------- KGE seeds
+def kge_seeds(res):
+    rows, per = [], {}
+    for sd in (42, 1, 2):
+        f = KGE / f"RotatE_seed{sd}" / "test_ranks.tsv"
+        if f.exists():
+            m = ranking_metrics(pd.read_csv(f, sep="\t")["kge_rank"].to_numpy(float))
+            best = json.loads((KGE / f"RotatE_seed{sd}" / "metrics.json").read_text()).get("best_epoch")
+            per[sd] = {**m, "best_epoch": best}
+            rows.append({"Seed": sd, "Best epoch": best, **{k: f"{m[k]:.3f}" for k in ("MRR", "Hits@1", "Hits@3", "Hits@10")}})
+    keys = ("MRR", "Hits@1", "Hits@3", "Hits@10")
+    agg = {k: {"mean": float(np.mean([v[k] for v in per.values()])),
+               "std": float(np.std([v[k] for v in per.values()], ddof=1))} for k in keys}
+    rows.append({"Seed": "mean ± std", "Best epoch": "–",
+                 **{k: f"{agg[k]['mean']:.3f} ± {agg[k]['std']:.3f}" for k in keys}})
+    res["kge_seeds"] = {"per_seed": per, "mean_std": agg}
+    write("kge_seeds", rows, ["Seed", "Best epoch", *keys], "RotatE test metrics over training seeds (same split)")
+
+
 # ----------------------------------------------------------------- recalibration
 def recalibration(res):
     """Fit monotone maps on validation-split LLM confidences, apply to test."""
@@ -356,12 +375,13 @@ def main():
     accuracy_calibration(res)
     faithfulness(res)
     robustness(res)
+    kge_seeds(res)
     prompt_v2(res)
     recalibration(res)
     (TAB / "results.json").write_text(json.dumps(res, indent=1, default=float))
     for f in ("accuracy", "calibration", "faithfulness", "robustness_kge",
               "robustness_llm_targeted", "robustness_llm_random", "prompt_v2_accuracy",
-              "prompt_v2_faithfulness", "recalibration"):
+              "prompt_v2_faithfulness", "recalibration", "kge_seeds"):
         print((TAB / f"{f}.md").read_text())
 
 
