@@ -3,7 +3,7 @@
 %  Build:  cd paper && pdflatex main && bibtex main && pdflatex main && pdflatex main
 %  Numbers: experiments/make_results.py -> results/tables/results.json and paper/tables/*.tex
 %  \TODO{...} marks text that still needs a result or an author decision.
-\documentclass[electronics,article,submit,oneauthor]{Definitions/mdpi}
+\documentclass[electronics,article,submit]{Definitions/mdpi}
 
 \usepackage{iftex}
 \ifXeTeX  % local preview build with tectonic only: no Ghostscript for the EPS logos, use stubs
@@ -36,11 +36,11 @@
 
 \Title{Trustworthy Drug Repurposing Recommendation via Knowledge-Graph-Grounded Large Language Models}
 \TitleCitation{Trustworthy Drug Repurposing Recommendation via Knowledge-Graph-Grounded Large Language Models}
-\Author{Kallol Naha $^{1,}$*}
-\AuthorNames{Kallol Naha}
-\AuthorCitation{Naha, K.}
-\address{$^{1}$ \quad \TODO{affiliation}}
-\corres{Correspondence: \TODO{e-mail}}
+\Author{Kallol Naha $^{1}$ and Hasan Jamil $^{1,}$*}
+\AuthorNames{Kallol Naha and Hasan Jamil}
+\AuthorCitation{Naha, K.; Jamil, H.}
+\address{$^{1}$ \quad Department of Computer Science, University of Idaho, 875 Perimeter Dr, Moscow, ID 83844, USA; naha7197@vandals.uidaho.edu}
+\corres{Correspondence: jamil@uidaho.edu}
 
 \abstract{Drug repurposing can be framed as a recommendation problem: for each disease, rank existing drugs by how likely they are to treat it. Knowledge-graph (KG) embedding models give useful rankings but no reasons, while large language models (LLMs) give fluent reasons that may be invented. We study a two-stage recommender that keeps the two roles apart. A RotatE model trained on PrimeKG proposes the top-20 drugs for each disease; for each candidate we retrieve up to ten 2--3-hop KG paths, and an LLM must explain the candidate using only those paths, cite them, and return a confidence that re-ranks the list. Every recommendation is logged with full provenance. On 939 held-out indications, grounded re-ranking raises MRR from 0.179 to 0.247--0.264 for four of five LLMs, and the paths add 0.03--0.05 MRR over the same LLMs without paths. Cited claims are almost always supported by the cited paths (97--99\%), but free-text mechanisms are not (14--28\% supported); requiring every mechanism sentence to cite paths raises this to 88--91\% at a small cost in accuracy. Raw confidences are badly over-confident (ECE 0.24--0.29) yet rank well (AUROC 0.80--0.90), and a two-parameter Platt map fitted on validation diseases reduces ECE to below 0.015. Grounding is also a vulnerability: three fake KG chains per decoy drug lift it to the top rank for up to 20\% of diseases, and the LLM cites the fake edges in over 98\% of those explanations. On 136 diseases whose drug edges are all withheld from training, grounded re-ranking raises MRR from 0.109 to 0.148--0.190, the paths add 0.03--0.05 MRR for four of five LLMs, and the gain comes almost entirely from paths through indications of ontologically related diseases; TxGNN, designed for this setting, reaches MRR 0.040 in our protocol.}
 
@@ -116,7 +116,7 @@ For each test disease we take the top $k=20$ RotatE candidates. For each disease
 \subsection{Grounded Explanation and Re-Ranking}
 Each pair is sent to the LLM with a system prompt (Appendix~\ref{app:prompts}) that requires it to (i) use only the given paths, (ii) give a list of claims, each citing the path IDs that state it, (iii) write a short mechanism built from the claims, and (iv) output a confidence in $[0,1]$ that the drug is an effective treatment. The response must be a single JSON object. In the \emph{no-paths} baseline the same LLM receives only the disease and drug names and returns a mechanism and a confidence. All calls use temperature 0 and a 4,096-token limit; reasoning traces are discarded before parsing. Candidates are re-ranked by confidence, with ties broken by the RotatE rank; unparsable responses get confidence 0. We also report reciprocal rank fusion (RRF, $k=60$)~\cite{cormack2009rrf} of the RotatE and LLM rankings. Because only the top 20 are re-ranked, gold drugs outside the top 20 keep their RotatE rank; 37.7\% of test pairs have the gold drug inside the top 20, which bounds what re-ranking can achieve.
 
-We compare five open-weight LLMs served through an OpenAI-compatible vLLM endpoint: Qwen3.8-27B (dense), Gemma-4-31B (dense), Qwen3.5-122B (mixture-of-experts, MoE), gpt-oss-120B (MoE)~\cite{openai2025gptoss} and Kimi-K3 (MoE, the largest) \TODO{cite model cards / technical reports for Qwen3.5, Qwen3.8, Gemma 4, Kimi K3}. This set spans four model families, dense and MoE designs, and a within-family size comparison (Qwen3.8-27B vs.\ Qwen3.5-122B).
+We compare five open-weight LLMs served through the University of Idaho MindRouter gateway~\cite{sheneman2026mindrouter}, an OpenAI-compatible vLLM endpoint: Qwen3.8-27B (dense), Gemma-4-31B (dense), Qwen3.5-122B (mixture-of-experts, MoE), gpt-oss-120B (MoE)~\cite{openai2025gptoss} and Kimi-K3 (MoE, the largest) \TODO{cite model cards / technical reports for Qwen3.5, Qwen3.8, Gemma 4, Kimi K3}. This set spans four model families, dense and MoE designs, and a within-family size comparison (Qwen3.8-27B vs.\ Qwen3.5-122B).
 
 \subsection{Provenance}
 Every LLM call writes one JSON record containing: the PrimeKG release and file hash, the split directory, the KG model run and checkpoint, the LLM identifier, the prompt template version and full prompt text, the retrieved paths with their weights, the raw response (including any reasoning text), the parsed output, latency, token counts and a UTC timestamp. All tables in this paper are regenerated from these records by a single script.
@@ -124,7 +124,7 @@ Every LLM call writes one JSON record containing: the PrimeKG release and file h
 \subsection{Evaluation}
 \textbf{Accuracy.} We report MRR and Hits@\{1,3,10\} over the 939 test pairs. Differences between methods are given with 95\% percentile confidence intervals from a paired cluster bootstrap over test diseases (2,000 resamples)~\cite{efron1993bootstrap}, so that pairs of the same disease are resampled together.
 
-\textbf{Faithfulness.} For 100 test diseases sampled at random (2,000 pairs per model) we split each explanation into statements: each cited claim, and each sentence of the mechanism. A judge LLM outside the compared set (Nemotron-3-Super-120B) labels every statement \textsc{supported}, \textsc{partial} or \textsc{unsupported} given the paths---only the cited paths for cited statements, any path otherwise---and is told not to use outside knowledge (Appendix~\ref{app:prompts}). We also check that every cited ID exists. To validate the judge, the author labelled a stratified sample of 126 statements (three models $\times$ \{claim, mechanism\} $\times$ three judge labels) without seeing the judge's labels; we report agreement as Cohen's $\kappa$~\cite{cohen1960kappa}. \TODO{human-label results.}
+\textbf{Faithfulness.} For 100 test diseases sampled at random (2,000 pairs per model) we split each explanation into statements: each cited claim, and each sentence of the mechanism. A judge LLM outside the compared set (Nemotron-3-Super-120B) labels every statement \textsc{supported}, \textsc{partial} or \textsc{unsupported} given the paths---only the cited paths for cited statements, any path otherwise---and is told not to use outside knowledge (Appendix~\ref{app:prompts}). We also check that every cited ID exists. To validate the judge, the first author labelled a stratified sample of 126 statements (three models $\times$ \{claim, mechanism\} $\times$ three judge labels) without seeing the judge's labels; we report agreement as Cohen's $\kappa$~\cite{cohen1960kappa}. \TODO{human-label results; if the labels start from the AI-drafted sheet, say so here (``labels drafted by an AI assistant and checked by the first author'').}
 
 A second prompt (v2) replaces the free-text mechanism with a list of sentences, each of which must cite the paths it restates, or state that the paths do not establish a mechanism. We run v2 with Qwen3.8-27B and Gemma-4-31B on the same 100 diseases.
 
@@ -178,7 +178,7 @@ Table~\ref{tab:faith} and Figure~\ref{fig:faith} report the judge's labels. Cite
 
 Requiring each mechanism sentence to cite paths (prompt v2) changes this sharply (Table~\ref{tab:v2}): supported mechanism sentences rise from 28\% to 88\% (Qwen3.8-27B) and from 24\% to 91\% (Gemma-4-31B), and fully supported explanations from 16--18\% to 78--84\%. The models also write about half as many mechanism sentences. The cost is a small drop in accuracy on these 100 diseases ($-0.023$ and $-0.017$ MRR; the first CI just reaches zero, the second includes it) and a lower parse rate for Gemma-4-31B (97.1\%).
 
-\TODO{Judge validation: Cohen's $\kappa$ between the judge and the author's labels on 126 statements, overall and for mechanism sentences; note the error types observed (e.g.\ a direct indication claim labelled supported; honest ``the paths do not establish a mechanism'' sentences labelled unsupported).}
+\TODO{Judge validation: Cohen's $\kappa$ between the judge and the first author's labels on 126 statements, overall and for mechanism sentences; note the error types observed (e.g.\ a direct indication claim labelled supported; honest ``the paths do not establish a mechanism'' sentences labelled unsupported).}
 
 \begin{table}[H]
 \caption{Faithfulness of grounded explanations (judge Nemotron-3-Super-120B; 100 test diseases, 20 candidates each). S/P/U: share of statements labelled supported / partial / unsupported. Pair all-S: share of explanations whose statements are all supported. Cite valid: share of claims whose cited IDs all exist.\label{tab:faith}}
@@ -362,19 +362,21 @@ We framed drug repurposing as a KG-grounded recommendation task and evaluated no
 
 \vspace{6pt}
 
-\authorcontributions{\TODO{e.g. ``The author confirms sole responsibility for conceptualization, methodology, software, analysis and writing.''}}
+\authorcontributions{Conceptualization, K.N.; methodology, K.N. and H.J.; software, K.N.; validation, K.N.; formal analysis, K.N.; investigation, K.N.; data curation, K.N.; visualization, K.N.; writing---original draft preparation, K.N.; writing---review and editing, H.J. and K.N.; supervision, H.J. All authors have read and agreed to the published version of the manuscript.}
 
-\funding{\TODO{funding statement}}
+% AUTHOR CONFIRMATION REQUIRED: grants copied from the RAGO/RAMP/PROBE manuscripts; confirm they apply to this study.
+\funding{This research was supported in part by the National Institutes of Health IDeA grant P20GM103408, the National Science Foundation CSSI grant OAC 2410668, and the USDA-NIFA Sustainable Agriculture Systems grant 2020-69012-31871.}
 
 \institutionalreview{Not applicable.}
 
 \informedconsent{Not applicable.}
 
-\dataavailability{PrimeKG v2.1 is available from Harvard Dataverse (doi:10.7910/DVN/IXA7BM). Code, prompts, split definitions and provenance logs are available at \TODO{repository URL / archive DOI}.}
+\dataavailability{PrimeKG v2.1 is available from Harvard Dataverse (doi:10.7910/DVN/IXA7BM). Code, prompts, split definitions and provenance logs are available at \url{https://github.com/utpoln/trustworthy-drug-repurposing} \TODO{archive DOI (e.g.\ Zenodo) for the submitted version}.}
 
-\acknowledgments{LLM inference was served by the MindRouter endpoint at the University of Idaho \TODO{confirm wording}. \TODO{GenAI disclosure as required by MDPI: name the tools, versions and purposes for which generative AI assisted in preparing the code or manuscript, beyond the LLMs studied as subjects of the experiments.}}
+% AUTHOR CONFIRMATION REQUIRED: the GenAI statement must match how the AI assistant was actually used.
+\acknowledgments{The authors thank the University of Idaho Research Computing team for access to the MindRouter API gateway~\cite{sheneman2026mindrouter} used for all model inference in this study. Separately from the LLMs evaluated in this study, during its preparation the authors used Claude (Anthropic; Claude Opus 5.5) through the Claude Code environment as an AI assistant. It wrote and executed code for the data splits, candidate generation, path retrieval, LLM and judge runs, poisoning experiments and statistical analysis; drafted manuscript text, tables, figure code and bibliography entries; and drafted labels for the judge-validation sample. The authors defined the study's aims and design, reviewed each design decision, and checked the code, results, references and text. The authors take full responsibility for the content of this publication.}
 
-\conflictsofinterest{The author declares no conflicts of interest.}
+\conflictsofinterest{The authors declare no conflicts of interest.}
 
 \abbreviations{Abbreviations}{
 The following abbreviations are used in this manuscript:
