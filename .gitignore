@@ -45,3 +45,11 @@ results/runs/llm/**/*.jsonl
 
 # live LLM run logs
 results/logs/llm_*.log
+
+# TxGNN baseline: isolated env + upstream code
+.venv-txgnn/
+third_party/
+data/processed/txgnn*/
+results/runs/txgnn/**/model/
+results/runs/txgnn/**/*.npz
+results/runs/txgnn/**/*.pkl
