@@ -64,4 +64,11 @@ scripts/           one-off utilities (e.g. test_mindrouter.py)
 - [x] Splits (`src/kg/split.py`, seed 42): 7,510 / 939 / 939 indication edges (train/valid/test);
       off-label/contraindication edges for held-out pairs removed from train (50 edges).
       Outputs in `data/processed/primekg_v2.1_seed42/` (large `.tsv.gz` files are git-ignored; rerun the script to rebuild them)
-- [ ] Link prediction (PyKEEN), then path retrieval, LLM re-ranking, evaluation, then paper (LaTeX)
+- [x] Link prediction: RotatE (seeds 42/1/2) + TransE (`src/candidates/`); TxGNN baseline in `.venv-txgnn` (`src/baselines/`)
+- [x] Path retrieval, grounded/no-paths LLM runs for 5 models, faithfulness judge, recalibration (valid split), prompt v2, poisoning
+- [x] All tables: `python -m experiments.make_results`; figures: `python -m experiments.make_figures`
+- [x] Manuscript draft `paper/main.tex` (MDPI template); build locally with `cd paper && tectonic -X compile main.tex`
+      (no Ghostscript locally: EPS logos replaced by `paper/build_stub/` under XeTeX only; Overleaf/pdflatex uses real logos)
+- [ ] Disease-held-out split (`python -m src.kg.split --by disease`; set `KG_SPLIT=data/processed/primekg_v2.1_disease_seed42` for all scripts): RotatE, TxGNN, LLM runs -> paper Section 4.5
+- [ ] Human labels for 126 faithfulness statements (`results/human_eval/faithfulness_sheet.csv`) -> Cohen's kappa
+- [ ] Remaining `\TODO{}` items in `paper/main.tex` (affiliation, model-card citations, GenAI disclosure, repo DOI)
