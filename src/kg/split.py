@@ -26,8 +26,16 @@ Outputs (data/processed/primekg_v2.1_seed{seed}/)
   test.tsv        head, relation, tail      (indication only)
   split_meta.json provenance: source md5, seed, ratios, counts, removals
 
+Disease-held-out mode (--by disease)
+------------------------------------
+The zero-shot repurposing setting of TxGNN: whole diseases (with >= 1
+indication) are assigned to valid / test, and ALL their drug-disease edges
+(indication, contraindication, off-label use) are removed from training, so
+the model has seen no treatment information for them. Their other edges
+(genes, phenotypes, ontology) stay. Output: primekg_v2.1_disease_seed{seed}/.
+
 Usage:
-    python -m src.kg.split [--seed 42] [--valid 0.1] [--test 0.1]
+    python -m src.kg.split [--seed 42] [--valid 0.1] [--test 0.1] [--by pair|disease]
 """
 import argparse
 import hashlib
@@ -98,6 +106,7 @@ def main() -> None:
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--valid", type=float, default=0.1)
     ap.add_argument("--test", type=float, default=0.1)
+    ap.add_argument("--by", choices=["pair", "disease"], default="pair")
     args = ap.parse_args()
 
     md5 = md5sum(args.kg)
@@ -114,19 +123,32 @@ def main() -> None:
     ind = triples[triples["relation"] == TARGET].reset_index(drop=True)
     rest = triples[triples["relation"] != TARGET]
     rng = np.random.default_rng(args.seed)
-    perm = rng.permutation(len(ind))
-    n_test = int(round(args.test * len(ind)))
-    n_valid = int(round(args.valid * len(ind)))
-    test = ind.iloc[perm[:n_test]]
-    valid = ind.iloc[perm[n_test:n_test + n_valid]]
-    train_ind = ind.iloc[perm[n_test + n_valid:]]
+    if args.by == "pair":
+        perm = rng.permutation(len(ind))
+        n_test = int(round(args.test * len(ind)))
+        n_valid = int(round(args.valid * len(ind)))
+        test = ind.iloc[perm[:n_test]]
+        valid = ind.iloc[perm[n_test:n_test + n_valid]]
+        train_ind = ind.iloc[perm[n_test + n_valid:]]
+    else:
+        dis = np.array(sorted(ind["tail"].unique()))
+        perm = rng.permutation(len(dis))
+        n_test = int(round(args.test * len(dis)))
+        n_valid = int(round(args.valid * len(dis)))
+        test_d, valid_d = set(dis[perm[:n_test]]), set(dis[perm[n_test:n_test + n_valid]])
+        test = ind[ind["tail"].isin(test_d)]
+        valid = ind[ind["tail"].isin(valid_d)]
+        train_ind = ind[~ind["tail"].isin(test_d | valid_d)]
 
     # Remove leaky drug-disease edges for held-out pairs
     held = set(zip(pd.concat([valid, test])["head"], pd.concat([valid, test])["tail"]))
     pair = list(zip(rest["head"], rest["tail"]))
-    leak_mask = rest["relation"].isin(LEAKY).to_numpy() & np.fromiter(
-        (p in held for p in pair), dtype=bool, count=len(pair)
-    )
+    if args.by == "pair":
+        leak_mask = rest["relation"].isin(LEAKY).to_numpy() & np.fromiter(
+            (p in held for p in pair), dtype=bool, count=len(pair)
+        )
+    else:  # every drug-disease edge of a held-out disease
+        leak_mask = rest["relation"].isin(LEAKY).to_numpy() & rest["tail"].isin(test_d | valid_d).to_numpy()
     removed = rest[leak_mask]
     train = pd.concat([rest[~leak_mask], train_ind], ignore_index=True)
 
@@ -136,12 +158,15 @@ def main() -> None:
     assert not set(zip(valid["head"], valid["tail"])) & set(zip(test["head"], test["tail"]))
     leftover = train[train["relation"].isin(LEAKY)]
     assert not (set(zip(leftover["head"], leftover["tail"])) & held), "leaky edge left in train"
+    if args.by == "disease":
+        dd = train[train["relation"].isin(DRUG_DISEASE)]
+        assert not dd["tail"].isin(test_d | valid_d).any(), "drug-disease edge of a held-out disease in train"
 
     train_entities = set(train["head"]).union(train["tail"])
     def unseen(df):
         return int((~df["head"].isin(train_entities) | ~df["tail"].isin(train_entities)).sum())
 
-    out = OUT_BASE / f"primekg_v2.1_seed{args.seed}"
+    out = OUT_BASE / (f"primekg_v2.1_seed{args.seed}" if args.by == "pair" else f"primekg_v2.1_disease_seed{args.seed}")
     out.mkdir(parents=True, exist_ok=True)
     nodes.to_csv(out / "nodes.tsv.gz", sep="\t", index=False)
     train.to_csv(out / "train.tsv.gz", sep="\t", index=False)
@@ -153,6 +178,7 @@ def main() -> None:
         "data_version": DATA_VERSION,
         "source_md5": md5,
         "seed": args.seed,
+        "split_by": args.by,
         "ratios": {"train": 1 - args.valid - args.test, "valid": args.valid, "test": args.test},
         "n_nodes": len(nodes),
         "n_canonical_triples": len(triples),

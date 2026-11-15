@@ -12,6 +12,7 @@ Only mechanism-related relations are used (see RELATIONS). Anatomy
 expression edges and most ontology parent-child edges are excluded: they are
 very numerous and rarely explain a mechanism.
 """
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -20,7 +21,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SPLIT = ROOT / "data" / "processed" / "primekg_v2.1_seed42"
+DEFAULT_SPLIT = Path(os.environ["KG_SPLIT"]).resolve() if os.environ.get("KG_SPLIT") else ROOT / "data" / "processed" / "primekg_v2.1_seed42"  # override with env KG_SPLIT
 RAW_KG = ROOT / "data" / "raw" / "kg.csv"
 
 RELATIONS = {

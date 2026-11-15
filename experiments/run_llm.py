@@ -11,6 +11,7 @@ Usage:
   python -m experiments.run_llm --model qwen/qwen3.8-27b --limit-diseases 5   # quick test
   python -m experiments.run_llm --model ... --graph data/poisoned/<x>/train.tsv.gz --tag poison_x
 """
+import os
 import argparse
 import json
 import time
@@ -25,7 +26,7 @@ from src.provenance.log import JsonlLog, file_md5, git_commit, now_utc, text_sha
 from src.retrieval.paths import RELATIONS, find_paths, load_graph, path_to_dict, path_to_text
 
 ROOT = Path(__file__).resolve().parents[1]
-SPLIT = ROOT / "data" / "processed" / "primekg_v2.1_seed42"
+SPLIT = Path(os.environ["KG_SPLIT"]).resolve() if os.environ.get("KG_SPLIT") else ROOT / "data" / "processed" / "primekg_v2.1_seed42"  # override with env KG_SPLIT
 
 
 def slug(model: str) -> str:

@@ -15,6 +15,7 @@ x_id is our node_index, which maps TxGNN outputs back to our ids.
 
 Usage: python -m src.baselines.txgnn_prep [--train-file data/poisoned/<x>/train.tsv.gz --out ...]
 """
+import os
 import argparse
 import json
 from pathlib import Path
@@ -25,7 +26,7 @@ import pandas as pd
 from src.provenance.log import file_md5, now_utc
 
 ROOT = Path(__file__).resolve().parents[2]
-SPLIT = ROOT / "data" / "processed" / "primekg_v2.1_seed42"
+SPLIT = Path(os.environ["KG_SPLIT"]).resolve() if os.environ.get("KG_SPLIT") else ROOT / "data" / "processed" / "primekg_v2.1_seed42"  # override with env KG_SPLIT
 
 
 def to_txgnn(df: pd.DataFrame, ntype: dict, idx: dict) -> pd.DataFrame:

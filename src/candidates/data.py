@@ -1,4 +1,5 @@
 """Load the processed PrimeKG split into PyKEEN TriplesFactories."""
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Set, Tuple
@@ -9,7 +10,7 @@ import torch
 from pykeen.triples import TriplesFactory
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SPLIT = ROOT / "data" / "processed" / "primekg_v2.1_seed42"
+DEFAULT_SPLIT = Path(os.environ["KG_SPLIT"]).resolve() if os.environ.get("KG_SPLIT") else ROOT / "data" / "processed" / "primekg_v2.1_seed42"  # override with env KG_SPLIT
 
 
 @dataclass
