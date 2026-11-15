@@ -20,6 +20,7 @@ import pandas as pd
 
 from src.eval.faithfulness import cites_fake, fake_edge_set
 from src.eval.ranking import ranking_metrics
+from src.eval.recalibrate import FITTERS
 from src.eval.rerank import calibration, load_llm, rerank_ranks
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -129,43 +130,130 @@ def accuracy_calibration(res):
 
 
 # ----------------------------------------------------------------- faithfulness
+def faith_counts(f: Path):
+    by = defaultdict(Counter); n_pairs = all_ok = valid = n_st = 0; seen = set()
+    recs = [json.loads(l) for l in open(f)]
+    for r in reversed(recs):  # last judgement per pair wins
+        key = (r["disease"], r["drug"])
+        if key in seen or r["llm"]["error"] or not r.get("labels"):
+            continue
+        seen.add(key); n_pairs += 1; ok = True
+        for s in r["statements"]:
+            lab = r["labels"].get(s["id"], "MISSING")
+            by[s["source"]][lab] += 1; by["all"][lab] += 1; n_st += 1
+            ok &= lab == "SUPPORTED"
+            if s["source"] == "claim":
+                valid += bool(s["cited"]) and all(
+                    c.startswith("P") and c[1:].isdigit() and 1 <= int(c[1:]) <= r["n_paths"] for c in s["cited"])
+        all_ok += ok
+    share = {src: {k: v / sum(c.values()) for k, v in c.items()} for src, c in by.items()}
+    return {"pairs": n_pairs, "statements": n_st, "share": share,
+            "n_mechanism": sum(by["mechanism"].values()),
+            "pairs_all_supported": all_ok / n_pairs,
+            "claim_citation_valid": valid / max(sum(by["claim"].values()), 1)}
+
+
+def faith_row(name, o):
+    g = lambda s, k: f"{o['share'].get(s, {}).get(k, 0):.3f}"
+    return {"Model": name, "Pairs": o["pairs"], "Stmts": o["statements"],
+            "Claim S": g("claim", "SUPPORTED"), "Claim U": g("claim", "UNSUPPORTED"),
+            "Mech S": g("mechanism", "SUPPORTED"), "Mech P": g("mechanism", "PARTIAL"),
+            "Mech U": g("mechanism", "UNSUPPORTED"), "All S": g("all", "SUPPORTED"),
+            "Pair all-S": f"{o['pairs_all_supported']:.3f}", "Cite valid": f"{o['claim_citation_valid']:.3f}"}
+
+
+FAITH_COLS = ["Model", "Pairs", "Stmts", "Claim S", "Claim U", "Mech S", "Mech P",
+              "Mech U", "All S", "Pair all-S", "Cite valid"]
+
+
 def faithfulness(res):
     rows, out = [], {}
     for slug, name in MODELS:
         f = LLM / "clean" / "grounded" / f"{slug}.judge_{JUDGE}.jsonl"
         if not f.exists():
             continue
-        by = defaultdict(Counter); n_pairs = all_ok = valid = n_st = 0; seen = set()
-        recs = [json.loads(l) for l in open(f)]
-        for r in reversed(recs):  # last judgement per pair wins
-            key = (r["disease"], r["drug"])
-            if key in seen or r["llm"]["error"] or not r.get("labels"):
-                continue
-            seen.add(key); n_pairs += 1; ok = True
-            for s in r["statements"]:
-                lab = r["labels"].get(s["id"], "MISSING")
-                by[s["source"]][lab] += 1; by["all"][lab] += 1; n_st += 1
-                ok &= lab == "SUPPORTED"
-                if s["source"] == "claim":
-                    valid += bool(s["cited"]) and all(
-                        c.startswith("P") and c[1:].isdigit() and 1 <= int(c[1:]) <= r["n_paths"] for c in s["cited"])
-            all_ok += ok
-        share = {src: {k: v / sum(c.values()) for k, v in c.items()} for src, c in by.items()}
-        out[slug] = {"pairs": n_pairs, "statements": n_st, "share": share,
-                     "pairs_all_supported": all_ok / n_pairs,
-                     "claim_citation_valid": valid / max(sum(by["claim"].values()), 1)}
-        g = lambda s, k: f"{share.get(s, {}).get(k, 0):.3f}"
-        rows.append({"Model": name, "Pairs": n_pairs, "Stmts": n_st,
-                     "Claim S": g("claim", "SUPPORTED"), "Claim U": g("claim", "UNSUPPORTED"),
-                     "Mech S": g("mechanism", "SUPPORTED"), "Mech P": g("mechanism", "PARTIAL"),
-                     "Mech U": g("mechanism", "UNSUPPORTED"), "All S": g("all", "SUPPORTED"),
-                     "Pair all-S": f"{all_ok / n_pairs:.3f}",
-                     "Cite valid": f"{out[slug]['claim_citation_valid']:.3f}"})
+        out[slug] = faith_counts(f)
+        rows.append(faith_row(name, out[slug]))
     res["faithfulness"] = {"judge": JUDGE, "models": out,
                            "note": "LLM-judge labels; pending validation against human labels"}
-    write("faithfulness", rows, ["Model", "Pairs", "Stmts", "Claim S", "Claim U", "Mech S", "Mech P",
-                                 "Mech U", "All S", "Pair all-S", "Cite valid"],
+    write("faithfulness", rows, FAITH_COLS,
           f"Faithfulness (judge {JUDGE}; S=supported, P=partial, U=unsupported; 100 sampled diseases)")
+
+
+# ----------------------------------------------------------------- prompt v2
+def prompt_v2(res):
+    """v1 vs v2 (cited mechanism sentences) on the same 100 sampled diseases."""
+    tr = pd.read_csv(KGE / "RotatE_seed42" / "test_ranks.tsv", sep="\t")
+    f_rows, a_rows, out = [], [], {}
+    for slug, name in MODELS:
+        v2f = LLM / "clean_v2" / "grounded" / f"{slug}.jsonl"
+        if not v2f.exists():
+            continue
+        L2 = load_llm(v2f)
+        dis = set(L2["disease"])
+        sub = tr[tr["disease"].isin(dis)].reset_index(drop=True)
+        boot = Boot(sub["disease"].to_numpy())
+        L1 = load_llm(LLM / "clean" / "grounded" / f"{slug}.jsonl")
+        L1 = L1[L1["disease"].isin(dis)]
+        r1 = np.array(rerank_ranks(L1, sub, K)["llm"], float)
+        r2 = np.array(rerank_ranks(L2, sub, K)["llm"], float)
+        kge = sub["kge_rank"].to_numpy(float)
+        d = 1 / r2 - 1 / r1
+        o = {"n_test_pairs": len(sub), "n_diseases": len(dis),
+             "rotate": ranking_metrics(kge), "v1": ranking_metrics(r1), "v2": ranking_metrics(r2),
+             "dMRR_v2_v1": {"mean": float(d.mean()), "ci": boot.ci(d)},
+             "cal_v1": calibration(L1), "cal_v2": calibration(L2)}
+        for v, m in (("v1", o["v1"]), ("v2", o["v2"])):
+            c = o[f"cal_{v}"]
+            a_rows.append({"Model": name, "Prompt": v, "MRR": f"{m['MRR']:.3f}", "H@1": f"{m['Hits@1']:.3f}",
+                           "H@10": f"{m['Hits@10']:.3f}", "ECE": f"{c['ECE']:.3f}", "AUROC": f"{c['AUROC']:.3f}",
+                           "dMRR": fmt_ci(d.mean(), o["dMRR_v2_v1"]["ci"]) if v == "v2" else "–"})
+        for v, base in (("v1", "clean"), ("v2", "clean_v2")):
+            jf = LLM / base / "grounded" / f"{slug}.judge_{JUDGE}.jsonl"
+            o[f"faith_{v}"] = faith_counts(jf)
+            f_rows.append(faith_row(f"{name} {v}", o[f"faith_{v}"]))
+        out[slug] = o
+    res["prompt_v2"] = out
+    write("prompt_v2_accuracy", a_rows, ["Model", "Prompt", "MRR", "H@1", "H@10", "ECE", "AUROC", "dMRR"],
+          f"Prompt v1 vs v2 on the 100 sampled test diseases (RotatE top-{K}; dMRR v2-v1, disease bootstrap)")
+    write("prompt_v2_faithfulness", f_rows, FAITH_COLS,
+          f"Faithfulness, prompt v1 vs v2 (v2: every mechanism sentence must cite paths; judge {JUDGE})")
+
+
+# ----------------------------------------------------------------- recalibration
+def recalibration(res):
+    """Fit monotone maps on validation-split LLM confidences, apply to test."""
+    rows, out = [], {}
+    for slug, name in MODELS:
+        vf = LLM / "valid" / "grounded" / f"{slug}.jsonl"
+        if not vf.exists():
+            continue
+        V = load_llm(vf).dropna(subset=["confidence"])
+        T = load_llm(LLM / "clean" / "grounded" / f"{slug}.jsonl").dropna(subset=["confidence"])
+        cv, yv = V["confidence"].to_numpy(float), V["is_gold"].to_numpy(int)
+        ct, yt = T["confidence"].to_numpy(float), T["is_gold"].to_numpy(int)
+        o = {"n_valid_pairs": len(V), "valid_base_rate": float(yv.mean()), "raw": cal_summary(ct, yt)}
+        rows.append({"Model": name, "Map": "none", "Params": "–", **cal_fmt(o["raw"])})
+        for mname, fit in FITTERS.items():
+            fmap = fit(cv, yv)
+            o[mname] = {"params": fmap.params, **cal_summary(np.asarray(fmap(ct), float), yt)}
+            ps = ", ".join(f"{k}={v:.2f}" if isinstance(v, float) else f"{k}={v}" for k, v in fmap.params.items())
+            rows.append({"Model": name, "Map": mname, "Params": ps, **cal_fmt(o[mname])})
+        out[slug] = o
+    res["recalibration"] = out
+    write("recalibration", rows, ["Model", "Map", "Params", "MeanConf", "ECE", "Brier", "AUROC"],
+          "Test-set calibration of grounded LLM confidence after maps fitted on the validation split "
+          "(100 validation diseases, top-20 candidates)")
+
+
+def cal_summary(c, y):
+    from src.eval.rerank import auroc, ece
+    return {"ECE": ece(c, y), "Brier": float(np.mean((c - y) ** 2)), "AUROC": auroc(c, y), "mean_conf": float(c.mean())}
+
+
+def cal_fmt(c):
+    return {"MeanConf": f"{c['mean_conf']:.3f}", "ECE": f"{c['ECE']:.3f}",
+            "Brier": f"{c['Brier']:.3f}", "AUROC": f"{c['AUROC']:.3f}"}
 
 
 # ----------------------------------------------------------------- robustness
@@ -268,9 +356,12 @@ def main():
     accuracy_calibration(res)
     faithfulness(res)
     robustness(res)
+    prompt_v2(res)
+    recalibration(res)
     (TAB / "results.json").write_text(json.dumps(res, indent=1, default=float))
     for f in ("accuracy", "calibration", "faithfulness", "robustness_kge",
-              "robustness_llm_targeted", "robustness_llm_random"):
+              "robustness_llm_targeted", "robustness_llm_random", "prompt_v2_accuracy",
+              "prompt_v2_faithfulness", "recalibration"):
         print((TAB / f"{f}.md").read_text())
 
 
