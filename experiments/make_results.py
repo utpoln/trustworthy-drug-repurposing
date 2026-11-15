@@ -101,6 +101,12 @@ def accuracy_calibration(res):
 
     if transe is not None:
         acc["TransE"] = row("TransE (graph only)", transe["kge_rank"].to_numpy(float))
+    txf = ROOT / "results" / "runs" / "txgnn" / "TxGNN_seed42" / "test_ranks.tsv"
+    if txf.exists():
+        tx = pd.read_csv(txf, sep="\t").set_index(["disease", "drug"]).loc[
+            list(zip(tr["disease"], tr["drug"]))]["kge_rank"].to_numpy(float)
+        acc["TxGNN"] = row("TxGNN (graph only)", tx)
+        acc["TxGNN"]["gold_in_topk"] = float(np.mean(tx <= K))
     acc["RotatE"] = row("RotatE (graph only)", kge)
     for slug, name in MODELS:
         R, cal = {}, {}
