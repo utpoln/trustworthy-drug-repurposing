@@ -64,7 +64,7 @@ This paper studies a recommender that separates the roles explicitly. A KG embed
 \item \textbf{Robustness.} What happens when the graph is poisoned, at training time and at retrieval time?
 \end{itemize}
 
-Our findings are mixed in a useful way. Grounded re-ranking improves accuracy for four of the five LLMs, and part of the gain comes from the paths rather than from the LLM's prior knowledge. Citation-level faithfulness is near perfect, but the free-text mechanism is mostly not supported by the paths until citations are required. Confidences rank well but are badly over-confident, which simple post-hoc recalibration fixes. Finally, the same grounding that makes explanations verifiable lets a few planted edges promote a decoy drug, with an explanation that cites the planted edges. We release the code, prompts and provenance logs \TODO{repository URL / archive DOI}.
+Our findings are mixed in a useful way. Grounded re-ranking improves accuracy for four of the five LLMs, and part of the gain comes from the paths rather than from the LLM's prior knowledge. Citation-level faithfulness is near perfect, but the free-text mechanism is mostly not supported by the paths until citations are required. Confidences rank well but are badly over-confident, which simple post-hoc recalibration fixes. Finally, the same grounding that makes explanations verifiable lets a few planted edges promote a decoy drug, with an explanation that cites the planted edges. We release the code, prompts and provenance logs at \url{https://github.com/utpoln/trustworthy-drug-repurposing}.
 
 %======================================================================
 \section{Related Work}
