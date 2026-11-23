@@ -6,9 +6,10 @@ Reports 3-class kappa, kappa with PARTIAL merged into UNSUPPORTED (binary "fully
 supported?"), raw agreement, per-source (claim / mechanism) breakdown and the confusion
 matrix. Writes results/tables/human_kappa.{md,json}.
 
-Usage: python -m src.eval.human_kappa
+Usage: python -m src.eval.human_kappa [sheet.csv]   (default results/human_eval/faithfulness_sheet.csv)
 """
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -27,7 +28,7 @@ def stats(h, j):
 
 
 def main():
-    sheet = pd.read_csv(HE / "faithfulness_sheet.csv")
+    sheet = pd.read_csv(sys.argv[1] if len(sys.argv) > 1 else HE / "faithfulness_sheet.csv")
     col = next(c for c in sheet.columns if c.startswith("your_label"))
     key = pd.read_csv(HE / "faithfulness_key.csv")
     df = sheet[["item", col]].merge(key, on="item")

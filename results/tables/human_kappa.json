@@ -1,0 +1,44 @@
+{
+ "overall": {
+  "n": 126,
+  "agree": 0.40476190476190477,
+  "kappa_3class": 0.1071428571428571,
+  "kappa_binary": 0.2710280373831775
+ },
+ "claim": {
+  "n": 63,
+  "agree": 0.3968253968253968,
+  "kappa_3class": 0.09523809523809523,
+  "kappa_binary": 0.3207547169811321
+ },
+ "mechanism": {
+  "n": 63,
+  "agree": 0.4126984126984127,
+  "kappa_3class": 0.11904761904761907,
+  "kappa_binary": 0.2222222222222222
+ },
+ "confusion_human_rows_judge_cols": {
+  "labels": [
+   "SUPPORTED",
+   "PARTIAL",
+   "UNSUPPORTED"
+  ],
+  "matrix": [
+   [
+    39,
+    30,
+    19
+   ],
+   [
+    3,
+    12,
+    23
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ]
+ }
+}
